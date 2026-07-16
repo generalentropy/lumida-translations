@@ -719,10 +719,20 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "typographyIdentity": {
+        "category": "Apariencia",
+        "title": "Nueva identidad tipográfica",
+        "description": "Lumida adopta dos nuevas tipografías (Bricolage Grotesque para los títulos y Hanken Grotesk para el texto) para un aspecto más marcado y moderno, con una jerarquía renovada y cifras más legibles en todo el panel."
+      },
+      "catppuccinDefault": {
+        "category": "Apariencia",
+        "title": "Catppuccin ahora es el tema predeterminado",
+        "description": "De forma predeterminada, Lumida ahora usa la paleta Catppuccin en modo oscuro. La paleta Aurora sigue disponible en cualquier momento en los ajustes de apariencia."
+      },
       "catppuccinTheme": {
         "category": "Apariencia",
         "title": "Añadido un sistema de temas de color",
-        "description": "Nuevo tema Catppuccin y su selector."
+        "description": "Nuevo tema Catppuccin."
       },
       "italianLanguage": {
         "category": "Aplicación",

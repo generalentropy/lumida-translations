@@ -719,10 +719,20 @@
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "typographyIdentity": {
+        "category": "Appearance",
+        "title": "New typographic identity",
+        "description": "Lumida adopts two new typefaces (Bricolage Grotesque for headings, Hanken Grotesk for text) for a bolder, more modern look, with a reworked hierarchy and more legible numbers across the dashboard."
+      },
+      "catppuccinDefault": {
+        "category": "Appearance",
+        "title": "Catppuccin is now the default theme",
+        "description": "By default, Lumida now uses the Catppuccin palette in dark mode. The Aurora palette stays available anytime in the appearance settings."
+      },
       "catppuccinTheme": {
         "category": "Appearance",
         "title": "Added a color theming system",
-        "description": "New Catppuccin theme and its selector."
+        "description": "New Catppuccin theme."
       },
       "italianLanguage": {
         "category": "Application",

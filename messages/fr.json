@@ -42,8 +42,8 @@
   },
   "Home": {
     "brandHomeLabel": "Accueil Lumida",
-    "heroTitle": "Enfin un tableau de bord pour",
-    "heroTitleAccent": "vos données Google Health.",
+    "heroTitle": "Enfin un tableau <br></br>de bord pour",
+    "heroTitleAccent": "vos données <br></br>Google Health.",
     "heroDescription": "Consultez votre activité, votre sommeil et vos indicateurs de santé directement depuis votre navigateur.",
     "primaryCta": "Essayer maintenant",
     "earlyAccessLabel": "Accès anticipé",
@@ -719,10 +719,20 @@
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "items": {
+      "typographyIdentity": {
+        "category": "Apparence",
+        "title": "Nouvelle identité typographique",
+        "description": "Lumida adopte deux nouvelles polices (Bricolage Grotesque pour les titres, Hanken Grotesk pour le texte) pour un look plus affirmé et moderne, avec une hiérarchie retravaillée et des chiffres plus lisibles dans tout le tableau de bord."
+      },
+      "catppuccinDefault": {
+        "category": "Apparence",
+        "title": "Catppuccin devient le thème par défaut",
+        "description": "Par défaut, Lumida s’affiche désormais avec la palette Catppuccin en mode sombre. La palette Aurora reste disponible à tout moment dans les réglages d’apparence."
+      },
       "catppuccinTheme": {
         "category": "Apparence",
         "title": "Ajout d’un système de thèmes de couleur",
-        "description": "Nouveau thème Catppuccin et son sélecteur."
+        "description": "Nouveau thème Catppuccin."
       },
       "italianLanguage": {
         "category": "Application",
