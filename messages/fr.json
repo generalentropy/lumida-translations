@@ -10,7 +10,8 @@
     "label": "Langue",
     "english": "Anglais",
     "french": "Français",
-    "spanish": "Espagnol"
+    "spanish": "Espagnol",
+    "italian": "Italien"
   },
   "ThemeSelector": {
     "label": "Apparence",
