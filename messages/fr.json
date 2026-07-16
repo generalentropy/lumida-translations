@@ -17,7 +17,10 @@
     "label": "Apparence",
     "system": "Système",
     "light": "Clair",
-    "dark": "Sombre"
+    "dark": "Sombre",
+    "colorLabel": "Thème de couleur",
+    "aurora": "Aurora",
+    "catppuccin": "Catppuccin"
   },
   "TemperatureUnitSelector": {
     "label": "Unité de température",
@@ -531,6 +534,9 @@
     "themeSystem": "Système",
     "themeLight": "Clair",
     "themeDark": "Sombre",
+    "colorTheme": "Thème de couleur",
+    "colorAurora": "Aurora",
+    "colorCatppuccin": "Catppuccin",
     "settings": "Réglages",
     "help": "Aide",
     "feedback": "Donner mon avis",
