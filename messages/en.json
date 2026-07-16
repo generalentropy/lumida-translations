@@ -61,6 +61,7 @@
     "footerLegalNotice": "Legal notice",
     "footerTerms": "Terms of service",
     "footerPrivacy": "Privacy policy",
+    "contributeCta": "Contribute",
     "footerCopyright": "© 2026 Lumida.",
     "disclaimer": "Lumida is not affiliated with Google, Google Health, or Fitbit.",
     "preview": {
@@ -703,12 +704,20 @@
     "mapNotice": "When a workout has a GPS route, its map stays in this browser session; OpenStreetMap only receives the tile requests needed to display the surrounding area.",
     "changelogTitle": "What's new",
     "changelogBody": "See the latest improvements to Lumida, from health-data exploration to privacy and security.",
-    "changelogCta": "View the changelog"
+    "changelogCta": "View the changelog",
+    "contributeTitle": "Contribute",
+    "contributeBody": "Help us improve Lumida's translations.",
+    "contributeCta": "Contribute"
   },
   "ChangelogPage": {
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "italianLanguage": {
+        "category": "Application",
+        "title": "Added Italian",
+        "description": "Lumida is now available in Italian."
+      },
       "navigationAndSleepLabels": {
         "category": "Interface",
         "title": "Improved navigation and sleep charts",
