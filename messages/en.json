@@ -729,6 +729,21 @@
         "title": "Added Italian",
         "description": "Lumida is now available in Italian."
       },
+      "dashboardSleepStages": {
+        "category": "Sleep",
+        "title": "Added sleep stages to the dashboard",
+        "description": "The dashboard now shows the sleep stages from the latest main sleep available in the selected period."
+      },
+      "dashboardRecentActivity": {
+        "category": "Activity",
+        "title": "Simplified Recent activity",
+        "description": "The card is now easier to read. Workout details remain available on the Activity page."
+      },
+      "dashboardPeriodHighlight": {
+        "category": "Interface",
+        "title": "New “Period highlight” card",
+        "description": "This card shows one key insight about your steps, sleep, or latest activity for the selected period."
+      },
       "navigationAndSleepLabels": {
         "category": "Interface",
         "title": "Improved navigation and sleep charts",
@@ -845,7 +860,7 @@
     "summaryError": "Unable to read your Google Health data.",
     "rateLimited": "Too Many Requests. Please wait a moment before trying again.",
     "lastSync": "Last sync: {time}",
-    "partial": "The summary is incomplete; sync to try again.",
+    "partial": "To avoid long loading times, only some of the data is shown. Choose a shorter period to see all of it.",
     "syncing": "Syncing…",
     "sync": "Sync",
     "disconnect": "Revoke Google Health access",
@@ -867,6 +882,29 @@
     "noSession": "No session",
     "recentActivity": "Recent activity",
     "viewAllActivity": "View all activity",
+    "periodHighlight": {
+      "title": "Period highlight",
+      "minutesValue": "{value} min",
+      "latestSleepComparison": "Last night: {latest}, compared with a {average} average for the period.",
+      "sleepWindowComparison": "Average sleep over {window}: {current}, compared with {previous} in the preceding period.",
+      "windows": {
+        "sevenDays": "the last 7 days",
+        "thirtyDays": "the last 30 days",
+        "ninetyDays": "the last 90 days"
+      },
+      "workoutFallback": "Workout",
+      "latestWorkoutDate": "Latest workout in the period · {date}",
+      "latestWorkoutWithDuration": "Latest workout in the period · {date} · {duration}",
+      "stepsValue": "{value} steps",
+      "peakHour": "{start}–{end}, the day's most active time.",
+      "peakDay": "{date}, the most active day in the period.",
+      "peakWeek": "Week of {date}, the most active week in the period.",
+      "notEnoughDataTitle": "Not enough data yet",
+      "notEnoughData": "A comparison will appear when this period contains enough data.",
+      "viewSleep": "View sleep",
+      "viewWorkout": "View workout",
+      "viewActivity": "View activity"
+    },
     "series": {
       "steps": "Steps",
       "minimum": "Minimum",

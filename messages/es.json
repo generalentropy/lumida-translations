@@ -729,6 +729,21 @@
         "title": "Añadido el italiano",
         "description": "Lumida ya está disponible en italiano."
       },
+      "dashboardSleepStages": {
+        "category": "Sueño",
+        "title": "Añadidas las fases del sueño al panel",
+        "description": "El panel ahora muestra las fases del último sueño principal disponible en el período seleccionado."
+      },
+      "dashboardRecentActivity": {
+        "category": "Actividad",
+        "title": "Actividad reciente simplificada",
+        "description": "La tarjeta ahora es más fácil de leer. Los detalles de las sesiones siguen disponibles en la página Actividad."
+      },
+      "dashboardPeriodHighlight": {
+        "category": "Interfaz",
+        "title": "Nueva tarjeta «Lo más destacado del período»",
+        "description": "Esta tarjeta muestra un dato clave sobre tus pasos, tu sueño o tu última actividad durante el período seleccionado."
+      },
       "navigationAndSleepLabels": {
         "category": "Interfaz",
         "title": "Mejora de la navegación y de los gráficos de sueño",
@@ -845,7 +860,7 @@
     "summaryError": "No se han podido consultar tus datos de Google Health.",
     "rateLimited": "Demasiadas solicitudes (Too Many Requests). Espera un momento antes de volver a intentarlo.",
     "lastSync": "Última sincronización: {time}",
-    "partial": "El resumen está incompleto; sincroniza para volver a intentarlo.",
+    "partial": "Para evitar tiempos de carga demasiado largos, solo se muestra una parte de los datos. Elige un periodo más corto para consultarlos todos.",
     "syncing": "Sincronizando…",
     "sync": "Sincronizar",
     "disconnect": "Revocar el acceso a Google Health",
@@ -867,6 +882,29 @@
     "noSession": "Sin sesiones",
     "recentActivity": "Actividad reciente",
     "viewAllActivity": "Ver toda la actividad",
+    "periodHighlight": {
+      "title": "A destacar en el período",
+      "minutesValue": "{value} min",
+      "latestSleepComparison": "Última noche: {latest}, frente a una media de {average} en el período.",
+      "sleepWindowComparison": "Sueño medio durante {window}: {current}, frente a {previous} en el período anterior.",
+      "windows": {
+        "sevenDays": "los últimos 7 días",
+        "thirtyDays": "los últimos 30 días",
+        "ninetyDays": "los últimos 90 días"
+      },
+      "workoutFallback": "Sesión",
+      "latestWorkoutDate": "Última sesión del período · {date}",
+      "latestWorkoutWithDuration": "Última sesión del período · {date} · {duration}",
+      "stepsValue": "{value} pasos",
+      "peakHour": "De {start} a {end}, el tramo más activo del día.",
+      "peakDay": "{date}, el día más activo del período.",
+      "peakWeek": "Semana del {date}, la más activa del período.",
+      "notEnoughDataTitle": "Aún no hay suficientes datos",
+      "notEnoughData": "La comparación aparecerá cuando este período contenga suficientes datos.",
+      "viewSleep": "Ver sueño",
+      "viewWorkout": "Ver sesión",
+      "viewActivity": "Ver actividad"
+    },
     "series": {
       "steps": "Pasos",
       "minimum": "Mínimo",
