@@ -719,6 +719,11 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "catppuccinTheme": {
+        "category": "Apariencia",
+        "title": "Añadido un sistema de temas de color",
+        "description": "Nuevo tema Catppuccin y su selector."
+      },
       "italianLanguage": {
         "category": "Aplicación",
         "title": "Añadido el italiano",
