@@ -1,0 +1,1296 @@
+{
+  "Metadata": {
+    "title": "Lumida",
+    "description": "Salud conectada, con claridad. Consulta y comprende tus datos de salud desde cualquier navegador.",
+    "homeTitle": "Lumida · Panel web para tus datos de Google Health y Fitbit",
+    "homeDescription": "El panel web de Fitbit ya no existe. Lumida lo reemplaza: consulta tus pasos, tu sueño, tu frecuencia cardíaca, tu peso y tus entrenamientos de Google Health desde cualquier navegador. Acceso anticipado gratuito.",
+    "ogTagline": "El panel web para tus datos de Google Health."
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma",
+    "english": "Inglés",
+    "french": "Francés",
+    "spanish": "Español"
+  },
+  "ThemeSelector": {
+    "label": "Apariencia",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "TemperatureUnitSelector": {
+    "label": "Unidad de temperatura",
+    "celsius": "Celsius (°C)",
+    "fahrenheit": "Fahrenheit (°F)",
+    "saved": "La unidad de temperatura se ha actualizado.",
+    "saveError": "No se pudo actualizar la unidad de temperatura."
+  },
+  "DemoData": {
+    "bannerTitle": "Atención",
+    "bannerDescription": "Actualmente estás usando datos de demostración. <settings>Cámbialo en Configuración.</settings>",
+    "dismissBanner": "Cerrar alerta",
+    "settingLabel": "Activar el modo de demostración",
+    "settingDescription": "Utiliza un conjunto local de datos ficticios para explorar todas las pantallas de salud.",
+    "saved": "La fuente de datos de salud se ha actualizado.",
+    "saveError": "No se pudo actualizar la fuente de datos de salud.",
+    "active": "Demo activa",
+    "dashboardTitle": "Datos de demostración"
+  },
+  "Home": {
+    "brandHomeLabel": "Inicio de Lumida",
+    "heroTitle": "Por fin, un panel de control para",
+    "heroTitleAccent": "tus datos de Google Health.",
+    "heroDescription": "Consulta tu actividad, tu sueño y tus indicadores de salud directamente desde tu navegador.",
+    "primaryCta": "Probar ahora",
+    "earlyAccessLabel": "Acceso anticipado",
+    "earlyAccessRemaining": "plazas disponibles",
+    "previewSectionLabel": "Vista previa del panel de Lumida",
+    "designTitle": "Útil, claro y elegante.",
+    "designDescription": "Lumida se construye con tus comentarios y expectativas para crear un panel de salud que responda de verdad a tus necesidades.",
+    "domainActivity": "Actividad",
+    "domainSleep": "Sueño",
+    "domainHeart": "Frecuencia cardíaca",
+    "domainOxygen": "Oxígeno",
+    "domainWeight": "Peso",
+    "domainNutrition": "Nutrición",
+    "privacyTitle": "Diseñado pensando en tu privacidad.",
+    "privacyDescription": "Tus datos de salud te pertenecen. Lumida está diseñada en torno a ese principio: no los almacenamos.",
+    "footerTagline": "Consulta desde tu navegador los datos de salud procedentes de Google Health, Fitbit u otros dispositivos compatibles.",
+    "footerLegalTitle": "Legal",
+    "footerLegalNotice": "Aviso legal",
+    "footerTerms": "Términos del servicio",
+    "footerPrivacy": "Política de privacidad",
+    "footerCopyright": "© 2026 Lumida.",
+    "disclaimer": "Lumida no está afiliada a Google, Google Health ni Fitbit.",
+    "preview": {
+      "navigationLabel": "Vista previa de la navegación del panel",
+      "period": "Resumen semanal",
+      "domainPeriod": "Tendencias de la semana",
+      "monthlyPeriod": "Tendencia de 30 días",
+      "greeting": "Buenos días, Alex",
+      "weekLabel": "{offset, plural, =0 {Esta semana} =1 {La semana pasada} other {Hace # semanas}}",
+      "previousWeek": "Semana anterior",
+      "nextWeek": "Semana siguiente",
+      "steps": "Pasos",
+      "weeklyTotal": "Total semanal",
+      "dailyAverage": "Media diaria",
+      "change": "{value, number, percent}",
+      "stepsChartLabel": "Evolución de pasos durante siete días",
+      "sleep": "Sueño",
+      "nightlyAverage": "Media por noche",
+      "nights": "{count, plural, one {# noche} other {# noches}}",
+      "recordedNights": "Noches registradas",
+      "shortestNight": "Noche más corta",
+      "longestNight": "Noche más larga",
+      "sleepValue": "{hours} h {minutes} min",
+      "sleepChartLabel": "Evolución de la duración del sueño durante siete noches",
+      "hoursValue": "{value} h",
+      "heartRate": "Frecuencia en reposo",
+      "restingAverage": "Media de siete días",
+      "latest": "Último valor",
+      "averageShort": "Media {value}",
+      "bpmValue": "{value} lpm",
+      "heartChartLabel": "Evolución de la frecuencia cardíaca en reposo durante siete días",
+      "heartRateVariability": "Variabilidad de la frecuencia cardíaca",
+      "millisecondsValue": "{value} ms",
+      "hrvChartLabel": "Evolución de la variabilidad de la frecuencia cardíaca durante siete días",
+      "sleepBreathing": "Respiración durante el sueño",
+      "breathsPerMinuteValue": "{value}/min",
+      "respiratoryRateChartLabel": "Evolución de la respiración durante el sueño durante siete días",
+      "nightlyTemperature": "Temperatura nocturna vs referencia",
+      "temperatureDeltaValue": "{value} °C",
+      "temperatureChartLabel": "Evolución de la variación de temperatura nocturna durante siete días",
+      "lowestRate": "Frecuencia mínima",
+      "highestRate": "Frecuencia máxima",
+      "activeMinutes": "Minutos activos",
+      "minutesValue": "{value} min",
+      "oxygen": "Saturación de oxígeno",
+      "percentValue": "{value} %",
+      "workouts": "Entrenamientos",
+      "weight": "Peso",
+      "weightTrend": "Evolución durante un mes",
+      "weightChartLabel": "Evolución diaria del peso durante un mes",
+      "weightDays": "{count} días",
+      "kilogramsValue": "{value} kg",
+      "monthlyChange": "Evolución del mes",
+      "lowestWeight": "Peso mínimo",
+      "highestWeight": "Peso máximo",
+      "macroDistribution": "Distribución de macronutrientes",
+      "weeklyDistribution": "Distribución energética estimada esta semana",
+      "macroChartLabel": "Distribución energética de proteínas, carbohidratos y grasas esta semana",
+      "protein": "Proteínas",
+      "carbohydrates": "Carbohidratos",
+      "fat": "Grasas",
+      "gramsValue": "{value} g",
+      "energyIntake": "Ingesta energética",
+      "energyChartLabel": "Evolución de la ingesta energética durante siete días",
+      "kcalValue": "{value} kcal",
+      "daysTracked": "{count, plural, one {# día} other {# días}}",
+      "totalEnergy": "Energía total de la semana",
+      "hydrationAverage": "Hidratación diaria media",
+      "litersValue": "{value} L",
+      "daysTrackedLabel": "Días registrados",
+      "days": {
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mié",
+        "thu": "Jue",
+        "fri": "Vie",
+        "sat": "Sáb",
+        "sun": "Dom"
+      }
+    }
+  },
+  "LegalCommon": {
+    "brandHomeLabel": "Inicio de Lumida",
+    "eyebrow": "Lumida",
+    "documentNavigationTitle": "Información legal",
+    "documentNavigationLabel": "Navegación entre documentos legales",
+    "footerNavigationLabel": "Enlaces legales",
+    "documents": {
+      "legal": "Aviso legal",
+      "terms": "Condiciones de uso",
+      "privacy": "Política de privacidad"
+    },
+    "lastUpdated": "Última actualización: {date}",
+    "copyright": "© 2026 Lumida.",
+    "contact": {
+      "emailLabel": "Correo electrónico",
+      "phoneLabel": "Número de teléfono",
+      "revealEmail": "Mostrar correo electrónico",
+      "revealPhone": "Mostrar número",
+      "revealing": "Verificando…",
+      "hint": "Oculto hasta que lo solicites para limitar la recopilación automatizada.",
+      "protectedHint": "Dato de contacto mostrado.",
+      "error": "No se ha podido mostrar este dato de contacto. Inténtalo de nuevo."
+    }
+  },
+  "LegalNoticePage": {
+    "metadata": {
+      "title": "Aviso legal",
+      "description": "Editor, alojamiento, contacto e información legal de Lumida."
+    },
+    "title": "Aviso legal",
+    "description": "Información que permite identificar al editor de Lumida y a los principales proveedores técnicos necesarios para el funcionamiento del servicio.",
+    "publisher": {
+      "title": "Editor del sitio",
+      "intro": "El sitio web y la aplicación Lumida son editados por:",
+      "nameLabel": "Editor",
+      "statusLabel": "Forma jurídica",
+      "statusValue": "Empresario individual",
+      "addressLabel": "Domicilio social",
+      "vatLabel": "IVA",
+      "vatValue": "IVA no aplicable conforme al artículo 293 B del Código General Tributario francés."
+    },
+    "publication": {
+      "title": "Publicación y desarrollo",
+      "description": "El director de la publicación y desarrollador de Lumida es {name}."
+    },
+    "hosting": {
+      "title": "Alojamiento",
+      "intro": "Lumida utiliza los siguientes proveedores de infraestructura:",
+      "applicationLabel": "Alojamiento del sitio y la aplicación:",
+      "databaseLabel": "Alojamiento de la base de datos:"
+    },
+    "service": {
+      "title": "Naturaleza del servicio",
+      "description": "Lumida es un servicio gratuito en fase beta reservado a personas mayores de edad. Proporciona una interfaz web para consultar la información de salud y actividad que el usuario autoriza mediante Google Health."
+    },
+    "property": {
+      "title": "Propiedad intelectual",
+      "description": "Salvo indicación en contrario, el nombre Lumida, la interfaz, los textos, gráficos, elementos visuales y componentes de software del servicio están protegidos por la legislación aplicable en materia de propiedad intelectual. Queda prohibida su reproducción, adaptación o difusión sin autorización previa, salvo las excepciones previstas por la ley."
+    },
+    "liability": {
+      "title": "Información de salud y responsabilidad",
+      "description": "Lumida es una herramienta informativa de bienestar y no un producto sanitario. No proporciona diagnósticos, tratamientos ni asesoramiento médico y no debe utilizarse en una emergencia. El usuario sigue siendo responsable de consultar a un profesional sanitario cualificado cuando sea necesario."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Puedes contactar con el editor mediante los datos que figuran a continuación. Solo se muestran cuando se solicitan para limitar su recopilación automatizada."
+    }
+  },
+  "TermsPage": {
+    "metadata": {
+      "title": "Condiciones de uso",
+      "description": "Condiciones que regulan el acceso al servicio Lumida en versión beta y su utilización."
+    },
+    "title": "Condiciones de uso",
+    "description": "Estas condiciones regulan el acceso a Lumida y su utilización. Léelas antes de crear una cuenta o conectar Google Health.",
+    "scope": {
+      "title": "Objeto y aceptación",
+      "description": "Al crear una cuenta o utilizar Lumida, aceptas estas condiciones y reconoces haber leído la política de privacidad. Si no estás de acuerdo, no debes utilizar el servicio. La aceptación de estas condiciones no sustituye el consentimiento independiente solicitado para acceder a los datos de salud."
+    },
+    "eligibility": {
+      "title": "Requisitos de acceso",
+      "description": "Lumida está reservado a personas de 18 años o más con capacidad legal para aceptar estas condiciones. Actualmente, el servicio se ofrece gratuitamente en versión beta."
+    },
+    "account": {
+      "title": "Responsabilidad sobre la cuenta",
+      "intro": "Eres responsable de tu cuenta y te comprometes a:",
+      "itemAccurate": "facilitar información de registro exacta y actualizada;",
+      "itemSecurity": "mantener la confidencialidad de tus credenciales y utilizar una contraseña segura;",
+      "itemPersonal": "utilizar la cuenta para ti y no suplantar a otra persona;",
+      "itemNotice": "informar rápidamente a Lumida si sospechas de un acceso no autorizado."
+    },
+    "health": {
+      "title": "Conexión con Google Health",
+      "description": "La conexión con Google Health es opcional. Tú eliges la cuenta de Google que quieres conectar y autorizas mediante Google OAuth los permisos de solo lectura solicitados. Lumida accede únicamente a las categorías necesarias para las funciones disponibles y puedes desconectar la integración en cualquier momento. Durante la fase de pruebas de Google, el acceso está sujeto a la capacidad disponible y a una autorización previa."
+    },
+    "beta": {
+      "title": "Beta gratuita y disponibilidad",
+      "description": "Lumida se ofrece gratuitamente durante su fase beta. Las funciones, la compatibilidad y las condiciones de acceso pueden evolucionar junto con el producto. El servicio puede interrumpirse por mantenimiento, seguridad, limitaciones de un proveedor o incidentes técnicos, sin compromiso de disponibilidad ininterrumpida."
+    },
+    "acceptableUse": {
+      "title": "Uso permitido",
+      "intro": "Está prohibido:",
+      "itemIllegal": "utilizar Lumida con fines ilícitos, fraudulentos o perjudiciales;",
+      "itemSecurity": "intentar eludir la seguridad, acceder a la cuenta de otra persona o perturbar el servicio;",
+      "itemAutomated": "realizar solicitudes automatizadas, scraping o extracciones excesivas que perjudiquen el servicio;",
+      "itemThirdParty": "importar, conectar o utilizar datos a los que no tengas autorización para acceder."
+    },
+    "disclaimer": {
+      "title": "Ausencia de asesoramiento médico",
+      "description": "Lumida presenta datos con fines de información personal y bienestar. No verifica la exactitud médica de los datos procedentes de los dispositivos, no realiza diagnósticos y no sustituye a un médico, a los servicios de emergencia ni a un profesional sanitario cualificado. Nunca retrases una consulta médica por la información mostrada en Lumida."
+    },
+    "thirdParties": {
+      "title": "Servicios de terceros",
+      "description": "Lumida depende de servicios gestionados por Google, Fitbit y proveedores técnicos. Sus propias condiciones y políticas de privacidad se aplican a sus servicios. Lumida no está afiliada ni respaldada por Google, Google Health o Fitbit y no puede garantizar la disponibilidad o exactitud de los servicios de terceros."
+    },
+    "property": {
+      "title": "Propiedad intelectual",
+      "description": "Lumida, sus contenidos originales, su interfaz y su software siguen siendo propiedad de sus respectivos titulares de derechos. Estas condiciones solo conceden un derecho personal, limitado, no exclusivo y revocable de uso del servicio."
+    },
+    "suspension": {
+      "title": "Suspensión y cierre de la cuenta",
+      "description": "El acceso puede limitarse o suspenderse para proteger el servicio, cumplir la ley, corregir un incumplimiento de estas condiciones o gestionar la capacidad de la beta. Puedes dejar de utilizar Lumida, desconectar Google Health y solicitar la eliminación de tu cuenta en cualquier momento."
+    },
+    "liability": {
+      "title": "Responsabilidad",
+      "description": "Lumida se presta con un cuidado razonable teniendo en cuenta su carácter gratuito y experimental. En la medida permitida por la ley, el editor no responde de daños indirectos, fallos de servicios de terceros, datos de origen inexactos o interrupciones que escapen razonablemente a su control. Ninguna disposición limita los derechos o responsabilidades que no puedan excluirse legalmente."
+    },
+    "changes": {
+      "title": "Cambios en las condiciones",
+      "description": "Estas condiciones pueden actualizarse para reflejar la evolución de Lumida, de sus proveedores o de la legislación aplicable. La fecha de vigencia figura al principio de esta página. Los cambios importantes se comunicarán a los usuarios por un medio adecuado."
+    },
+    "law": {
+      "title": "Legislación aplicable",
+      "description": "Estas condiciones se rigen por la legislación francesa, sin privar a los consumidores de las protecciones obligatorias de su país de residencia. Las partes intentarán primero alcanzar una solución amistosa; de no ser posible, los tribunales competentes se determinarán conforme a las normas procesales aplicables."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Puedes enviar cualquier pregunta sobre estas condiciones al contacto general de Lumida."
+    }
+  },
+  "PrivacyPage": {
+    "metadata": {
+      "title": "Política de privacidad",
+      "description": "Cómo accede Lumida a los datos de la cuenta y de Google Health, y cómo los utiliza, protege y conserva."
+    },
+    "title": "Política de privacidad",
+    "description": "Esta política explica cómo trata Lumida los datos personales cuando creas una cuenta, conectas Google Health o utilizas el servicio.",
+    "controller": {
+      "title": "Responsable del tratamiento",
+      "description": "El responsable de los tratamientos de datos personales realizados por Lumida es {name}, empresario individual."
+    },
+    "principle": {
+      "title": "Nuestro principio esencial",
+      "description": "Tus datos de salud te pertenecen. Lumida los recupera únicamente para mostrar las funciones que solicitas y no crea una copia permanente de tus mediciones de salud en su base de datos."
+    },
+    "data": {
+      "title": "Datos tratados",
+      "intro": "Según el uso que hagas de Lumida, pueden tratarse las siguientes categorías:",
+      "account": "Datos de la cuenta: nombre, correo electrónico, imagen de perfil cuando la proporciona Google, estado de verificación, función y fechas de la cuenta.",
+      "authentication": "Datos de autenticación y seguridad: hash de la contraseña, identificador de la cuenta del proveedor y, cuando sean necesarios, tokens utilizados para el inicio de sesión social, token y caducidad de la sesión, dirección IP, agente de usuario, registros de verificación y contadores de limitación de solicitudes.",
+      "access": "Datos de gestión del acceso beta: correo electrónico de la cuenta de Google que facilitas, idioma de la solicitud, fecha de solicitud y fecha de aprobación.",
+      "preferences": "Preferencias y datos de administración: idioma elegido en la URL, apariencia guardada en el dispositivo, unidad de temperatura, última fecha aproximada de actividad y posibles restricciones de la cuenta.",
+      "connection": "Datos de conexión con Google Health: identificador estable de Google, permisos concedidos, estado y fechas de conexión, y token de actualización cifrado necesario para mantener la conexión.",
+      "health": "Datos de salud y actividad solicitados bajo demanda: actividad y ejercicio, sueño, frecuencia cardiaca, saturación de oxígeno, mediciones de recuperación, peso, nutrición, hidratación y, cuando lo autorizas, rutas geográficas de los entrenamientos.",
+      "communications": "Datos de comentarios sobre el producto y comunicaciones: mensajes, cuenta asociada, idioma de la aplicación, zona horaria, página de origen normalizada, tamaño de la ventana, agente de usuario y versión del despliegue, además del contenido y los metadatos técnicos del correo cuando contactas con Lumida o recibes un mensaje transaccional."
+    },
+    "purposes": {
+      "title": "Finalidades y bases jurídicas",
+      "service": "Proporcionar la cuenta, la autenticación, las preferencias y las funciones solicitadas: ejecución del contrato constituido por estas condiciones.",
+      "security": "Proteger las cuentas, prevenir abusos, administrar el acceso beta y mantener el servicio: intereses legítimos de Lumida en materia de seguridad y buen funcionamiento.",
+      "health": "Recuperar y mostrar los datos de Google Health: tu consentimiento explícito conforme a los artículos 6.1.a y 9.2.a del RGPD.",
+      "communication": "Revisar los comentarios sobre el producto, responder a solicitudes y enviar mensajes relativos a la cuenta, la seguridad y el acceso: ejecución del servicio e intereses legítimos de Lumida en mejorar el producto y responder a los usuarios.",
+      "legal": "Cumplir obligaciones legales y formular, ejercer o defender reclamaciones: obligación legal o interés legítimo, según corresponda."
+    },
+    "consent": {
+      "title": "Consentimiento para los datos de salud",
+      "description": "La conexión con Google Health es opcional. El proceso indica que el acceso se utiliza para mostrar tus datos en Lumida; después, Google presenta las categorías de solo lectura solicitadas y te pide que las apruebes. Lumida no considera la aceptación de las condiciones como consentimiento para el tratamiento de datos de salud.",
+      "withdrawal": "Puedes retirar tu consentimiento en cualquier momento desconectando Google Health en Lumida. Lumida revocará entonces la autorización de Google cuando sea posible y eliminará el registro local de conexión. La retirada no afecta a los tratamientos realizados lícitamente con anterioridad."
+    },
+    "google": {
+      "title": "Uso limitado de Google Health",
+      "description": "El uso que Lumida hace de la información recibida de la API de Google Health cumple la política Google Health API Developer and User Data Policy, incluidos sus requisitos de uso limitado.",
+      "policyLink": "Consultar la política Google Health API Developer and User Data Policy"
+    },
+    "storage": {
+      "title": "Tratamiento de los datos de salud",
+      "health": "Las mediciones de salud pasan por el servidor de Lumida únicamente durante el tiempo necesario para responder a tu solicitud. No se guardan ni en Neon ni en un almacenamiento persistente del navegador. La interfaz conserva temporalmente las respuestas en memoria: los datos pasan a considerarse obsoletos después de 15 minutos y una entrada sin utilizar se elimina después de 30 minutos; la caché completa se borra al cerrar sesión.",
+      "token": "Los tokens de actualización de Google Health se cifran en reposo mediante AES-256-GCM. Los tokens de acceso permanecen en el servidor y solo se conservan en la memoria temporal del proceso. Los tokens OAuth y los datos de salud nunca se guardan en el almacenamiento del navegador."
+    },
+    "providers": {
+      "title": "Destinatarios y proveedores",
+      "intro": "Los datos personales solo se comunican en la medida necesaria para el funcionamiento de Lumida a las siguientes categorías de proveedores:",
+      "vercel": "alojamiento de la aplicación y ejecución del servidor ({location}).",
+      "neon": "base de datos PostgreSQL de las cuentas ({location}). Las mediciones de salud no se guardan allí.",
+      "resend": "envío de correos transaccionales ({location}).",
+      "google": "inicio de sesión social, autorización OAuth y API de Google Health, cuando el usuario elige estos servicios.",
+      "cloudflare": "protección DNS y encaminamiento de los mensajes enviados a las direcciones de contacto de Lumida.",
+      "openStreetMap": "suministro de teselas cartográficas para la zona visible de un entrenamiento; la ruta completa no se envía a OpenStreetMap."
+    },
+    "transfers": {
+      "title": "Transferencias internacionales",
+      "description": "La región principal de la base de datos está en Fráncfort y los datos de los correos transaccionales se tratan en Irlanda. Algunos proveedores están establecidos en Estados Unidos o pueden prestar asistencia desde fuera del Espacio Económico Europeo. Cuando sea necesario, las transferencias se basan en un mecanismo de adecuación, como el Marco de Privacidad de Datos UE–EE. UU., cláusulas contractuales tipo u otra garantía ofrecida por el proveedor correspondiente."
+    },
+    "retention": {
+      "title": "Plazos de conservación",
+      "account": "Los datos de la cuenta se conservan mientras permanezca activa y se eliminan tras una solicitud de supresión verificada, salvo que exista una obligación legal de conservación.",
+      "health": "Las mediciones de salud no se conservan en la base de datos; su tratamiento temporal en la memoria del servidor y del navegador se describe anteriormente.",
+      "connection": "Los datos de conexión con Google Health se conservan hasta que desconectes Google Health o se elimine la cuenta.",
+      "temporary": "Una transacción OAuth de Google Health caduca después de 10 minutos, un enlace de verificación del correo después de una hora y un enlace de restablecimiento de contraseña después de 15 minutos.",
+      "communication": "Los comentarios vinculados a la cuenta se conservan mientras sean útiles para mejorar Lumida y se eliminan con la cuenta, salvo que deban mantenerse para una reclamación legal. Las demás comunicaciones se conservan el tiempo necesario para responder y gestionar su seguimiento.",
+      "logs": "Los registros técnicos de seguridad y alojamiento se conservan durante periodos limitados según la configuración de los proveedores y las necesidades legítimas de seguridad. Las copias de seguridad de los proveedores pueden permanecer hasta que finalice su ciclo normal de rotación."
+    },
+    "cookies": {
+      "title": "Cookies y almacenamiento local",
+      "description": "Lumida utiliza únicamente los almacenamientos necesarios para prestar el servicio solicitado o recordar las preferencias de la interfaz:",
+      "session": "cookies seguras de autenticación y sesión;",
+      "oauth": "cookies temporales de seguridad e idioma durante el proceso OAuth de Google Health;",
+      "preferences": "cookie de estado de la barra lateral y almacenamiento local del dispositivo para la preferencia de apariencia.",
+      "noTracking": "Actualmente, Lumida no utiliza cookies publicitarias, seguimiento del comportamiento ni herramientas de análisis de marketing. Estos mecanismos necesarios no requieren un aviso de cookies publicitarias."
+    },
+    "rights": {
+      "title": "Tus derechos",
+      "intro": "Con sujeción a las condiciones previstas en el RGPD, puedes ejercer los siguientes derechos:",
+      "access": "acceder a tus datos personales y rectificarlos;",
+      "delete": "solicitar la supresión de los datos de tu cuenta;",
+      "restrict": "oponerte a determinados tratamientos o solicitar su limitación;",
+      "portability": "recibir los datos que hayas facilitado en un formato portátil cuando este derecho sea aplicable;",
+      "withdraw": "retirar tu consentimiento en cualquier momento, sin afectar a los tratamientos lícitos anteriores.",
+      "complaint": "También puedes presentar una reclamación ante la autoridad francesa de protección de datos, la"
+    },
+    "security": {
+      "title": "Seguridad",
+      "description": "Lumida aplica medidas destinadas a proteger los datos personales, como la gestión de OAuth en el servidor, el cifrado de los tokens de actualización de Google Health, cookies seguras, controles de acceso, validación de entradas y limitación de solicitudes. Ningún servicio en línea puede garantizar una seguridad absoluta; los usuarios también deben proteger sus credenciales y dispositivos."
+    },
+    "minors": {
+      "title": "Servicio reservado a mayores de edad",
+      "description": "Lumida está reservado a personas de 18 años o más y no proporciona intencionadamente cuentas a menores. Si se identifican datos de un menor, podrán eliminarse después de las comprobaciones oportunas."
+    },
+    "changes": {
+      "title": "Cambios en esta política",
+      "description": "Esta política puede actualizarse cuando cambien las funciones, los proveedores o las obligaciones legales de Lumida. Su fecha de vigencia figura al principio de la página y los cambios importantes se comunicarán por un medio adecuado."
+    },
+    "contact": {
+      "title": "Contacto de privacidad",
+      "description": "Para ejercer tus derechos o formular una pregunta sobre privacidad, contacta con Lumida mediante la dirección específica que aparece a continuación. Podrá solicitarse una verificación de identidad cuando sea razonablemente necesaria para proteger la cuenta."
+    }
+  },
+  "Login": {
+    "signInTab": "Iniciar sesión",
+    "signUpTab": "Registrarse",
+    "namePlaceholder": "Nombre",
+    "emailPlaceholder": "Correo electrónico",
+    "passwordPlaceholder": "Contraseña (12 caracteres mín.)",
+    "genericError": "Ha ocurrido un error.",
+    "invalidCredentials": "El correo electrónico o la contraseña no son correctos.",
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear una cuenta",
+    "pending": "Espera un momento…",
+    "separator": "o",
+    "continueWithGoogle": "Continuar con Google",
+    "emailRequired": "Introduce una dirección de correo válida.",
+    "emailNotVerified": "Este correo electrónico todavía no está verificado. Acabamos de enviar un nuevo enlace a:",
+    "signupCompleteTitle": "¡Gracias por registrarte!",
+    "signupCompleteDescription": "Hemos enviado un enlace de verificación a:",
+    "checkInboxTitle": "Revisa tu bandeja de entrada",
+    "checkInboxDescription": "Hemos enviado un enlace de verificación a:",
+    "resendVerification": "Enviar un nuevo enlace",
+    "resendPending": "Enviando…",
+    "resendConfirmation": "Se ha enviado un nuevo enlace de verificación.",
+    "backToSignIn": "Volver al inicio de sesión",
+    "verificationLinkInvalid": "Este enlace de verificación no es válido o ha caducado.",
+    "verificationLinkInvalidHelp": "Introduce tu correo electrónico a continuación para recibir un nuevo enlace.",
+    "verificationCompleteTitle": "Correo electrónico verificado",
+    "verificationCompleteDescription": "Tu panel de Lumida se está abriendo…",
+    "forgotPassword": "¿Has olvidado tu contraseña?",
+    "passwordResetComplete": "Tu contraseña se ha cambiado. Inicia sesión con la nueva contraseña."
+  },
+  "EmailVerification": {
+    "subject": "Verifica tu correo de Lumida",
+    "preview": "Confirma tu correo electrónico para terminar de crear tu cuenta de Lumida.",
+    "heading": "Confirma tu correo electrónico",
+    "body": "Confirma esta dirección de correo para terminar de crear tu cuenta de Lumida.",
+    "cta": "Verificar mi correo",
+    "expires": "Este enlace caduca en una hora.",
+    "ignore": "Si no has creado una cuenta de Lumida, puedes ignorar este correo."
+  },
+  "ForgotPassword": {
+    "title": "Restablece tu contraseña",
+    "description": "Introduce la dirección de correo asociada a tu cuenta de Lumida.",
+    "emailLabel": "Correo electrónico",
+    "invalidEmail": "Introduce una dirección de correo válida.",
+    "submit": "Enviar enlace de restablecimiento",
+    "pending": "Enviando…",
+    "completeTitle": "Revisa tu bandeja de entrada",
+    "completeDescription": "Si existe una cuenta asociada a esta dirección, recibirás en breve un enlace para restablecer la contraseña. Revisa también la carpeta de correo no deseado.",
+    "rateLimited": "Demasiados intentos. Espera un minuto antes de volver a intentarlo.",
+    "genericError": "No se pudo completar la solicitud. Inténtalo de nuevo.",
+    "backToSignIn": "Volver al inicio de sesión"
+  },
+  "ResetPassword": {
+    "title": "Elige una nueva contraseña",
+    "description": "Usa una contraseña única que no utilices en ningún otro servicio.",
+    "passwordLabel": "Nueva contraseña",
+    "passwordHelp": "Al menos {count} caracteres. Puedes usar una frase de contraseña larga.",
+    "confirmationLabel": "Confirma la nueva contraseña",
+    "submit": "Cambiar contraseña",
+    "pending": "Cambiando la contraseña…",
+    "passwordTooShort": "Usa al menos {count} caracteres.",
+    "passwordTooLong": "Usa como máximo {count} caracteres.",
+    "passwordMismatch": "Las contraseñas no coinciden.",
+    "rateLimited": "Demasiados intentos. Espera un minuto antes de volver a intentarlo.",
+    "genericError": "No se pudo cambiar la contraseña. Inténtalo de nuevo.",
+    "invalidTitle": "Este enlace ya no es válido",
+    "invalidDescription": "Puede haber caducado o haberse utilizado ya. Solicita un nuevo enlace seguro.",
+    "requestNewLink": "Solicitar un nuevo enlace"
+  },
+  "PasswordResetEmail": {
+    "subject": "Restablece tu contraseña de Lumida",
+    "preview": "Usa este enlace seguro para elegir una nueva contraseña de Lumida.",
+    "heading": "Restablece tu contraseña",
+    "body": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta de Lumida.",
+    "cta": "Elegir una nueva contraseña",
+    "expires": "Por tu seguridad, este enlace de un solo uso caduca en 15 minutos.",
+    "ignore": "Si no has solicitado este cambio, puedes ignorar este correo. Tu contraseña no ha cambiado."
+  },
+  "PasswordChangedEmail": {
+    "subject": "Tu contraseña de Lumida ha cambiado",
+    "preview": "Aviso de seguridad: tu contraseña de Lumida ha cambiado.",
+    "heading": "Contraseña cambiada",
+    "body": "La contraseña de tu cuenta de Lumida se ha cambiado correctamente.",
+    "sessions": "Se han cerrado todas las sesiones activas para proteger tu cuenta.",
+    "warning": "Si no has realizado este cambio, solicita inmediatamente otro restablecimiento de contraseña y protege tu cuenta de correo."
+  },
+  "GoogleHealthAccessEmail": {
+    "subject": "Tu acceso a Lumida ha sido aprobado",
+    "preview": "Ya puedes conectar Google Health con Lumida.",
+    "greeting": "Hola",
+    "heading": "Enhorabuena, tu acceso ha sido aprobado",
+    "body": "La cuenta de Google Health o Fitbit que indicaste se ha añadido a los usuarios de prueba autorizados. Ya puedes conectar tu cuenta y acceder a Lumida.",
+    "approvedAddress": "Cuenta de Google autorizada:",
+    "cta": "Abrir Lumida",
+    "support": "Si tienes dificultades para conectarte, únete a nuestro Discord.",
+    "discordCta": "Obtener ayuda en Discord",
+    "closing": "Nos vemos pronto en Lumida."
+  },
+  "Dashboard": {
+    "title": "Panel de control"
+  },
+  "GoogleHealthAccess": {
+    "eyebrow": "Ya casi está",
+    "titleGreeting": "Hola {name} 👋",
+    "titleWelcome": "Te damos la bienvenida a Lumida",
+    "remainingSpots": "{count, plural, one {# plaza disponible} other {# plazas disponibles}}",
+    "description": "Introduce el correo de la cuenta de Google Health que quieres conectar. Cuando se apruebe tu dirección, recibirás un correo para informarte.",
+    "verificationRequired": "Verificación del correo requerida",
+    "emailVerificationRequired": "Verifica el correo de tu cuenta de Lumida antes de solicitar acceso a Google Health.",
+    "pendingBadge": "Solicitud enviada",
+    "pendingDescription": "Hemos recibido tu solicitud y la aprobaremos en breve. Te avisaremos por correo en cuanto tu acceso esté listo.",
+    "changeEmail": "Cambiar el correo",
+    "emailLabel": "Correo de Google Health",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "invalidEmail": "Introduce una dirección de correo válida.",
+    "submitError": "No se pudo guardar tu solicitud. Inténtalo de nuevo.",
+    "saved": "¡Solicitud enviada! Nos pondremos en contacto contigo muy pronto.",
+    "cancel": "Cancelar",
+    "submitting": "Enviando…",
+    "updateRequest": "Actualizar solicitud",
+    "submit": "Solicitar acceso"
+  },
+  "AppSidebar": {
+    "overview": "Resumen",
+    "dashboard": "Panel de control",
+    "tracking": "Seguimiento",
+    "activity": "Actividad",
+    "sleep": "Sueño",
+    "recovery": "Recuperación",
+    "health": "Salud",
+    "weight": "Peso",
+    "nutrition": "Nutrición",
+    "toggleSidebar": "Mostrar u ocultar la barra lateral",
+    "mobileNavTitle": "Navegación",
+    "mobileNavDescription": "Menú de navegación principal.",
+    "resources": "Recursos",
+    "discord": "Discord",
+    "appearance": "Apariencia",
+    "themeSystem": "Sistema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "settings": "Ajustes",
+    "help": "Ayuda",
+    "feedback": "Comentarios",
+    "changelog": "Novedades",
+    "administration": "Administración",
+    "signOut": "Cerrar sesión"
+  },
+  "AdminSidebar": {
+    "administration": "Administración",
+    "overview": "Resumen",
+    "users": "Usuarios",
+    "feedback": "Comentarios de usuarios",
+    "backToApp": "Volver a Lumida",
+    "toggleSidebar": "Mostrar u ocultar la barra de administración",
+    "mobileNavTitle": "Navegación de administración",
+    "mobileNavDescription": "Menú de navegación del área de administración."
+  },
+  "AdminOverviewPage": {
+    "title": "Resumen de administración",
+    "description": "Métricas de cuentas, comentarios y conexiones con Google Health.",
+    "metrics": {
+      "totalUsers": {
+        "title": "Usuarios registrados",
+        "description": "Todas las cuentas de Lumida."
+      },
+      "newUsers": {
+        "title": "Nuevos usuarios",
+        "description": "Cuentas creadas durante los últimos 30 días."
+      },
+      "verifiedUsers": {
+        "title": "Cuentas verificadas",
+        "description": "Cuentas con una dirección de correo verificada."
+      },
+      "bannedUsers": {
+        "title": "Cuentas bloqueadas",
+        "description": "Cuentas que actualmente no pueden iniciar sesión."
+      },
+      "activeConnections": {
+        "title": "Vinculadas a Google Health",
+        "description": "Cuentas con una conexión activa con Google Health."
+      },
+      "totalFeedback": {
+        "title": "Comentarios del producto",
+        "description": "Mensajes enviados desde la barra lateral de Lumida."
+      }
+    }
+  },
+  "FeedbackDialog": {
+    "title": "Ayúdanos a mejorar Lumida",
+    "description": "Nos encantaría conocer tu opinión.",
+    "messageLabel": "Comparte tus ideas",
+    "messagePlaceholder": "¿Qué funciona bien? ¿Qué resulta confuso? ¿Qué falta?",
+    "privacyNote": "No incluyas mediciones de salud ni otra información sensible.",
+    "discordHelp": "¿Necesitas ayuda? Únete a la comunidad en <discord>Discord</discord>.",
+    "close": "Cerrar la ventana de comentarios",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "submitting": "Enviando…",
+    "success": "¡Gracias! Tu opinión se ha enviado.",
+    "invalidMessage": "Escribe un mensaje antes de enviar tu opinión.",
+    "submitError": "No se pudo enviar tu opinión. Inténtalo de nuevo.",
+    "rateLimited": "Has enviado varios mensajes recientemente. Inténtalo de nuevo en unos minutos."
+  },
+  "AdminFeedbackPage": {
+    "title": "Comentarios de usuarios",
+    "description": "Comentarios del producto vinculados a la cuenta y contexto técnico capturado al enviarlos.",
+    "listTitle": "Comentarios del producto",
+    "listDescription": "{count, plural, =0 {No hay comentarios} one {# comentario} other {# comentarios}}",
+    "columns": {
+      "user": "Usuario",
+      "message": "Mensaje",
+      "context": "Contexto",
+      "createdAt": "Enviado"
+    },
+    "context": {
+      "source": "Página",
+      "locale": "Idioma",
+      "timeZone": "Zona horaria",
+      "viewport": "Ventana",
+      "viewportValue": "{width} × {height} px",
+      "browser": "Navegador",
+      "version": "Despliegue",
+      "id": "ID del comentario",
+      "unknown": "No disponible"
+    },
+    "empty": {
+      "title": "Todavía no hay comentarios",
+      "description": "Los mensajes enviados desde la barra lateral de Lumida aparecerán aquí."
+    },
+    "pagination": {
+      "summary": "Página {page} de {totalPages}",
+      "label": "Paginación de la lista de comentarios",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "previousLabel": "Ir a la página anterior",
+      "nextLabel": "Ir a la página siguiente"
+    }
+  },
+  "AdminUsersPage": {
+    "title": "Usuarios",
+    "description": "Cuentas de Lumida, estados y actividad reciente.",
+    "listTitle": "Usuarios registrados",
+    "listDescription": "{count, plural, =0 {Ningún usuario registrado} one {# usuario registrado} other {# usuarios registrados}}",
+    "columns": {
+      "user": "Usuario",
+      "role": "Rol",
+      "status": "Estado",
+      "emailVerified": "Correo verificado",
+      "googleHealthAccess": "Acceso a Google Health",
+      "lastActiveAt": "Última actividad",
+      "createdAt": "Registro"
+    },
+    "activity": {
+      "never": "Nunca"
+    },
+    "roles": {
+      "admin": "Administrador",
+      "user": "Usuario"
+    },
+    "statuses": {
+      "active": "Activo",
+      "banned": "Bloqueado"
+    },
+    "emailVerification": {
+      "verified": "Verificado",
+      "unverified": "Sin verificar"
+    },
+    "googleHealthAccess": {
+      "noRequest": "Sin solicitud",
+      "pending": "Pendiente de aprobación",
+      "approved": "Aprobado",
+      "approve": "Aprobar",
+      "approving": "Aprobando…",
+      "approvalSuccess": "Acceso a Google Health aprobado y correo de confirmación enviado.",
+      "approvalError": "No se pudo aprobar el acceso. Comprueba el servicio de correo e inténtalo de nuevo."
+    },
+    "empty": "No se encontraron usuarios.",
+    "pagination": {
+      "summary": "Página {page} de {totalPages}",
+      "label": "Paginación de la lista de usuarios",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "previousLabel": "Ir a la página anterior",
+      "nextLabel": "Ir a la página siguiente"
+    }
+  },
+  "SettingsPage": {
+    "title": "Ajustes",
+    "description": "Gestiona las preferencias de tu cuenta y los servicios conectados.",
+    "accountTitle": "Cuenta",
+    "accountDescription": "La cuenta que utilizas para iniciar sesión en Lumida. Puede ser distinta de la cuenta de Google Health conectada.",
+    "preferencesTitle": "Preferencias de la aplicación",
+    "preferencesDescription": "Elige cómo se muestra y funciona Lumida para ti.",
+    "connectionsTitle": "Servicios conectados",
+    "connectionsDescription": "Gestiona los servicios externos autorizados para compartir datos con Lumida.",
+    "disconnectConfirmation": "Al revocar el acceso se desconecta Google Health y se elimina la conexión de Lumida. Ya no podrás acceder a tus datos de salud desde la aplicación.",
+    "confirmDisconnect": "Revocar acceso",
+    "cancel": "Cancelar",
+    "notConnectedDescription": "Google Health no está conectado a Lumida.",
+    "backToDashboard": "Volver al panel de control"
+  },
+  "HelpPage": {
+    "title": "Ayuda e información",
+    "description": "Descubre cómo funciona Lumida y cómo se tratan tus datos de salud.",
+    "aboutTitle": "Acerca de Lumida",
+    "aboutBody": "Lumida solicita tus datos de Google Health cuando los necesitas y los presenta como resúmenes y tendencias sencillos. Es una herramienta informativa y no ofrece diagnósticos médicos.",
+    "privacyTitle": "Privacidad",
+    "cacheNotice": "Los datos solo se conservan en la memoria caché de esta sesión.",
+    "storageNotice": "Lumida no guarda tus mediciones de salud en su base de datos ni en el almacenamiento del navegador. Los datos de Google Health se solicitan cuando son necesarios.",
+    "disconnectNotice": "Cuando revocas el acceso a Google Health en Ajustes, Lumida elimina la información de conexión local y deja de poder acceder a tus datos de salud.",
+    "mapNotice": "Cuando un entrenamiento tiene un recorrido GPS, su mapa permanece en esta sesión del navegador; OpenStreetMap solo recibe las solicitudes de teselas necesarias para mostrar la zona circundante.",
+    "changelogTitle": "Novedades",
+    "changelogBody": "Descubre las últimas mejoras de Lumida, desde la exploración de los datos de salud hasta la privacidad y la seguridad.",
+    "changelogCta": "Ver el registro de cambios"
+  },
+  "ChangelogPage": {
+    "title": "Novedades",
+    "description": "Nuevas funciones, mejoras y correcciones.",
+    "items": {
+      "navigationAndSleepLabels": {
+        "category": "Interfaz",
+        "title": "Mejora de la navegación y de los gráficos de sueño",
+        "description": "La barra lateral se ha reorganizado y se han aclarado varias etiquetas de los gráficos de sueño."
+      },
+      "demonstrationMode": {
+        "category": "Aplicación",
+        "title": "Añadido el modo de demostración",
+        "description": "Se añadió una opción para explorar Lumida con un conjunto de datos de demostración."
+      },
+      "mobileLayout": {
+        "category": "Interfaz",
+        "title": "Mejora de la vista móvil",
+        "description": "El panel ahora usa espaciados más ajustados en el móvil y muestra la acción de sincronización como un icono compacto."
+      },
+      "productFeedback": {
+        "category": "Aplicación",
+        "title": "Añadido el envío de comentarios",
+        "description": "Añadido un formulario de comentarios de usuarios accesible desde la barra lateral."
+      },
+      "localTimeZone": {
+        "category": "Corrección",
+        "title": "Corregidas las fechas y horas locales",
+        "description": "Las fechas y horas ahora utilizan la zona horaria local del navegador, incluidos los cambios de horario estacional. El problema se producía porque producción heredaba la zona UTC del servidor de alojamiento, mientras que desarrollo heredaba la zona local del equipo del desarrollador. Gracias a @GoombaAdventurer por señalar este problema."
+      },
+      "recoveryTrends": {
+        "category": "Salud",
+        "title": "Se añadieron tendencias detalladas de recuperación",
+        "description": "Una página de Recuperación muestra ahora por separado las tendencias de la frecuencia cardíaca en reposo, su variabilidad, la respiración durante el sueño y la temperatura nocturna. Gracias a @GoombaAdventurer por proponer esta mejora."
+      },
+      "securityAndPerformance": {
+        "category": "Aplicación",
+        "title": "Mejoras de seguridad y rendimiento",
+        "description": "Lumida incorpora nuevas mejoras de seguridad y optimizaciones de rendimiento para ofrecer una experiencia más fiable y fluida."
+      },
+      "recoverySignals": {
+        "category": "Salud",
+        "title": "Añadidas las señales de recuperación",
+        "description": "El panel de control ahora reúne la frecuencia cardíaca en reposo, la variabilidad de la frecuencia cardíaca, la respiración durante el sueño y la temperatura nocturna cuando estas mediciones están disponibles en Google Health."
+      },
+      "temperatureUnitPreference": {
+        "category": "Aplicación",
+        "title": "Añadida la preferencia de unidad de temperatura",
+        "description": "Los ajustes ahora permiten mostrar las temperaturas de recuperación en Celsius o Fahrenheit en toda la cuenta de Lumida."
+      },
+      "workoutHeartRateZones": {
+        "category": "Actividad",
+        "title": "Añadidas las zonas de frecuencia cardíaca",
+        "description": "La página de detalle de una sesión ahora muestra un gráfico de frecuencia cardíaca por minuto, incluso en las sesiones registradas sin recorrido GPS."
+      },
+      "workoutDetails": {
+        "category": "Actividad",
+        "title": "Añadido el detalle de las sesiones de ejercicio",
+        "description": "Cada sesión de ejercicio mostrada en Actividad ahora incluye un enlace a una página de detalle, que presenta las mediciones disponibles y muestra el recorrido en un mapa cuando se ha registrado un trazado GPS y se ha concedido el permiso de Google Health."
+      },
+      "googleHealthCurrentPeriod": {
+        "category": "Corrección",
+        "title": "Corregida la sincronización del periodo actual",
+        "description": "La actividad de Google Health ahora se sincroniza correctamente al comienzo de un nuevo día local, incluso justo después de medianoche en zonas horarias adelantadas respecto a UTC."
+      },
+      "googleHealthSecurity": {
+        "category": "Seguridad",
+        "title": "Mejora de la seguridad de la conexión con Google Health",
+        "description": "La autorización de Google Health ahora está vinculada a la sesión de Lumida que la inició, y cada nueva conexión crea una nueva versión de las credenciales para que los tokens de acceso almacenados previamente en caché no puedan reutilizarse."
+      },
+      "appearance": {
+        "category": "Apariencia",
+        "title": "Añadidos los modos de apariencia",
+        "description": "Lumida ahora ofrece los modos de apariencia claro, oscuro y del sistema."
+      },
+      "changelogPage": {
+        "category": "Aplicación",
+        "title": "Añadida la página de novedades",
+        "description": "Una página de novedades recoge ahora las nuevas funciones, las mejoras y las correcciones."
+      },
+      "settings": {
+        "category": "Cuenta",
+        "title": "Añadidos los ajustes de la cuenta y las conexiones",
+        "description": "Una página de Ajustes permite ahora gestionar la información de la cuenta, el idioma de la interfaz y la conexión con Google Health."
+      },
+      "recentActivity": {
+        "category": "Actividad",
+        "title": "Añadidas las actividades recientes al panel de control",
+        "description": "El panel de control ahora muestra los entrenamientos recientes de Google Health con su duración, distancia, calorías y otros datos disponibles de la sesión."
+      },
+      "onDemandHealth": {
+        "category": "Privacidad",
+        "title": "Datos de salud bajo demanda",
+        "description": "Los datos de salud ahora se solicitan a Google Health únicamente cuando se muestran; Lumida no almacena las mediciones de salud en su base de datos ni en el almacenamiento del navegador."
+      },
+      "languages": {
+        "category": "Aplicación",
+        "title": "Añadidos el inglés, el francés y el español",
+        "description": "La interfaz de Lumida ahora está disponible en inglés, francés y español; las fechas y los números se formatean según el idioma seleccionado."
+      }
+    }
+  },
+  "GoogleHealth": {
+    "title": "Google Health",
+    "connected": "Conectado",
+    "accessRequired": "Acceso requerido",
+    "accessPending": "Acceso pendiente de aprobación",
+    "notConnected": "Sin conectar",
+    "revoked": "Acceso revocado",
+    "expired": "Conexión caducada",
+    "statusLoading": "Cargando…",
+    "statusError": "No se ha podido obtener el estado de la conexión.",
+    "expiredDescription": "Tu conexión con Google Health ha caducado. Vuelve a conectarla para consultar tus datos.",
+    "notConnectedDescription": "Conecta tu cuenta de Google Health para visualizar tus datos en la aplicación.",
+    "accessRequiredDescription": "Solicita acceso de prueba a Google Health desde tu panel antes de conectar tu cuenta.",
+    "viewAccessRequest": "Ver solicitud de acceso",
+    "connect": "Conectar Google Health",
+    "connectedSince": "Conectado desde el {date}",
+    "summaryError": "No se han podido consultar tus datos de Google Health.",
+    "rateLimited": "Demasiadas solicitudes (Too Many Requests). Espera un momento antes de volver a intentarlo.",
+    "lastSync": "Última sincronización: {time}",
+    "partial": "El resumen está incompleto; sincroniza para volver a intentarlo.",
+    "syncing": "Sincronizando…",
+    "sync": "Sincronizar",
+    "disconnect": "Revocar el acceso a Google Health",
+    "disconnectSuccess": "Acceso a Google Health revocado.",
+    "disconnectError": "No se ha podido revocar el acceso a Google Health."
+  },
+  "HealthCharts": {
+    "loading": "Cargando tus resúmenes de salud…",
+    "steps": "Pasos",
+    "heartRate": "Frecuencia cardíaca",
+    "heartRateRange": "{minimum}–{maximum} lpm",
+    "noData": "Sin datos",
+    "sleep": "Sueño",
+    "sleepCalculationLabel": "Cómo se calcula la duración del sueño",
+    "sleepCalculationHelp": "Tiempo realmente dormido durante las sesiones principales de sueño. Se excluyen los periodos despierto y las siestas detectadas por Google Health.",
+    "duration": "{hours} h {minutes}",
+    "nightOf": "Noche del {date}",
+    "averageNights": "Media de {count, plural, one {# noche} other {# noches}} · {period}",
+    "noSession": "Sin sesiones",
+    "recentActivity": "Actividad reciente",
+    "viewAllActivity": "Ver toda la actividad",
+    "series": {
+      "steps": "Pasos",
+      "minimum": "Mínimo",
+      "average": "Media",
+      "maximum": "Máximo",
+      "sleepDuration": "Duración del sueño"
+    }
+  },
+  "OxygenSaturationCard": {
+    "title": "SpO₂ · Oxígeno en sangre",
+    "percentValue": "{value} %",
+    "confidenceRange": "Intervalo de confianza {lower}–{upper} %",
+    "sleepAverage": "Media durante el sueño",
+    "periodAverage": "{value} % de media durante {count, plural, one {# noche} other {# noches}}",
+    "noData": "No hay datos de SpO₂ en este período.",
+    "series": {
+      "lowerBound": "Límite inferior de confianza",
+      "average": "Media durante el sueño",
+      "upperBound": "Límite superior de confianza"
+    }
+  },
+  "RecoverySignalsCard": {
+    "title": "Señales de recuperación",
+    "beatsPerMinuteValue": "{value} bpm",
+    "withinUsualRange": "Dentro de tu rango habitual de {minimum} a {maximum} bpm",
+    "belowUsualRange": "Por debajo de tu rango habitual de {minimum} a {maximum} bpm",
+    "aboveUsualRange": "Por encima de tu rango habitual de {minimum} a {maximum} bpm",
+    "latestValue": "Último valor registrado",
+    "noData": "No hay señales de recuperación en este período.",
+    "noRestingHeartRate": "No hay datos de frecuencia cardíaca en reposo en este período.",
+    "heartRateVariability": "Variabilidad de la frecuencia cardíaca",
+    "millisecondsValue": "{value} ms",
+    "heartRateVariabilityRange": "Rango habitual: {minimum}–{maximum} ms",
+    "respiratoryRate": "Respiración durante el sueño",
+    "respiratoryRateValue": "{value}/min",
+    "temperatureDelta": "Temperatura nocturna vs referencia",
+    "nightlyTemperature": "Temperatura nocturna",
+    "temperatureValue": "{value} {unit}",
+    "temperatureUnitHelpLabel": "Acerca de la unidad de temperatura",
+    "temperatureUnitHelp": "Puedes cambiar la unidad de temperatura en los Ajustes.",
+    "temperatureUnitHelpLink": "Abrir los Ajustes",
+    "viewTrends": "Ver tendencias de recuperación",
+    "series": {
+      "restingHeartRate": "Frecuencia cardíaca en reposo"
+    }
+  },
+  "RecoveryPage": {
+    "title": "Recuperación",
+    "description": "Sigue cada señal de recuperación por separado para ver cómo cambia con el tiempo.",
+    "restingHeartRateTitle": "Frecuencia cardíaca en reposo",
+    "heartRateVariabilityTitle": "Variabilidad de la frecuencia cardíaca",
+    "respiratoryRateTitle": "Respiración durante el sueño",
+    "temperatureDeltaTitle": "Temperatura nocturna vs referencia",
+    "nightlyTemperatureTitle": "Temperatura nocturna",
+    "temperatureBaselineContext": "Comparada con tu referencia personal de 30 días",
+    "bpmValue": "{value} lpm",
+    "millisecondsValue": "{value} ms",
+    "respiratoryRateValue": "{value}/min",
+    "temperatureValue": "{value} {unit}",
+    "periodAverage": "{value} de media en el período",
+    "withinUsualRange": "Dentro de tu rango habitual ({minimum}–{maximum})",
+    "belowUsualRange": "Por debajo de tu rango habitual ({minimum}–{maximum})",
+    "aboveUsualRange": "Por encima de tu rango habitual ({minimum}–{maximum})",
+    "noRestingHeartRate": "No hay datos de frecuencia cardíaca en reposo en este período.",
+    "noHeartRateVariability": "No hay datos de variabilidad de la frecuencia cardíaca en este período.",
+    "noRespiratoryRate": "No hay datos de respiración durante el sueño en este período.",
+    "noTemperature": "No hay datos de temperatura nocturna en este período."
+  },
+  "HealthPages": {
+    "periodLabel": "Período",
+    "unit": {
+      "day": "Día",
+      "week": "Sem.",
+      "month": "Mes",
+      "quarter": "3 meses",
+      "year": "Año"
+    },
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "thisWeek": "Esta semana",
+    "thisMonth": "Este mes",
+    "previousPeriod": "Período anterior",
+    "nextPeriod": "Período siguiente",
+    "weekOf": "Semana del {date}",
+    "duration": "{hours} h {minutes}",
+    "durationCompact": "{hours}h{minutes}"
+  },
+  "ExerciseTypes": {
+    "AEROBIC_WORKOUT": "Entrenamiento aeróbico",
+    "ARCHERY": "Tiro con arco",
+    "ASSAULT_BIKE": "Bicicleta de aire",
+    "BACKPACKING": "Senderismo de varios días",
+    "BADMINTON": "Bádminton",
+    "BALLET": "Ballet",
+    "BALLROOM_DANCE": "Baile de salón",
+    "BARRE_CLASS": "Clase de barre",
+    "BASEBALL": "Béisbol",
+    "BASKETBALL": "Baloncesto",
+    "BIKING": "Ciclismo",
+    "BILLIARDS": "Billar",
+    "BODY_WEIGHT": "Entrenamiento con peso corporal",
+    "BOOTCAMP": "Bootcamp",
+    "BOWLING": "Bolos",
+    "BOXING": "Boxeo",
+    "BREAKDANCING": "Breakdance",
+    "CALISTHENICS": "Calistenia",
+    "CANOEING": "Canoa",
+    "CARDIO_SCULPT": "Cardio sculpt",
+    "CARDIO_WORKOUT": "Entrenamiento cardiovascular",
+    "CARPENTRY": "Carpintería",
+    "CHEERLEADING": "Animación deportiva",
+    "CIRCUIT_TRAINING": "Entrenamiento en circuito",
+    "CLEANING": "Limpieza",
+    "CLIMBING": "Escalada",
+    "CORE_TRAINING": "Entrenamiento del core",
+    "CRICKET": "Críquet",
+    "CROQUET": "Croquet",
+    "CROSS_COUNTRY_SKI": "Esquí de fondo",
+    "CROSS_TRAINING": "Entrenamiento cruzado",
+    "CROSSFIT": "CrossFit",
+    "CURLING": "Curling",
+    "DANCING": "Baile",
+    "DIVING": "Saltos",
+    "ELECTRIC_BIKE": "Bicicleta eléctrica",
+    "ELECTRIC_SCOOTER": "Patinete eléctrico",
+    "ELLIPTICAL": "Elíptica",
+    "EQUESTRIAN_SPORTS": "Deportes ecuestres",
+    "EXERCISE_CLASS": "Clase de ejercicio",
+    "FENCING": "Esgrima",
+    "FIELD_HOCKEY": "Hockey sobre hierba",
+    "FISHING": "Pesca",
+    "FITNESS_GAMING": "Videojuego de fitness",
+    "FOILING": "Foil",
+    "FOOTBALL_AMERICAN": "Fútbol americano",
+    "FOOTBALL_AUSTRALIAN": "Fútbol australiano",
+    "FREE_WEIGHTS": "Pesas libres",
+    "FRISBEE_PLAYING_GENERAL": "Frisbee",
+    "FUNCTIONAL_STRENGTH_TRAINING": "Entrenamiento de fuerza funcional",
+    "GARDENING": "Jardinería",
+    "GOLF": "Golf",
+    "GYMNASTICS": "Gimnasia",
+    "HANDBALL": "Balonmano",
+    "HAND_CYCLING": "Ciclismo de mano",
+    "HIIT": "HIIT",
+    "HIKING": "Senderismo",
+    "HIP_HOP": "Hip-hop",
+    "HOCKEY": "Hockey",
+    "HOEING": "Labrar con azada",
+    "HOUSEHOLD_CHORES": "Tareas domésticas",
+    "HUNTING": "Caza",
+    "ICE_SKATING": "Patinaje sobre hielo",
+    "INCLINE_RUN": "Carrera con inclinación",
+    "INCLINE_WALK": "Caminata con inclinación",
+    "INDOOR_CLIMBING": "Escalada en interior",
+    "INTERVAL_WORKOUT": "Entrenamiento por intervalos",
+    "JAZZ_DANCE": "Danza jazz",
+    "JIU_JITSU": "Jiu-jitsu",
+    "JUMPING_ROPE": "Saltar a la cuerda",
+    "KARATE": "Kárate",
+    "KAYAKING": "Kayak",
+    "KICKBOXING": "Kickboxing",
+    "KITESURFING": "Kitesurf",
+    "LACROSSE": "Lacrosse",
+    "MARTIAL_ARTS": "Artes marciales",
+    "MEDITATE": "Meditación",
+    "MODERN_DANCE": "Danza moderna",
+    "MOTOCROSS": "Motocross",
+    "MOTORCYCLE": "Motociclismo",
+    "MOUNTAIN_BIKE": "Ciclismo de montaña",
+    "MOWING_LAWN": "Cortar el césped",
+    "MUAY_THAI": "Muay Thai",
+    "MULTISPORT": "Multideporte",
+    "MUSICAL_PERFORMANCE": "Interpretación musical",
+    "NORDIC_WALKING": "Marcha nórdica",
+    "ORIENTEERING": "Orientación",
+    "OTHER": "Otra actividad",
+    "OUTDOOR_BIKE": "Ciclismo al aire libre",
+    "OUTDOOR_WORKOUT": "Entrenamiento al aire libre",
+    "PADDLEBOARDING": "Paddle surf",
+    "PADEL": "Pádel",
+    "PAINTING": "Pintura",
+    "PARAGLIDING": "Parapente",
+    "PARKOUR": "Parkour",
+    "PICKELBALL": "Pickleball",
+    "PILATES": "Pilates",
+    "POLO": "Polo",
+    "POWERLIFTING": "Powerlifting",
+    "POWER_WALKING": "Marcha rápida",
+    "RACKET_SPORTS": "Deportes de raqueta",
+    "RACQUETBALL": "Ráquetbol",
+    "RESISTANCE_BANDS": "Bandas de resistencia",
+    "ROCK_CLIMBING": "Escalada en roca",
+    "ROLLERBLADING": "Patinaje en línea",
+    "ROLLER_SKATING": "Patinaje sobre ruedas",
+    "ROWING": "Remo",
+    "ROWING_MACHINE": "Máquina de remo",
+    "RUCKING": "Caminata con carga",
+    "RUGBY": "Rugby",
+    "RUNNING": "Carrera",
+    "SAILING": "Vela",
+    "SCOOTERING": "Patinete",
+    "SCUBA_DIVING": "Submarinismo",
+    "SHOOTING": "Tiro deportivo",
+    "SHOVELING": "Palear",
+    "SKATEBOARDING": "Skateboard",
+    "SKATING": "Patinaje",
+    "SKIING": "Esquí",
+    "SKYDIVING": "Paracaidismo",
+    "SNORKELING": "Esnórquel",
+    "SNOWBOARDING": "Snowboard",
+    "SNOWMOBILING": "Moto de nieve",
+    "SNOWSHOEING": "Raquetas de nieve",
+    "SNOW_SPORT": "Deporte de nieve",
+    "SOCCER": "Fútbol",
+    "SOFTBALL": "Sóftbol",
+    "SPEED_SKATING": "Patinaje de velocidad",
+    "SPINNING": "Spinning",
+    "SPORT": "Deporte",
+    "SQUASH": "Squash",
+    "STAIRCLIMBER": "Máquina de escaleras",
+    "STATIONARY_BIKE": "Bicicleta estática",
+    "STEP_TRAINING": "Step",
+    "STRENGTH_TRAINING": "Entrenamiento de fuerza",
+    "STRETCHING": "Estiramientos",
+    "STROLLER_WALK": "Caminata con carrito",
+    "SURFING": "Surf",
+    "SWIMMING": "Natación",
+    "SWIMMING_OPEN_WATER": "Natación en aguas abiertas",
+    "SWIMMING_POOL": "Natación en piscina",
+    "SYNCHRONIZED_SWIMMING": "Natación sincronizada",
+    "TABATA_WORKOUT": "Entrenamiento Tabata",
+    "TABLE_TENNIS": "Tenis de mesa",
+    "TAEKWONDO": "Taekwondo",
+    "TAI_CHI": "Taichí",
+    "TANGO": "Tango",
+    "TENNIS": "Tenis",
+    "TRACK_AND_FIELD": "Atletismo",
+    "TRAIL_RUN": "Carrera de montaña",
+    "TRAMPOLINE": "Trampolín",
+    "TREADMILL": "Cinta de correr",
+    "TREADMILL_WALK": "Caminata en cinta",
+    "TRX": "TRX",
+    "ULTIMATE_FRISBEE": "Ultimate frisbee",
+    "UNICYCLING": "Monociclo",
+    "VOLLEYBALL": "Voleibol",
+    "VOLLEYBALL_BEACH": "Vóley playa",
+    "WAKEBOARDING": "Wakeboard",
+    "WALKING": "Caminata",
+    "WALK_WITH_WEIGHTS": "Caminata con pesas",
+    "WATER_AEROBICS": "Aquagym",
+    "WATER_JOGGING": "Aquajogging",
+    "WATER_POLO": "Waterpolo",
+    "WATER_SKIING": "Esquí acuático",
+    "WATER_SPORT": "Deporte acuático",
+    "WATER_VOLLEYBALL": "Voleibol acuático",
+    "WEEDING": "Deshierbe",
+    "WEIGHTLIFTING": "Halterofilia",
+    "WEIGHT_MACHINES": "Máquinas de musculación",
+    "WEIGHTS": "Pesas",
+    "WHEELCHAIR": "Actividad en silla de ruedas",
+    "WINDSURFING": "Windsurf",
+    "WORKOUT": "Entrenamiento",
+    "WRESTLING": "Lucha",
+    "YOGA": "Yoga",
+    "YOGA_BIKRAM": "Yoga Bikram",
+    "YOGA_HATHA": "Hatha yoga",
+    "YOGA_POWER": "Power yoga",
+    "YOGA_VINYASA": "Yoga Vinyasa",
+    "ZUMBA": "Zumba"
+  },
+  "ActivityPage": {
+    "title": "Actividad",
+    "stepsTitle": "Pasos",
+    "dailyAverage": "Una media de {value} pasos al día",
+    "noSteps": "No hay datos de pasos en este período.",
+    "workoutsTitle": "Entrenamientos",
+    "workoutsCount": "{count, plural, =0 {Sin entrenamientos} one {# entrenamiento} other {# entrenamientos}}",
+    "activeTotal": "{duration} de actividad en total",
+    "noWorkouts": "No hay entrenamientos registrados en este período. Tus sesiones deportivas aparecerán aquí.",
+    "moreWorkouts": "{count, plural, one {# entrenamiento anterior del período no aparece en la lista} other {# entrenamientos anteriores del período no aparecen en la lista}}",
+    "workout": "Entrenamiento",
+    "distanceKm": "{value} km",
+    "calories": "{value} kcal",
+    "bpm": "{value} lpm",
+    "minutesShort": "{value} min",
+    "viewDetails": "Ver detalles",
+    "viewDetailsFor": "Ver los detalles de {name}",
+    "series": {
+      "steps": "Pasos",
+      "activeMinutes": "Minutos activos"
+    }
+  },
+  "WorkoutPage": {
+    "title": "Detalles del entrenamiento",
+    "backToActivity": "Volver a actividad",
+    "workout": "Entrenamiento",
+    "loading": "Cargando los detalles del entrenamiento",
+    "statusError": "No se ha podido obtener el estado de la conexión con Google Health.",
+    "loadError": "No se ha podido cargar este entrenamiento. Puede que ya no esté disponible.",
+    "noMetrics": "No hay métricas detalladas disponibles para este entrenamiento.",
+    "metric": {
+      "activeDuration": "Duración activa",
+      "distance": "Distancia",
+      "calories": "Calorías",
+      "averageHeartRate": "Frecuencia cardíaca media",
+      "averagePace": "Ritmo medio",
+      "averageSpeed": "Velocidad media",
+      "steps": "Pasos",
+      "elevationGain": "Desnivel positivo",
+      "activeZoneMinutes": "Minutos de zona activa",
+      "runVo2Max": "VO₂ máx. de carrera",
+      "swimLengths": "Largos de piscina",
+      "poolLength": "Longitud de la piscina",
+      "cadence": "Cadencia media",
+      "strideLength": "Longitud de zancada",
+      "groundContactTime": "Tiempo de contacto con el suelo",
+      "verticalOscillation": "Oscilación vertical",
+      "verticalRatio": "Ratio vertical"
+    },
+    "paceValue": "{minutes}:{seconds} /km",
+    "kilometersValue": "{value} km",
+    "caloriesValue": "{value} kcal",
+    "bpmValue": "{value} lpm",
+    "bpmRangeValue": "{min}–{max} lpm",
+    "speedValue": "{value} km/h",
+    "metersValue": "{value} m",
+    "minutesValue": "{value} min",
+    "vo2MaxValue": "{value} ml/kg/min",
+    "cadenceValue": "{value} pasos/min",
+    "millisecondsValue": "{value} ms",
+    "millimetersValue": "{value} mm",
+    "percentValue": "{value} %",
+    "routeTitle": "Recorrido",
+    "routeDescription": "Muestra el recorrido GPS registrado durante este entrenamiento, cuando esté disponible.",
+    "routeMapLabel": "Mapa interactivo del recorrido del entrenamiento",
+    "routeNotRecorded": "No se registró ningún recorrido GPS para este entrenamiento.",
+    "routeUnavailable": "El recorrido GPS no está disponible temporalmente.",
+    "routePermissionRequired": "Este entrenamiento tiene un recorrido GPS. Vuelve a conectar Google Health para autorizar el acceso a los datos de ubicación.",
+    "authorizeLocation": "Autorizar recorridos GPS",
+    "heartRateTitle": "Frecuencia cardíaca durante el entrenamiento",
+    "heartRateZoneNote": "Los umbrales de zona se estiman a partir de las duraciones de zona registradas.",
+    "elevationTitle": "Perfil de altitud",
+    "elevationDescription": "Altitud registrada en la cronología GPS.",
+    "zonesTitle": "Zonas de frecuencia cardíaca",
+    "zonesDescription": "Tiempo registrado en cada zona de esfuerzo.",
+    "zone": {
+      "light": "Ligera",
+      "moderate": "Moderada",
+      "vigorous": "Vigorosa",
+      "peak": "Pico"
+    },
+    "splitsTitle": "Vueltas y segmentos",
+    "splitsDescription": "Segmentos registrados por el dispositivo durante el entrenamiento.",
+    "splitLabel": "Segmento {index}",
+    "mobilityTitle": "Dinámica de carrera",
+    "mobilityDescription": "Métricas avanzadas de carrera proporcionadas por el dispositivo de registro.",
+    "eventsTitle": "Eventos del entrenamiento",
+    "eventsDescription": "Inicios, paradas, pausas y reanudaciones registrados por el dispositivo.",
+    "series": {
+      "heartRate": "Frecuencia cardíaca",
+      "elevation": "Altitud",
+      "zoneMinutes": "Minutos",
+      "activeMinutes": "Minutos activos"
+    }
+  },
+  "SleepPage": {
+    "title": "Sueño",
+    "durationTitle": "Duración del sueño",
+    "latestNight": "Última noche · {date}",
+    "averageNight": "Una media de {duration} por noche",
+    "noSessions": "No hay sesiones de sueño en este período.",
+    "stagesTitle": "Fases del sueño",
+    "stagesDescription": "Cronología de la noche seleccionada",
+    "nightRange": "Noche del {range}",
+    "sleepWindow": "{start}–{end} · {duration} de sueño",
+    "selectNight": "Seleccionar una noche",
+    "nightOption": "{date} · {start}–{end}",
+    "stageInterval": "{start}–{end} · {duration}",
+    "noStages": "No hay una cronología detallada de las fases disponible en este período.",
+    "napsTitle": "Siestas · duración total",
+    "napsSummary": "{count, plural, one {# siesta} other {# siestas}} · {duration} de media",
+    "noNaps": "No se han detectado siestas en este período.",
+    "series": {
+      "asleep": "Duración del sueño",
+      "asleepStage": "Dormido",
+      "napDuration": "Duración de la siesta",
+      "deep": "Profundo",
+      "light": "Ligero",
+      "rem": "REM",
+      "restless": "Inquieto",
+      "awake": "Despierto"
+    }
+  },
+  "HeartPage": {
+    "title": "Salud",
+    "heartRateTitle": "Frecuencia cardíaca",
+    "bpmValue": "{value} lpm",
+    "heartRateRange": "{minimum}–{maximum} lpm",
+    "periodAverage": "{value} lpm de media en el período",
+    "noData": "No hay datos de frecuencia cardíaca en este período.",
+    "series": {
+      "minimum": "Mínimo",
+      "average": "Media",
+      "maximum": "Máximo"
+    }
+  },
+  "WeightPage": {
+    "title": "Peso",
+    "latestWeight": "Último peso",
+    "kgValue": "{value} kg",
+    "measuredOn": "Medido el {date}",
+    "trendDelta": "{delta} kg en el período",
+    "periodAverage": "{value} kg de media en el período",
+    "noData": "No hay mediciones de peso en este período.",
+    "singleMeasurement": "El gráfico aparece cuando el período tiene al menos dos mediciones.",
+    "series": {
+      "weight": "Peso"
+    }
+  },
+  "NutritionPage": {
+    "title": "Nutrición",
+    "scopeTitle": "Autoriza los datos de nutrición",
+    "scopeDescription": "Vuelve a conectar Google Health para que Lumida pueda leer los datos de nutrición e hidratación que registras en Fitbit.",
+    "scopeAction": "Autorizar datos de nutrición",
+    "macrosTitle": "Distribución de macronutrientes",
+    "macrosDescription": "Distribución energética estimada en el período seleccionado",
+    "kcalValue": "{value} kcal",
+    "gramsValue": "{value} g",
+    "percentValue": "{value} %",
+    "protein": "Proteínas",
+    "carbohydrates": "Carbohidratos",
+    "fat": "Grasas",
+    "macroMethod": "Estimación a partir de las cantidades registradas: 4 kcal/g para proteínas y carbohidratos, 9 kcal/g para grasas.",
+    "noMacros": "No hay datos de macronutrientes en este período.",
+    "energyTitle": "Ingesta energética",
+    "energyAverage": "{value} kcal de media durante {count, plural, one {# día con datos} other {# días con datos}}",
+    "noEnergy": "No hay datos de ingesta energética en este período.",
+    "singleEnergy": "La tendencia aparece cuando el período tiene al menos dos valores.",
+    "hydrationTitle": "Hidratación",
+    "litersValue": "{value} L",
+    "hydrationAverage": "{value} L de media durante {count, plural, one {# día con datos} other {# días con datos}}",
+    "noHydration": "No hay datos de hidratación en este período.",
+    "series": {
+      "energy": "Ingesta energética",
+      "hydration": "Hidratación"
+    }
+  }
+}
