@@ -719,6 +719,11 @@
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "sleepDataSources": {
+        "category": "Sleep",
+        "title": "Filter sleep by source (experimental)",
+        "description": "When several sources feed your sleep data, /sleep can now filter by source and show only the ones you care about. Thanks to @GoombaAdventurer for the suggestion."
+      },
       "typographyIdentity": {
         "category": "Appearance",
         "title": "New typographic identity",
@@ -1297,6 +1302,11 @@
     "napsTitle": "Naps · total duration",
     "napsSummary": "{count, plural, one {# nap} other {# naps}} · {duration} on average",
     "noNaps": "No naps detected for this period.",
+    "sourcesButton": "Sources",
+    "sourcesTitle": "Data sources",
+    "sourcesDescription": "Choose which sources to display.",
+    "unknownSource": "Unknown source",
+    "allSourcesHidden": "All sources are hidden. Enable at least one to see your sleep.",
     "series": {
       "asleep": "Sleep duration",
       "asleepStage": "Asleep",

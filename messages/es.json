@@ -719,6 +719,11 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "sleepDataSources": {
+        "category": "Sueño",
+        "title": "Filtrar el sueño por fuente (experimental)",
+        "description": "Cuando varias fuentes alimentan tus datos de sueño, /sleep ya permite filtrar por fuente y mostrar solo las que te interesan. Gracias a @GoombaAdventurer por la sugerencia."
+      },
       "typographyIdentity": {
         "category": "Apariencia",
         "title": "Nueva identidad tipográfica",
@@ -1297,6 +1302,11 @@
     "napsTitle": "Siestas · duración total",
     "napsSummary": "{count, plural, one {# siesta} other {# siestas}} · {duration} de media",
     "noNaps": "No se han detectado siestas en este período.",
+    "sourcesButton": "Fuentes",
+    "sourcesTitle": "Fuentes de datos",
+    "sourcesDescription": "Elige qué fuentes mostrar.",
+    "unknownSource": "Fuente desconocida",
+    "allSourcesHidden": "Todas las fuentes están ocultas. Activa al menos una para ver tu sueño.",
     "series": {
       "asleep": "Duración del sueño",
       "asleepStage": "Dormido",

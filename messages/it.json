@@ -719,6 +719,11 @@
     "title": "Novità",
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "items": {
+      "sleepDataSources": {
+        "category": "Sonno",
+        "title": "Filtra il sonno per sorgente (sperimentale)",
+        "description": "Quando più sorgenti alimentano i tuoi dati del sonno, /sleep ora consente di filtrare per sorgente e mostrare solo quelle che ti interessano. Grazie a @GoombaAdventurer per il suggerimento."
+      },
       "typographyIdentity": {
         "category": "Aspetto",
         "title": "Nuova identità tipografica",
@@ -1297,6 +1302,11 @@
     "napsTitle": "Sonnellini · durata totale",
     "napsSummary": "{count, plural, one {# sonnellino} other {# sonnellini}} · {duration} in media",
     "noNaps": "Nessun sonnellino rilevato per questo periodo.",
+    "sourcesButton": "Sorgenti",
+    "sourcesTitle": "Sorgenti dati",
+    "sourcesDescription": "Scegli quali sorgenti mostrare.",
+    "unknownSource": "Sorgente sconosciuta",
+    "allSourcesHidden": "Tutte le sorgenti sono nascoste. Attivane almeno una per vedere il tuo sonno.",
     "series": {
       "asleep": "Durata del sonno",
       "asleepStage": "Nel sonno",

@@ -719,6 +719,11 @@
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "items": {
+      "sleepDataSources": {
+        "category": "Sommeil",
+        "title": "Filtrer le sommeil par source (expérimental)",
+        "description": "Quand plusieurs sources alimentent vos données de sommeil, /sleep permet désormais de filtrer par source et de n’afficher que celles qui vous intéressent. Merci à @GoombaAdventurer pour la suggestion."
+      },
       "typographyIdentity": {
         "category": "Apparence",
         "title": "Nouvelle identité typographique",
@@ -1297,6 +1302,11 @@
     "napsTitle": "Siestes · durée totale",
     "napsSummary": "{count, plural, one {# sieste} other {# siestes}} · {duration} en moyenne",
     "noNaps": "Aucune sieste détectée sur cette période.",
+    "sourcesButton": "Sources",
+    "sourcesTitle": "Sources de données",
+    "sourcesDescription": "Choisissez les sources à afficher.",
+    "unknownSource": "Source inconnue",
+    "allSourcesHidden": "Toutes les sources sont masquées. Activez-en au moins une pour voir votre sommeil.",
     "series": {
       "asleep": "Durée de sommeil",
       "asleepStage": "Endormi",
