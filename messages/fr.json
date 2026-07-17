@@ -724,6 +724,11 @@
         "title": "Filtrer le sommeil par source (expérimental)",
         "description": "Quand plusieurs sources alimentent vos données de sommeil, /sleep permet désormais de filtrer par source et de n’afficher que celles qui vous intéressent. Merci à @GoombaAdventurer pour la suggestion."
       },
+      "securityHardening": {
+        "category": "Sécurité",
+        "title": "Renforcement de la sécurité",
+        "description": "Améliorations générales de la sécurité de l’application."
+      },
       "typographyIdentity": {
         "category": "Apparence",
         "title": "Nouvelle identité typographique",

@@ -724,6 +724,11 @@
         "title": "Filtra il sonno per sorgente (sperimentale)",
         "description": "Quando più sorgenti alimentano i tuoi dati del sonno, /sleep ora consente di filtrare per sorgente e mostrare solo quelle che ti interessano. Grazie a @GoombaAdventurer per il suggerimento."
       },
+      "securityHardening": {
+        "category": "Sicurezza",
+        "title": "Rafforzamento della sicurezza",
+        "description": "Miglioramenti generali di sicurezza dell’app."
+      },
       "typographyIdentity": {
         "category": "Aspetto",
         "title": "Nuova identità tipografica",

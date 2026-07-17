@@ -724,6 +724,11 @@
         "title": "Filter sleep by source (experimental)",
         "description": "When several sources feed your sleep data, /sleep can now filter by source and show only the ones you care about. Thanks to @GoombaAdventurer for the suggestion."
       },
+      "securityHardening": {
+        "category": "Security",
+        "title": "Security hardening",
+        "description": "General security improvements across the app."
+      },
       "typographyIdentity": {
         "category": "Appearance",
         "title": "New typographic identity",

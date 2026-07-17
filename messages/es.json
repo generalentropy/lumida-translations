@@ -724,6 +724,11 @@
         "title": "Filtrar el sueño por fuente (experimental)",
         "description": "Cuando varias fuentes alimentan tus datos de sueño, /sleep ya permite filtrar por fuente y mostrar solo las que te interesan. Gracias a @GoombaAdventurer por la sugerencia."
       },
+      "securityHardening": {
+        "category": "Seguridad",
+        "title": "Refuerzo de la seguridad",
+        "description": "Mejoras generales de seguridad en la aplicación."
+      },
       "typographyIdentity": {
         "category": "Apariencia",
         "title": "Nueva identidad tipográfica",
