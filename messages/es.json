@@ -20,7 +20,8 @@
     "dark": "Oscuro",
     "colorLabel": "Tema de color",
     "aurora": "Aurora",
-    "catppuccin": "Catppuccin"
+    "catppuccin": "Catppuccin",
+    "vitality": "Vitality"
   },
   "TemperatureUnitSelector": {
     "label": "Unidad de temperatura",
@@ -537,6 +538,7 @@
     "colorTheme": "Tema de color",
     "colorAurora": "Aurora",
     "colorCatppuccin": "Catppuccin",
+    "colorVitality": "Vitality",
     "settings": "Ajustes",
     "help": "Ayuda",
     "feedback": "Comentarios",
@@ -719,6 +721,11 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "vitalityTheme": {
+        "category": "Apariencia",
+        "title": "Nuevo tema Vitality",
+        "description": "Añadido un nuevo tema de color “Vitality”."
+      },
       "sleepDataSources": {
         "category": "Sueño",
         "title": "Filtrar el sueño por fuente (experimental)",
