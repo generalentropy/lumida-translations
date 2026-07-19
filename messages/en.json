@@ -721,6 +721,11 @@
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "vitalityDefault": {
+        "category": "Appearance",
+        "title": "Vitality is now the default theme",
+        "description": "By default, Lumida now uses the Vitality palette in dark mode. The Catppuccin and Aurora palettes stay available anytime in the appearance settings."
+      },
       "vitalityTheme": {
         "category": "Appearance",
         "title": "New Vitality theme",

@@ -721,6 +721,11 @@
     "title": "Novità",
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "items": {
+      "vitalityDefault": {
+        "category": "Aspetto",
+        "title": "Vitality è ora il tema predefinito",
+        "description": "Per impostazione predefinita, Lumida ora usa la palette Vitality in modalità scura. Le palette Catppuccin e Aurora restano disponibili in qualsiasi momento nelle impostazioni di aspetto."
+      },
       "vitalityTheme": {
         "category": "Aspetto",
         "title": "Nuovo tema Vitality",
