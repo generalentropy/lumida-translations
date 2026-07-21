@@ -721,6 +721,11 @@
     "title": "Novità",
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "items": {
+      "sleepSchedule": {
+        "category": "Sonno",
+        "title": "Grafico degli orari del sonno",
+        "description": "/sleep ora mostra un grafico delle fasce di sonno giorno per giorno nel periodo selezionato: orario in cui vai a dormire e ti svegli per ogni notte, pisolini inclusi, con le medie del periodo."
+      },
       "vitalityDefault": {
         "category": "Aspetto",
         "title": "Vitality è ora il tema predefinito",
@@ -1308,6 +1313,10 @@
     "latestNight": "Ultima notte · {date}",
     "averageNight": "In media {duration} per notte",
     "noSessions": "Nessuna sessione di sonno per questo periodo.",
+    "scheduleTitle": "Orari del sonno",
+    "scheduleAverage": "Orario medio in cui ti addormenti e ti svegli nel periodo",
+    "scheduleNight": "Notte",
+    "scheduleNap": "Pisolino",
     "stagesTitle": "Fasi del sonno",
     "stagesDescription": "Cronologia della notte selezionata",
     "nightRange": "Notte del {range}",

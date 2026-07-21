@@ -721,6 +721,11 @@
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "sleepSchedule": {
+        "category": "Sleep",
+        "title": "Sleep schedule chart",
+        "description": "/sleep now shows a day-by-day chart of your sleep times over the selected period: bedtime and wake-up for each night, naps included, with the period averages."
+      },
       "vitalityDefault": {
         "category": "Appearance",
         "title": "Vitality is now the default theme",
@@ -1308,6 +1313,10 @@
     "latestNight": "Last night · {date}",
     "averageNight": "Averaging {duration} per night",
     "noSessions": "No sleep sessions for this period.",
+    "scheduleTitle": "Sleep schedule",
+    "scheduleAverage": "Average bedtime and wake-up over the period",
+    "scheduleNight": "Night",
+    "scheduleNap": "Nap",
     "stagesTitle": "Sleep stages",
     "stagesDescription": "Timeline of the selected night",
     "nightRange": "Night of {range}",

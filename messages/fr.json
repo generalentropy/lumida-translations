@@ -721,6 +721,11 @@
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "items": {
+      "sleepSchedule": {
+        "category": "Sommeil",
+        "title": "Graphique des horaires de sommeil",
+        "description": "/sleep affiche désormais un graphique des plages de sommeil jour après jour sur la période sélectionnée : coucher et lever de chaque nuit, siestes comprises, avec les moyennes de la période."
+      },
       "vitalityDefault": {
         "category": "Apparence",
         "title": "Vitality devient le thème par défaut",
@@ -1308,6 +1313,10 @@
     "latestNight": "Dernière nuit · {date}",
     "averageNight": "En moyenne {duration} par nuit",
     "noSessions": "Aucune session de sommeil sur cette période.",
+    "scheduleTitle": "Horaires de sommeil",
+    "scheduleAverage": "Coucher et lever moyens sur la période",
+    "scheduleNight": "Nuit",
+    "scheduleNap": "Sieste",
     "stagesTitle": "Phases de sommeil",
     "stagesDescription": "Chronologie de la nuit sélectionnée",
     "nightRange": "Nuit du {range}",

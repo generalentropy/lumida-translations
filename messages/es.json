@@ -721,6 +721,11 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "sleepSchedule": {
+        "category": "Sueño",
+        "title": "Gráfico del horario de sueño",
+        "description": "/sleep ahora muestra un gráfico de tus franjas de sueño día a día en el período seleccionado: hora de acostarte y despertarte de cada noche, siestas incluidas, con las medias del período."
+      },
       "vitalityDefault": {
         "category": "Apariencia",
         "title": "Vitality ahora es el tema predeterminado",
@@ -1308,6 +1313,10 @@
     "latestNight": "Última noche · {date}",
     "averageNight": "Una media de {duration} por noche",
     "noSessions": "No hay sesiones de sueño en este período.",
+    "scheduleTitle": "Horario de sueño",
+    "scheduleAverage": "Hora media de acostarte y despertarte en el período",
+    "scheduleNight": "Noche",
+    "scheduleNap": "Siesta",
     "stagesTitle": "Fases del sueño",
     "stagesDescription": "Cronología de la noche seleccionada",
     "nightRange": "Noche del {range}",
