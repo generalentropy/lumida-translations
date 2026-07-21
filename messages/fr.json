@@ -734,6 +734,11 @@
         "title": "Ajout d'un mode développeur",
         "description": "Les données de santé brutes peuvent désormais être téléchargées."
       },
+      "userInterfaceImprovements": {
+        "category": "Application",
+        "title": "Améliorations de l'interface utilisateur",
+        "description": "Améliorations diverses."
+      },
       "sleepSchedule": {
         "category": "Sommeil",
         "title": "Graphique des horaires de sommeil",

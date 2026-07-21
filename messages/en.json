@@ -734,6 +734,11 @@
         "title": "Added developer mode",
         "description": "Raw health data can now be downloaded."
       },
+      "userInterfaceImprovements": {
+        "category": "Application",
+        "title": "User interface improvements",
+        "description": "Various improvements."
+      },
       "sleepSchedule": {
         "category": "Sleep",
         "title": "Sleep schedule chart",

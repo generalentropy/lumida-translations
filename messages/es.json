@@ -734,6 +734,11 @@
         "title": "Añadido el modo desarrollador",
         "description": "Ahora se pueden descargar los datos de salud sin procesar."
       },
+      "userInterfaceImprovements": {
+        "category": "Aplicación",
+        "title": "Mejoras de la interfaz de usuario",
+        "description": "Mejoras diversas."
+      },
       "sleepSchedule": {
         "category": "Sueño",
         "title": "Gráfico del horario de sueño",

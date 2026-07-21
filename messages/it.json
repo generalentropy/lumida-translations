@@ -734,6 +734,11 @@
         "title": "Aggiunta la modalità sviluppatore",
         "description": "Ora è possibile scaricare i dati sanitari non elaborati."
       },
+      "userInterfaceImprovements": {
+        "category": "Applicazione",
+        "title": "Miglioramenti dell'interfaccia utente",
+        "description": "Miglioramenti vari."
+      },
       "sleepSchedule": {
         "category": "Sonno",
         "title": "Grafico degli orari del sonno",
