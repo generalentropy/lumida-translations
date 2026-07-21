@@ -41,6 +41,14 @@
     "active": "Demo activa",
     "dashboardTitle": "Datos de demostración"
   },
+  "DeveloperMode": {
+    "settingLabel": "Activar el modo desarrollador",
+    "settingDescription": "Muestra en las páginas de salud un control para descargar los datos sin procesar que Lumida ha cargado para el periodo seleccionado. Estos archivos contienen datos de salud confidenciales; compártelos solo con personas de confianza.",
+    "saved": "Se ha actualizado el modo desarrollador.",
+    "saveError": "No se pudo actualizar el modo desarrollador.",
+    "download": "Descargar datos sin procesar",
+    "downloadError": "No se pudo crear el archivo de datos sin procesar."
+  },
   "Home": {
     "brandHomeLabel": "Inicio de Lumida",
     "heroTitle": "Por fin, un panel de control para",
@@ -721,6 +729,11 @@
     "title": "Novedades",
     "description": "Nuevas funciones, mejoras y correcciones.",
     "items": {
+      "developerMode": {
+        "category": "Aplicación",
+        "title": "Añadido el modo desarrollador",
+        "description": "Ahora se pueden descargar los datos de salud sin procesar."
+      },
       "sleepSchedule": {
         "category": "Sueño",
         "title": "Gráfico del horario de sueño",

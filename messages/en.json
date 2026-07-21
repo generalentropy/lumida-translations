@@ -41,6 +41,14 @@
     "active": "Demo active",
     "dashboardTitle": "Demonstration data"
   },
+  "DeveloperMode": {
+    "settingLabel": "Enable developer mode",
+    "settingDescription": "Show a download control on health pages for the raw Lumida data loaded for the selected period. These files contain sensitive health data; share them only with someone you trust.",
+    "saved": "Developer mode updated.",
+    "saveError": "Developer mode could not be updated.",
+    "download": "Download raw data",
+    "downloadError": "The raw data file could not be created."
+  },
   "Home": {
     "brandHomeLabel": "Lumida home",
     "heroTitle": "Finally, a dashboard for",
@@ -721,6 +729,11 @@
     "title": "What's new",
     "description": "New features, improvements, and fixes.",
     "items": {
+      "developerMode": {
+        "category": "Application",
+        "title": "Added developer mode",
+        "description": "Raw health data can now be downloaded."
+      },
       "sleepSchedule": {
         "category": "Sleep",
         "title": "Sleep schedule chart",

@@ -41,6 +41,14 @@
     "active": "Demo attiva",
     "dashboardTitle": "Dati dimostrativi"
   },
+  "DeveloperMode": {
+    "settingLabel": "Attiva la modalità sviluppatore",
+    "settingDescription": "Mostra nelle pagine della salute un comando per scaricare i dati non elaborati caricati da Lumida per il periodo selezionato. Questi file contengono dati sanitari sensibili; condividili solo con persone di fiducia.",
+    "saved": "Modalità sviluppatore aggiornata.",
+    "saveError": "Impossibile aggiornare la modalità sviluppatore.",
+    "download": "Scarica dati non elaborati",
+    "downloadError": "Impossibile creare il file dei dati non elaborati."
+  },
   "Home": {
     "brandHomeLabel": "Pagina iniziale di Lumida",
     "heroTitle": "Finalmente una dashboard per",
@@ -721,6 +729,11 @@
     "title": "Novità",
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "items": {
+      "developerMode": {
+        "category": "Applicazione",
+        "title": "Aggiunta la modalità sviluppatore",
+        "description": "Ora è possibile scaricare i dati sanitari non elaborati."
+      },
       "sleepSchedule": {
         "category": "Sonno",
         "title": "Grafico degli orari del sonno",

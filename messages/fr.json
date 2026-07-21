@@ -41,6 +41,14 @@
     "active": "Démo active",
     "dashboardTitle": "Données de démonstration"
   },
+  "DeveloperMode": {
+    "settingLabel": "Activer le mode développeur",
+    "settingDescription": "Affiche dans les pages de santé un bouton permettant de télécharger les données brutes chargées par Lumida pour la période sélectionnée. Ces fichiers contiennent des données de santé sensibles ; ne les partagez qu’avec une personne de confiance.",
+    "saved": "Le mode développeur a été mis à jour.",
+    "saveError": "Impossible de mettre à jour le mode développeur.",
+    "download": "Télécharger les données brutes",
+    "downloadError": "Impossible de créer le fichier de données brutes."
+  },
   "Home": {
     "brandHomeLabel": "Accueil Lumida",
     "heroTitle": "Enfin un tableau <br></br>de bord pour",
@@ -721,6 +729,11 @@
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "items": {
+      "developerMode": {
+        "category": "Application",
+        "title": "Ajout d'un mode développeur",
+        "description": "Les données de santé brutes peuvent désormais être téléchargées."
+      },
       "sleepSchedule": {
         "category": "Sommeil",
         "title": "Graphique des horaires de sommeil",
