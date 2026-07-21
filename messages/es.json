@@ -1025,6 +1025,7 @@
     "thisMonth": "Este mes",
     "previousPeriod": "Período anterior",
     "nextPeriod": "Período siguiente",
+    "pickDay": "Abrir el calendario para ver un día concreto",
     "weekOf": "Semana del {date}",
     "duration": "{hours} h {minutes}",
     "durationCompact": "{hours}h{minutes}"
