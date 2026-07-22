@@ -11,7 +11,8 @@
     "english": "Anglais",
     "french": "Français",
     "spanish": "Espagnol",
-    "italian": "Italien"
+    "italian": "Italien",
+    "german": "Allemand"
   },
   "ThemeSelector": {
     "label": "Apparence",
@@ -729,6 +730,11 @@
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "items": {
+      "germanLanguage": {
+        "category": "Application",
+        "title": "Ajout de l’allemand",
+        "description": "Lumida est désormais disponible en allemand."
+      },
       "developerMode": {
         "category": "Application",
         "title": "Ajout d'un mode développeur",
