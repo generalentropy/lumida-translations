@@ -753,7 +753,13 @@
   "ChangelogPage": {
     "title": "Nouveautés",
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
+    "npmLinkLabel": "Voir sur npm",
     "items": {
+      "lumidaCli": {
+        "category": "Application",
+        "title": "Lumida dans votre terminal",
+        "description": "Le CLI Lumida est maintenant disponible pour accéder à vos données depuis votre terminal."
+      },
       "germanLanguage": {
         "category": "Application",
         "title": "Ajout de l’allemand",
