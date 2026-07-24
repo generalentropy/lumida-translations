@@ -6,7 +6,7 @@
     "accountLabel": "Lumida account",
     "permissionsTitle": "Read-only access",
     "permissionsDescription": "The CLI can read your Google Health connection status and a compact health summary.",
-    "securityDescription": "It cannot change your account, disconnect Google Health, or use administration features.",
+    "securityDescription": "It cannot change your account or disconnect Google Health.",
     "approve": "Authorize the CLI",
     "deny": "Deny",
     "pending": "Authorizing…",

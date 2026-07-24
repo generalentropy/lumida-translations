@@ -6,7 +6,7 @@
     "accountLabel": "Compte Lumida",
     "permissionsTitle": "Accès en lecture seule",
     "permissionsDescription": "Le CLI peut consulter l’état de votre connexion Google Health et un résumé compact de vos données de santé.",
-    "securityDescription": "Il ne peut pas modifier votre compte, déconnecter Google Health ni utiliser les fonctions d’administration.",
+    "securityDescription": "Il ne peut pas modifier votre compte ni déconnecter Google Health.",
     "approve": "Autoriser le CLI",
     "deny": "Refuser",
     "pending": "Autorisation…",

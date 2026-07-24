@@ -6,7 +6,7 @@
     "accountLabel": "Lumida-Konto",
     "permissionsTitle": "Schreibgeschützter Zugriff",
     "permissionsDescription": "Die CLI kann den Status deiner Google-Health-Verbindung und eine kompakte Gesundheitsübersicht lesen.",
-    "securityDescription": "Sie kann dein Konto nicht ändern, Google Health nicht trennen und keine Verwaltungsfunktionen verwenden.",
+    "securityDescription": "Sie kann dein Konto nicht ändern oder Google Health trennen.",
     "approve": "CLI autorisieren",
     "deny": "Ablehnen",
     "pending": "Autorisierung…",
