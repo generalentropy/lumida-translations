@@ -1,4 +1,28 @@
 {
+  "DeviceAuthorization": {
+    "title": "Connetti Lumida CLI",
+    "description": "Una sessione da riga di comando richiede l’accesso al tuo account Lumida.",
+    "codeLabel": "Codice di verifica",
+    "accountLabel": "Account Lumida",
+    "permissionsTitle": "Accesso in sola lettura",
+    "permissionsDescription": "La CLI può leggere lo stato della connessione Google Health e un riepilogo compatto dei dati sanitari.",
+    "securityDescription": "Non può modificare l’account, disconnettere Google Health o usare le funzioni di amministrazione.",
+    "approve": "Autorizza la CLI",
+    "deny": "Nega",
+    "pending": "Autorizzazione…",
+    "approvedTitle": "CLI autorizzata",
+    "approvedDescription": "Puoi chiudere questa pagina e tornare al terminale.",
+    "deniedTitle": "Richiesta negata",
+    "deniedDescription": "Non è stata creata alcuna sessione CLI. Puoi chiudere questa pagina.",
+    "genericError": "Impossibile completare la richiesta. Controlla il codice e riprova.",
+    "enterCodeTitle": "Inserisci il codice di verifica",
+    "enterCodeDescription": "Usa il codice mostrato dal comando lumida login.",
+    "continue": "Continua",
+    "invalidCodeTitle": "Codice non valido o scaduto",
+    "invalidCodeDescription": "Esegui di nuovo lumida login per creare un nuovo codice.",
+    "usedCodeTitle": "Codice già usato",
+    "usedCodeDescription": "Questa richiesta è già stata approvata o negata."
+  },
   "Metadata": {
     "title": "Lumida",
     "description": "Salute connessa, finalmente chiara. Consulta e comprendi i tuoi dati sulla salute da qualsiasi browser.",

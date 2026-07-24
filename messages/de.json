@@ -1,4 +1,28 @@
 {
+  "DeviceAuthorization": {
+    "title": "Lumida CLI verbinden",
+    "description": "Eine Befehlszeilensitzung fordert Zugriff auf dein Lumida-Konto an.",
+    "codeLabel": "Bestätigungscode",
+    "accountLabel": "Lumida-Konto",
+    "permissionsTitle": "Schreibgeschützter Zugriff",
+    "permissionsDescription": "Die CLI kann den Status deiner Google-Health-Verbindung und eine kompakte Gesundheitsübersicht lesen.",
+    "securityDescription": "Sie kann dein Konto nicht ändern, Google Health nicht trennen und keine Verwaltungsfunktionen verwenden.",
+    "approve": "CLI autorisieren",
+    "deny": "Ablehnen",
+    "pending": "Autorisierung…",
+    "approvedTitle": "CLI autorisiert",
+    "approvedDescription": "Du kannst diese Seite schließen und zum Terminal zurückkehren.",
+    "deniedTitle": "Anfrage abgelehnt",
+    "deniedDescription": "Es wurde keine CLI-Sitzung erstellt. Du kannst diese Seite schließen.",
+    "genericError": "Die Anfrage konnte nicht abgeschlossen werden. Prüfe den Code und versuche es erneut.",
+    "enterCodeTitle": "Bestätigungscode eingeben",
+    "enterCodeDescription": "Verwende den Code, den der Befehl lumida login anzeigt.",
+    "continue": "Weiter",
+    "invalidCodeTitle": "Ungültiger oder abgelaufener Code",
+    "invalidCodeDescription": "Führe lumida login erneut aus, um einen neuen Code zu erstellen.",
+    "usedCodeTitle": "Code bereits verwendet",
+    "usedCodeDescription": "Diese Anfrage wurde bereits genehmigt oder abgelehnt."
+  },
   "Metadata": {
     "title": "Lumida",
     "description": "Vernetzte Gesundheit, klar und verständlich. Sieh dir deine Gesundheitsdaten in jedem Browser an und verstehe sie.",

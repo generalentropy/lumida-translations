@@ -1,4 +1,28 @@
 {
+  "DeviceAuthorization": {
+    "title": "Connect Lumida CLI",
+    "description": "A command-line session is requesting access to your Lumida account.",
+    "codeLabel": "Verification code",
+    "accountLabel": "Lumida account",
+    "permissionsTitle": "Read-only access",
+    "permissionsDescription": "The CLI can read your Google Health connection status and a compact health summary.",
+    "securityDescription": "It cannot change your account, disconnect Google Health, or use administration features.",
+    "approve": "Authorize the CLI",
+    "deny": "Deny",
+    "pending": "Authorizing…",
+    "approvedTitle": "CLI authorized",
+    "approvedDescription": "You can close this page and return to your terminal.",
+    "deniedTitle": "Request denied",
+    "deniedDescription": "No CLI session was created. You can close this page.",
+    "genericError": "The request could not be completed. Check the code and try again.",
+    "enterCodeTitle": "Enter your verification code",
+    "enterCodeDescription": "Use the code displayed by the lumida login command.",
+    "continue": "Continue",
+    "invalidCodeTitle": "Invalid or expired code",
+    "invalidCodeDescription": "Run lumida login again to create a new verification code.",
+    "usedCodeTitle": "Code already used",
+    "usedCodeDescription": "This request has already been approved or denied."
+  },
   "Metadata": {
     "title": "Lumida",
     "description": "Connected health, made clear. Access and understand your health data from any browser.",
