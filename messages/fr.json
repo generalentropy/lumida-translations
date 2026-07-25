@@ -763,6 +763,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "multipleSleepSources": {
+        "category": "Sommeil",
+        "title": "Amélioration de la vue Sommeil",
+        "description": "L’affichage des données provenant de plusieurs sources a été amélioré. Merci à @GoombaAdventurer."
+      },
       "localHealthCache": {
         "category": "Application",
         "title": "Plus rapide grâce au cache local",
