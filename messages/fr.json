@@ -74,6 +74,13 @@
     "download": "Télécharger les données brutes",
     "downloadError": "Impossible de créer le fichier de données brutes."
   },
+  "HealthCache": {
+    "settingLabel": "Stockage local des données de santé",
+    "performanceDescription": "Performance : Vos pages s'ouvrent instantanément et Lumida sollicite moins Google Health en conservant vos données en cache sur cet appareil.",
+    "privacyDescription": "Confidentialité : Désactiver ce réglage efface immédiatement toutes les données stockées localement (fortement recommandé sur un appareil public ou partagé).",
+    "enabled": "Cache local des données santé activé.",
+    "disabled": "Cache local désactivé et supprimé de cet appareil."
+  },
   "Home": {
     "brandHomeLabel": "Accueil Lumida",
     "heroTitle": "Enfin un tableau <br></br>de bord pour",
@@ -366,8 +373,8 @@
     },
     "storage": {
       "title": "Traitement des données de santé",
-      "health": "Les mesures de santé transitent par le serveur Lumida uniquement le temps nécessaire pour répondre à votre demande. Elles ne sont enregistrées ni dans Neon, ni dans un stockage persistant du navigateur. L’interface conserve temporairement les réponses en mémoire : elles deviennent obsolètes après 15 minutes et une entrée inutilisée est supprimée après 30 minutes ; l’ensemble du cache est effacé à la déconnexion du compte.",
-      "token": "Les jetons d’actualisation Google Health sont chiffrés au repos avec AES-256-GCM. Les jetons d’accès restent côté serveur et ne sont conservés que dans la mémoire temporaire du processus. Les jetons OAuth et les données de santé ne sont jamais placés dans le stockage du navigateur."
+      "health": "Les mesures de santé transitent par le serveur Lumida uniquement le temps nécessaire pour répondre à votre demande et ne sont jamais enregistrées dans Neon. Pour accélérer l’interface, les résumés déjà consultés sont conservés dans un cache local sur votre appareil (mémoire du navigateur et stockage navigateur IndexedDB). Ce cache ne quitte jamais votre appareil, expire automatiquement au plus tard après 30 jours, est supprimé à la déconnexion du compte et peut être désactivé à tout moment dans les réglages de l’application — par exemple sur un ordinateur partagé. Les tracés GPS des séances ne sont jamais écrits dans le stockage du navigateur et restent uniquement en mémoire.",
+      "token": "Les jetons d’actualisation Google Health sont chiffrés au repos avec AES-256-GCM. Les jetons d’accès restent côté serveur et ne sont conservés que dans la mémoire temporaire du processus. Les jetons OAuth ne sont jamais exposés au navigateur ; les seules données de santé présentes sur votre appareil sont celles du cache local décrit ci-dessus, sous votre contrôle."
     },
     "providers": {
       "title": "Destinataires et prestataires",
@@ -386,7 +393,7 @@
     "retention": {
       "title": "Durées de conservation",
       "account": "Les données du compte sont conservées tant que celui-ci reste actif, puis supprimées à la suite d’une demande de suppression vérifiée, sauf obligation légale de conservation.",
-      "health": "Les mesures de santé ne sont pas conservées dans la base de données ; leur traitement temporaire en mémoire serveur et navigateur est décrit ci-dessus.",
+      "health": "Les mesures de santé ne sont pas conservées dans la base de données ; leur traitement serveur temporaire et le cache sur votre appareil, sous votre contrôle, sont décrits ci-dessus.",
       "connection": "Les données de connexion Google Health sont conservées jusqu’à la déconnexion de Google Health ou la suppression du compte.",
       "temporary": "Une transaction OAuth Google Health expire après 10 minutes, un lien de validation d’adresse après une heure et un lien de réinitialisation du mot de passe après 15 minutes.",
       "communication": "Les retours liés au compte sont conservés tant qu’ils sont utiles à l’amélioration de Lumida et supprimés avec le compte, sauf nécessité liée à un droit en justice. Les autres échanges sont conservés le temps nécessaire pour répondre et assurer leur suivi.",
@@ -397,7 +404,8 @@
       "description": "Lumida utilise uniquement les stockages nécessaires pour fournir le service demandé ou mémoriser les préférences d’interface :",
       "session": "cookies sécurisés d’authentification et de session ;",
       "oauth": "cookies temporaires de sécurité et de langue pendant le parcours OAuth Google Health ;",
-      "preferences": "cookie d’état de la barre latérale et stockage local de l’appareil pour la préférence d’apparence.",
+      "preferences": "cookie d’état de la barre latérale et stockage local de l’appareil pour la préférence d’apparence ;",
+      "healthCache": "cache facultatif sur l’appareil (IndexedDB) des données santé déjà consultées, supprimé à la déconnexion du compte et désactivable dans les réglages de l’application.",
       "noTracking": "Lumida n’utilise actuellement aucun cookie publicitaire, suivi comportemental ou outil d’analyse marketing. Ces mécanismes nécessaires ne requièrent pas de bandeau relatif aux cookies publicitaires."
     },
     "rights": {
@@ -739,8 +747,8 @@
     "aboutTitle": "À propos de Lumida",
     "aboutBody": "Lumida récupère vos données depuis Google Health uniquement lorsque vous les consultez, puis les présente sous forme de résumés et de tendances simples. Il s'agit d'un outil d'information qui ne fournit aucun diagnostic médical.",
     "privacyTitle": "Confidentialité",
-    "cacheNotice": "Les données sont conservées uniquement dans le cache mémoire de cette session.",
-    "storageNotice": "Lumida n'enregistre pas vos mesures de santé dans sa base de données ni dans le stockage du navigateur. Elle les récupère auprès de Google Health uniquement lorsque vous les consultez.",
+    "cacheNotice": "Les données santé déjà consultées sont conservées dans un cache local sur cet appareil pour un affichage instantané ; la journée en cours est actualisée au rechargement. Vous pouvez désactiver le cache local à tout moment dans les Réglages.",
+    "storageNotice": "Lumida n'enregistre pas vos mesures de santé dans sa base de données. Elle les récupère auprès de Google Health lorsque vous les consultez et ne les met en cache que sur votre appareil, jamais sur ses serveurs.",
     "disconnectNotice": "Lorsque vous révoquez l'accès Google Health dans les Réglages, Lumida supprime les informations de connexion locales et ne peut plus accéder à vos données de santé.",
     "mapNotice": "Lorsqu'une séance possède un tracé GPS, sa carte reste dans cette session du navigateur ; OpenStreetMap ne reçoit que les requêtes de tuiles nécessaires à l'affichage de la zone environnante.",
     "changelogTitle": "Nouveautés",
@@ -755,6 +763,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "localHealthCache": {
+        "category": "Application",
+        "title": "Plus rapide grâce au cache local",
+        "description": "Lumida est désormais plus rapide et plus fluide : les données santé déjà consultées sont mises en cache sur votre appareil (IndexedDB), les pages s'ouvrent instantanément et Lumida interroge moins souvent Google Health. Vos mesures ne quittent toujours pas votre appareil, et vous pouvez désactiver ce cache à tout moment dans les Réglages."
+      },
       "lumidaCli": {
         "category": "Application",
         "title": "Lumida dans votre terminal",

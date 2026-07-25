@@ -74,6 +74,13 @@
     "download": "Download raw data",
     "downloadError": "The raw data file could not be created."
   },
+  "HealthCache": {
+    "settingLabel": "Local storage of health data",
+    "performanceDescription": "Performance: Your pages open instantly and Lumida calls Google Health less often by keeping your data cached on this device.",
+    "privacyDescription": "Privacy: Turning this setting off immediately deletes all locally stored data (strongly recommended on a public or shared device).",
+    "enabled": "Local health cache enabled.",
+    "disabled": "Local health cache disabled and deleted from this device."
+  },
   "Home": {
     "brandHomeLabel": "Lumida home",
     "heroTitle": "Finally, a dashboard for",
@@ -366,8 +373,8 @@
     },
     "storage": {
       "title": "How health data is handled",
-      "health": "Health measurements pass through Lumida’s server only for the time needed to answer your request. They are not written to Neon or persistent browser storage. The interface keeps responses temporarily in memory: data becomes stale after 15 minutes and an unused entry is removed after 30 minutes; the complete cache is cleared on sign-out.",
-      "token": "Google Health refresh tokens are encrypted at rest using AES-256-GCM. Access tokens remain server-side and are kept only in short-lived process memory. OAuth tokens and health data are never exposed to browser storage."
+      "health": "Health measurements pass through Lumida’s server only for the time needed to answer your request and are never written to Neon. To make the interface faster, summaries you have already viewed are kept in a local cache on your device (browser memory and IndexedDB browser storage). This cache never leaves your device, expires automatically after 30 days at the latest, is deleted when you sign out, and can be disabled at any time in the app settings — for example on a shared computer. Workout GPS routes are never written to browser storage and remain in memory only.",
+      "token": "Google Health refresh tokens are encrypted at rest using AES-256-GCM. Access tokens remain server-side and are kept only in short-lived process memory. OAuth tokens are never exposed to the browser; the only health data on your device is the local cache described above, under your control."
     },
     "providers": {
       "title": "Recipients and service providers",
@@ -386,7 +393,7 @@
     "retention": {
       "title": "Retention periods",
       "account": "Account data is kept while the account remains active, then deleted following a verified deletion request, except where retention is legally required.",
-      "health": "Health measurements are not retained in the database; temporary server and browser-memory handling is described above.",
+      "health": "Health measurements are not retained in the database; the temporary server-side handling and the on-device cache under your control are described above.",
       "connection": "Google Health connection data is retained until you disconnect Google Health or the account is deleted.",
       "temporary": "A Google Health OAuth transaction expires after 10 minutes, an email-verification link after one hour and a password-reset link after 15 minutes.",
       "communication": "Account-linked product feedback is kept while useful for improving Lumida and is deleted with the account, unless retention is needed for a legal claim. Other correspondence is kept for the time needed to answer and manage follow-up.",
@@ -397,7 +404,8 @@
       "description": "Lumida uses only storage that is necessary to provide the requested service or remember interface preferences:",
       "session": "secure authentication and session cookies;",
       "oauth": "short-lived security and language cookies during the Google Health OAuth flow;",
-      "preferences": "a sidebar cookie and local device storage for the appearance preference.",
+      "preferences": "a sidebar cookie and local device storage for the appearance preference;",
+      "healthCache": "an optional on-device cache (IndexedDB) of already-viewed health data, deleted on sign-out and deactivatable in the app settings.",
       "noTracking": "Lumida does not currently use advertising cookies, behavioural tracking or marketing analytics. These necessary mechanisms do not require an advertising-cookie banner."
     },
     "rights": {
@@ -739,8 +747,8 @@
     "aboutTitle": "About Lumida",
     "aboutBody": "Lumida requests your Google Health data on demand and presents it as simple summaries and trends. It is an information tool and does not provide medical diagnoses.",
     "privacyTitle": "Privacy",
-    "cacheNotice": "Data is kept only in this session's in-memory cache.",
-    "storageNotice": "Lumida does not write your health measurements to its database or to browser storage. Google Health data is requested on demand.",
+    "cacheNotice": "Already-viewed health data is kept in a local cache on this device so screens open instantly; the current day is refreshed on reload. You can turn local caching off anytime in Settings.",
+    "storageNotice": "Lumida does not write your health measurements to its database. Google Health data is requested on demand and cached only on your device, never on Lumida's servers.",
     "disconnectNotice": "When you revoke Google Health access in Settings, Lumida deletes the local connection information and can no longer access your health data.",
     "mapNotice": "When a workout has a GPS route, its map stays in this browser session; OpenStreetMap only receives the tile requests needed to display the surrounding area.",
     "changelogTitle": "What's new",
@@ -755,6 +763,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "localHealthCache": {
+        "category": "Application",
+        "title": "Faster with on-device caching",
+        "description": "Lumida now feels faster and smoother: health data you have already viewed is cached on your device (IndexedDB), so pages open instantly and Lumida calls Google Health less often. Your measurements still never leave your device, and you can opt out anytime in Settings."
+      },
       "lumidaCli": {
         "category": "Application",
         "title": "Lumida in your terminal",
