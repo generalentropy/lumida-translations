@@ -763,6 +763,11 @@
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "npmLinkLabel": "Vedi su npm",
     "items": {
+      "napDetection": {
+        "category": "Correzione",
+        "title": "Corretto il rilevamento dei sonnellini",
+        "description": "I sonnellini che Google Health non contrassegna come tali ora sono distinti correttamente dalle notti nella pagina Sonno."
+      },
       "multipleSleepSources": {
         "category": "Sonno",
         "title": "Vista Sonno migliorata",

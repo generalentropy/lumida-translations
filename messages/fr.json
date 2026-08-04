@@ -763,6 +763,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "napDetection": {
+        "category": "Correctif",
+        "title": "Correction de la détection des siestes",
+        "description": "Les siestes que Google Health n'identifie pas comme telles sont désormais correctement distinguées des nuits sur la page Sommeil."
+      },
       "multipleSleepSources": {
         "category": "Sommeil",
         "title": "Amélioration de la vue Sommeil",

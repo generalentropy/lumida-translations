@@ -763,6 +763,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "napDetection": {
+        "category": "Fehlerbehebung",
+        "title": "Erkennung von Nickerchen korrigiert",
+        "description": "Nickerchen, die Google Health nicht als solche markiert, werden auf der Seite Schlaf jetzt korrekt von Nächten unterschieden."
+      },
       "multipleSleepSources": {
         "category": "Schlaf",
         "title": "Verbesserte Schlafansicht",

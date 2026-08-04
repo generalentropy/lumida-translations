@@ -763,6 +763,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "napDetection": {
+        "category": "Corrección",
+        "title": "Corregida la detección de siestas",
+        "description": "Las siestas que Google Health no marca como tales ahora se distinguen correctamente de las noches en la página Sueño."
+      },
       "multipleSleepSources": {
         "category": "Sueño",
         "title": "Vista de Sueño mejorada",

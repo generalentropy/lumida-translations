@@ -763,6 +763,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "napDetection": {
+        "category": "Fix",
+        "title": "Fixed nap detection",
+        "description": "Naps that Google Health does not flag as such are now correctly separated from nights on the Sleep page."
+      },
       "multipleSleepSources": {
         "category": "Sleep",
         "title": "Improved Sleep view",
