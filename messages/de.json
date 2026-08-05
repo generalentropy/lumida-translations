@@ -766,6 +766,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "cliAuthorizationSecurity": {
+        "category": "Sicherheit",
+        "title": "Sicherere CLI-Autorisierung",
+        "description": "Die Seite zur Autorisierung der Lumida CLI zeigt jetzt die Uhrzeit der Anfrage an und erinnert dich daran, jeden Bestätigungscode abzulehnen, den du nicht selbst erzeugt hast."
+      },
       "napDetection": {
         "category": "Fehlerbehebung",
         "title": "Erkennung von Nickerchen korrigiert",

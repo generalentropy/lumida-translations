@@ -766,6 +766,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "cliAuthorizationSecurity": {
+        "category": "Seguridad",
+        "title": "Autorización del CLI más segura",
+        "description": "La página que autoriza Lumida CLI ahora muestra la hora de la solicitud y te recuerda que debes rechazar cualquier código de verificación que no hayas generado tú."
+      },
       "napDetection": {
         "category": "Corrección",
         "title": "Corregida la detección de siestas",

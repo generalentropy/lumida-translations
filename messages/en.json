@@ -766,6 +766,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "cliAuthorizationSecurity": {
+        "category": "Security",
+        "title": "Safer CLI authorization",
+        "description": "The page that authorizes Lumida CLI now shows the time the request was made and reminds you to refuse any verification code you did not generate yourself."
+      },
       "napDetection": {
         "category": "Fix",
         "title": "Fixed nap detection",
