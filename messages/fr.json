@@ -766,6 +766,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "lumidaCliPeriods": {
+        "category": "Application",
+        "title": "Mise à jour de Lumida CLI",
+        "description": "Le CLI résume désormais une période allant jusqu’à 90 jours, affiche la tendance de votre sommeil et peut produire du JSON pour vos propres scripts. Pensez à le mettre à jour."
+      },
       "cliAuthorizationSecurity": {
         "category": "Sécurité",
         "title": "Autorisation du CLI plus sûre",
