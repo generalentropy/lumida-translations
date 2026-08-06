@@ -767,6 +767,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "serverMigration": {
+        "category": "Aplicación",
+        "title": "Migración de servidor",
+        "description": "Migración a un nuevo servidor y mejora del rendimiento."
+      },
       "lumidaCliPeriods": {
         "category": "Aplicación",
         "title": "Actualización de Lumida CLI",
