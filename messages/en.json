@@ -239,7 +239,8 @@
       "title": "Hosting",
       "intro": "Lumida relies on the following infrastructure providers:",
       "applicationLabel": "Website and application hosting:",
-      "databaseLabel": "Database hosting:"
+      "databaseLabel": "Database hosting:",
+      "contentDeliveryLabel": "Content delivery and TLS termination:"
     },
     "service": {
       "title": "Nature of the service",
@@ -382,16 +383,16 @@
     "providers": {
       "title": "Recipients and service providers",
       "intro": "Personal data is disclosed only as needed to operate Lumida, to the following categories of providers:",
-      "vercel": "application hosting and server execution ({location}).",
+      "hetzner": "application hosting and server execution ({location}).",
       "neon": "PostgreSQL account database ({location}). Health measurements are not stored there.",
       "resend": "transactional email delivery ({location}).",
       "google": "social sign-in, OAuth authorization and the Google Health API, when chosen by the user.",
-      "cloudflare": "DNS protection and routing of messages sent to Lumida contact addresses.",
+      "cloudflare": "content delivery network placed in front of the application: DNS, attack protection and TLS termination, so all traffic including health data in transit passes through its network; also routes messages sent to Lumida contact addresses ({location}).",
       "openStreetMap": "map-tile delivery for a visible workout area; the complete route line is not uploaded to OpenStreetMap."
     },
     "transfers": {
       "title": "International transfers",
-      "description": "The primary database region is Frankfurt and transactional email data is processed in Ireland. Some providers are established in the United States or may provide support from outside the European Economic Area. Where required, transfers rely on an adequacy mechanism such as the EU–US Data Privacy Framework, standard contractual clauses or another safeguard made available by the relevant provider."
+      "description": "The application is hosted in Germany, the primary database region is Frankfurt and transactional email data is processed in Ireland. Some providers are established in the United States or may provide support from outside the European Economic Area. Where required, transfers rely on an adequacy mechanism such as the EU–US Data Privacy Framework, standard contractual clauses or another safeguard made available by the relevant provider."
     },
     "retention": {
       "title": "Retention periods",

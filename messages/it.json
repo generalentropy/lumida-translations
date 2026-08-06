@@ -239,7 +239,8 @@
       "title": "Hosting",
       "intro": "Lumida si affida ai seguenti fornitori di infrastruttura:",
       "applicationLabel": "Hosting del sito e dell’applicazione:",
-      "databaseLabel": "Hosting del database:"
+      "databaseLabel": "Hosting del database:",
+      "contentDeliveryLabel": "Distribuzione dei contenuti e terminazione TLS:"
     },
     "service": {
       "title": "Natura del servizio",
@@ -382,16 +383,16 @@
     "providers": {
       "title": "Destinatari e fornitori di servizi",
       "intro": "I dati personali sono comunicati solo nella misura necessaria al funzionamento di Lumida, alle seguenti categorie di fornitori:",
-      "vercel": "hosting dell’applicazione ed esecuzione lato server ({location}).",
+      "hetzner": "hosting dell’applicazione ed esecuzione lato server ({location}).",
       "neon": "database PostgreSQL degli account ({location}). Le misurazioni sulla salute non vi vengono memorizzate.",
       "resend": "invio di email transazionali ({location}).",
       "google": "accesso social, autorizzazione OAuth e API Google Health, quando scelti dall’utente.",
-      "cloudflare": "protezione DNS e instradamento dei messaggi inviati agli indirizzi di contatto di Lumida.",
+      "cloudflare": "rete di distribuzione posta davanti all’applicazione: DNS, protezione dagli attacchi e terminazione TLS, per cui tutto il traffico, compresi i dati sanitari in transito, attraversa la sua rete; instrada inoltre i messaggi inviati agli indirizzi di contatto di Lumida ({location}).",
       "openStreetMap": "consegna delle tessere di mappa per l’area visibile di un allenamento; la linea completa del percorso non viene inviata a OpenStreetMap."
     },
     "transfers": {
       "title": "Trasferimenti internazionali",
-      "description": "La regione principale del database è Francoforte e i dati delle email transazionali sono trattati in Irlanda. Alcuni fornitori hanno sede negli Stati Uniti o possono fornire assistenza da fuori dello Spazio economico europeo. Ove richiesto, i trasferimenti si basano su un meccanismo di adeguatezza come l’EU–US Data Privacy Framework, sulle clausole contrattuali standard o su un’altra garanzia messa a disposizione dal fornitore interessato."
+      "description": "L’applicazione è ospitata in Germania, la regione principale del database è Francoforte e i dati delle email transazionali sono trattati in Irlanda. Alcuni fornitori hanno sede negli Stati Uniti o possono fornire assistenza da fuori dello Spazio economico europeo. Ove richiesto, i trasferimenti si basano su un meccanismo di adeguatezza come l’EU–US Data Privacy Framework, sulle clausole contrattuali standard o su un’altra garanzia messa a disposizione dal fornitore interessato."
     },
     "retention": {
       "title": "Periodi di conservazione",

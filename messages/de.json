@@ -239,7 +239,8 @@
       "title": "Hosting",
       "intro": "Lumida nutzt die folgenden Infrastruktur-Dienstleister:",
       "applicationLabel": "Hosting von Website und App:",
-      "databaseLabel": "Hosting der Datenbank:"
+      "databaseLabel": "Hosting der Datenbank:",
+      "contentDeliveryLabel": "Content-Delivery und TLS-Terminierung:"
     },
     "service": {
       "title": "Art des Dienstes",
@@ -382,16 +383,16 @@
     "providers": {
       "title": "Empfänger und Dienstleister",
       "intro": "Personenbezogene Daten werden nur im für den Betrieb von Lumida erforderlichen Umfang an die folgenden Kategorien von Dienstleistern weitergegeben:",
-      "vercel": "Hosting der App und serverseitige Ausführung ({location}).",
+      "hetzner": "Hosting der App und serverseitige Ausführung ({location}).",
       "neon": "PostgreSQL-Datenbank der Konten ({location}). Gesundheitswerte werden dort nicht gespeichert.",
       "resend": "Versand der transaktionalen E-Mails ({location}).",
       "google": "Social-Login, OAuth-Autorisierung und Google Health API, wenn Sie diese Dienste wählen.",
-      "cloudflare": "DNS-Schutz und Weiterleitung der an die Lumida-Kontaktadressen gesendeten Nachrichten.",
+      "cloudflare": "Content-Delivery-Netzwerk vor der Anwendung: DNS, Angriffsschutz und TLS-Terminierung, sodass der gesamte Datenverkehr einschließlich der Gesundheitsdaten während der Übertragung sein Netz durchläuft; leitet außerdem die an die Lumida-Kontaktadressen gesendeten Nachrichten weiter ({location}).",
       "openStreetMap": "Bereitstellung der Kartenkacheln für den sichtbaren Bereich eines Workouts; der vollständige Streckenverlauf wird nicht an OpenStreetMap übermittelt."
     },
     "transfers": {
       "title": "Internationale Übermittlungen",
-      "description": "Die Hauptregion der Datenbank befindet sich in Frankfurt, und die Daten der transaktionalen E-Mails werden in Irland verarbeitet. Einige Dienstleister haben ihren Sitz in den USA oder leisten möglicherweise Support von außerhalb des Europäischen Wirtschaftsraums. Sofern erforderlich, stützen sich die Übermittlungen auf einen Angemessenheitsmechanismus wie den EU-US-Datenschutzrahmen (Data Privacy Framework), Standardvertragsklauseln oder eine andere vom jeweiligen Dienstleister angebotene Garantie."
+      "description": "Die Anwendung wird in Deutschland gehostet, die Hauptregion der Datenbank befindet sich in Frankfurt, und die Daten der transaktionalen E-Mails werden in Irland verarbeitet. Einige Dienstleister haben ihren Sitz in den USA oder leisten möglicherweise Support von außerhalb des Europäischen Wirtschaftsraums. Sofern erforderlich, stützen sich die Übermittlungen auf einen Angemessenheitsmechanismus wie den EU-US-Datenschutzrahmen (Data Privacy Framework), Standardvertragsklauseln oder eine andere vom jeweiligen Dienstleister angebotene Garantie."
     },
     "retention": {
       "title": "Speicherdauer",

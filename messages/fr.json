@@ -239,7 +239,8 @@
       "title": "Hébergement",
       "intro": "Lumida s’appuie sur les prestataires d’infrastructure suivants :",
       "applicationLabel": "Hébergement du site et de l’application :",
-      "databaseLabel": "Hébergement de la base de données :"
+      "databaseLabel": "Hébergement de la base de données :",
+      "contentDeliveryLabel": "Diffusion de contenu et terminaison TLS :"
     },
     "service": {
       "title": "Nature du service",
@@ -382,16 +383,16 @@
     "providers": {
       "title": "Destinataires et prestataires",
       "intro": "Les données personnelles sont communiquées uniquement dans la mesure nécessaire au fonctionnement de Lumida, aux catégories de prestataires suivantes :",
-      "vercel": "hébergement de l’application et exécution serveur ({location}).",
+      "hetzner": "hébergement de l’application et exécution serveur ({location}).",
       "neon": "base de données PostgreSQL des comptes ({location}). Les mesures de santé n’y sont pas enregistrées.",
       "resend": "envoi des e-mails transactionnels ({location}).",
       "google": "connexion sociale, autorisation OAuth et API Google Health, lorsque l’utilisateur choisit ces services.",
-      "cloudflare": "protection DNS et routage des messages envoyés aux adresses de contact Lumida.",
+      "cloudflare": "réseau de diffusion placé devant l’application : DNS, protection contre les attaques et terminaison TLS, de sorte que l’ensemble du trafic, y compris les données de santé en transit, traverse son réseau ; assure également le routage des messages envoyés aux adresses de contact Lumida ({location}).",
       "openStreetMap": "fourniture des tuiles cartographiques correspondant à la zone visible d’un entraînement ; le tracé complet n’est pas transmis à OpenStreetMap."
     },
     "transfers": {
       "title": "Transferts internationaux",
-      "description": "La région principale de la base de données se trouve à Francfort et les données des e-mails transactionnels sont traitées en Irlande. Certains prestataires sont établis aux États-Unis ou peuvent fournir une assistance depuis l’extérieur de l’Espace économique européen. Lorsque cela est requis, les transferts s’appuient sur un mécanisme d’adéquation tel que le cadre UE–États-Unis de protection des données, des clauses contractuelles types ou une autre garantie proposée par le prestataire concerné."
+      "description": "L’application est hébergée en Allemagne, la région principale de la base de données se trouve à Francfort et les données des e-mails transactionnels sont traitées en Irlande. Certains prestataires sont établis aux États-Unis ou peuvent fournir une assistance depuis l’extérieur de l’Espace économique européen. Lorsque cela est requis, les transferts s’appuient sur un mécanisme d’adéquation tel que le cadre UE–États-Unis de protection des données, des clauses contractuelles types ou une autre garantie proposée par le prestataire concerné."
     },
     "retention": {
       "title": "Durées de conservation",

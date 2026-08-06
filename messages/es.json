@@ -239,7 +239,8 @@
       "title": "Alojamiento",
       "intro": "Lumida utiliza los siguientes proveedores de infraestructura:",
       "applicationLabel": "Alojamiento del sitio y la aplicación:",
-      "databaseLabel": "Alojamiento de la base de datos:"
+      "databaseLabel": "Alojamiento de la base de datos:",
+      "contentDeliveryLabel": "Distribución de contenido y terminación TLS:"
     },
     "service": {
       "title": "Naturaleza del servicio",
@@ -382,16 +383,16 @@
     "providers": {
       "title": "Destinatarios y proveedores",
       "intro": "Los datos personales solo se comunican en la medida necesaria para el funcionamiento de Lumida a las siguientes categorías de proveedores:",
-      "vercel": "alojamiento de la aplicación y ejecución del servidor ({location}).",
+      "hetzner": "alojamiento de la aplicación y ejecución del servidor ({location}).",
       "neon": "base de datos PostgreSQL de las cuentas ({location}). Las mediciones de salud no se guardan allí.",
       "resend": "envío de correos transaccionales ({location}).",
       "google": "inicio de sesión social, autorización OAuth y API de Google Health, cuando el usuario elige estos servicios.",
-      "cloudflare": "protección DNS y encaminamiento de los mensajes enviados a las direcciones de contacto de Lumida.",
+      "cloudflare": "red de distribución situada delante de la aplicación: DNS, protección frente a ataques y terminación TLS, de modo que todo el tráfico, incluidos los datos de salud en tránsito, atraviesa su red; también encamina los mensajes enviados a las direcciones de contacto de Lumida ({location}).",
       "openStreetMap": "suministro de teselas cartográficas para la zona visible de un entrenamiento; la ruta completa no se envía a OpenStreetMap."
     },
     "transfers": {
       "title": "Transferencias internacionales",
-      "description": "La región principal de la base de datos está en Fráncfort y los datos de los correos transaccionales se tratan en Irlanda. Algunos proveedores están establecidos en Estados Unidos o pueden prestar asistencia desde fuera del Espacio Económico Europeo. Cuando sea necesario, las transferencias se basan en un mecanismo de adecuación, como el Marco de Privacidad de Datos UE–EE. UU., cláusulas contractuales tipo u otra garantía ofrecida por el proveedor correspondiente."
+      "description": "La aplicación está alojada en Alemania, la región principal de la base de datos está en Fráncfort y los datos de los correos transaccionales se tratan en Irlanda. Algunos proveedores están establecidos en Estados Unidos o pueden prestar asistencia desde fuera del Espacio Económico Europeo. Cuando sea necesario, las transferencias se basan en un mecanismo de adecuación, como el Marco de Privacidad de Datos UE–EE. UU., cláusulas contractuales tipo u otra garantía ofrecida por el proveedor correspondiente."
     },
     "retention": {
       "title": "Plazos de conservación",
