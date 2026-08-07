@@ -107,6 +107,11 @@
     "sleepSourcesDescription": "Mehrere Geräte im Einsatz? Lumida erkennt jede Datenquelle und hält sie getrennt.",
     "privacyTitle": "Mit Respekt für deine Privatsphäre entwickelt.",
     "privacyDescription": "Deine Gesundheitsdaten gehören dir. Lumida ist um dieses Prinzip herum gebaut: Wir speichern sie nicht.",
+    "cliTitle": "Lumida CLI — Der Weg für Nerds.",
+    "cliDescription": "Greif direkt vom Terminal auf deine Daten zu.",
+    "cliTerminalLabel": "Demo-Terminal der Lumida CLI",
+    "cliCommandsLabel": "Probier einen Befehl:",
+    "cliRunCommand": "{command} im Demo-Terminal ausführen",
     "footerTagline": "Sieh dir im Browser die Gesundheitsdaten aus Google Health, Fitbit oder anderen kompatiblen Geräten an.",
     "footerLegalTitle": "Rechtliches",
     "footerLegalNotice": "Impressum",
@@ -575,6 +580,7 @@
     "health": "Gesundheit",
     "weight": "Gewicht",
     "nutrition": "Ernährung",
+    "notes": "Notizen",
     "toggleSidebar": "Seitenleiste ein- oder ausblenden",
     "mobileNavTitle": "Navigation",
     "mobileNavDescription": "Hauptnavigationsmenü.",
@@ -592,6 +598,7 @@
     "help": "Hilfe",
     "feedback": "Feedback geben",
     "changelog": "Neuigkeiten",
+    "guide": "Leitfaden",
     "administration": "Administration",
     "signOut": "Abmelden"
   },
@@ -749,6 +756,31 @@
     "notConnectedDescription": "Google Health ist nicht mit Lumida verbunden.",
     "backToDashboard": "Zurück zum Dashboard"
   },
+  "GuidePage": {
+    "title": "Leitfaden",
+    "description": "Wie Lumida deine Daten darstellt.",
+    "sections": {
+      "sleep": "Schlaf und Schlafphasen"
+    },
+    "items": {
+      "sleepNightNaming": {
+        "title": "Benennung der Nächte",
+        "description": "Eine Nacht wird nach dem Tag deines Aufwachens benannt und reicht vom Vorabend bis zu diesem Morgen. Wer um 00:35 einschläft, gehört daher weiterhin zur Nacht davor und wird genauso beschriftet wie ein Zubettgehen um 23:10: Die Beschriftung ändert ihre Form nicht danach, auf welcher Seite von Mitternacht du ins Bett gegangen bist."
+      },
+      "sleepNaps": {
+        "title": "Nickerchen",
+        "description": "Nickerchen bleiben außerhalb deiner Nächte, außerhalb des Werts „Letzte Nacht“ und außerhalb der Phasen-Chronologie. Google Health kennzeichnet die meisten davon; bei Quellen, die das nicht tun, zählt Lumida einen Tagschlaf als Nickerchen, sobald am selben Tag ein längerer Schlaf vorliegt. So bleibt der Hauptschlaf einer Nachtschichtkraft eine Nacht."
+      },
+      "sleepStages": {
+        "title": "Phasendetails",
+        "description": "Wie viel Detail du bekommst, hängt von deinem Gerät ab. Manche Quellen trennen Tief-, Leicht- und REM-Schlaf; andere unterscheiden nur zwischen schlafend, unruhig und wach. Trägt eine Nacht überhaupt keine Phasendetails, sagt die Chronologie das, statt welche zu erfinden."
+      },
+      "sleepSources": {
+        "title": "Quellen",
+        "description": "Mehrere Apps oder Geräte können dieselbe Nacht aufzeichnen. Lumida stellt sie nebeneinander, statt sie zusammenzuführen, und über die Schaltfläche „Quellen“ auf der Schlafseite wählst du aus, welche angezeigt werden."
+      }
+    }
+  },
   "HelpPage": {
     "title": "Hilfe und Informationen",
     "description": "Erfahre, wie Lumida funktioniert und wie deine Daten verarbeitet werden.",
@@ -771,6 +803,21 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "dailyNotes": {
+        "category": "Notizen",
+        "title": "Tägliche Notizen",
+        "description": "Schreibe eine Notiz pro Tag. Sie erscheint verkürzt, wenn du auf ein Gesundheitsdiagramm zeigst, und ordnet eine Messung in deinen Tag ein. Die Seite Notizen sammelt und verwaltet alle. Notizen werden verschlüsselt gespeichert."
+      },
+      "activityHeatmap": {
+        "category": "Aktivität",
+        "title": "Aktivitäts-Heatmap",
+        "description": "Eine Heatmap-Ansicht der Trainingseinheiten wurde zum Dashboard hinzugefügt."
+      },
+      "healthCardHeaders": {
+        "category": "Oberfläche",
+        "title": "Einheitliche Kartenköpfe",
+        "description": "Die Gesundheitskarten folgen derselben Hierarchie: der Name des Blocks in Kapitälchen, darunter sein hervorgehobener Wert. Auf der Seite Schlaf zeigt die Phasen-Zeitachse die Uhrzeiten der Nacht neben der Auswahl, statt sie unter dem Titel zu wiederholen."
+      },
       "serverMigration": {
         "category": "App",
         "title": "Server-Migration",
@@ -1050,6 +1097,19 @@
       "sleepDuration": "Schlafdauer"
     }
   },
+  "ActivityHeatmap": {
+    "title": "Aktivitätskalender",
+    "totalRolling": "{count, plural, =0 {Keine Einheiten in den letzten 12 Monaten} one {# Einheit in den letzten 12 Monaten} other {# Einheiten in den letzten 12 Monaten}}",
+    "totalYear": "{count, plural, =0 {Keine Einheiten im Jahr {year}} one {# Einheit im Jahr {year}} other {# Einheiten im Jahr {year}}}",
+    "description": "Jedes Kästchen steht für einen Tag. Die Intensität zeigt die Anzahl der aufgezeichneten Einheiten.",
+    "sessions": "Einheiten",
+    "yearSelector": "Jahr auswählen",
+    "dayCount": "{count, plural, =0 {Keine Einheiten} one {# Einheit} other {# Einheiten}}",
+    "less": "Weniger",
+    "more": "Mehr",
+    "error": "Der Aktivitätskalender konnte nicht geladen werden.",
+    "partial": "Für diesen Zeitraum wird nur ein Teil der Einheiten angezeigt."
+  },
   "OxygenSaturationCard": {
     "title": "SpO₂ · Sauerstoff im Blut",
     "percentValue": "{value} %",
@@ -1079,7 +1139,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Nächtliche Temperatur vs. Referenz",
     "nightlyTemperature": "Nächtliche Temperatur",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "temperatureUnitHelpLabel": "Über die Temperatureinheit",
     "temperatureUnitHelp": "Du kannst die Temperatureinheit in den Einstellungen ändern.",
     "temperatureUnitHelpLink": "Einstellungen öffnen",
@@ -1100,7 +1160,7 @@
     "bpmValue": "{value} bpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "periodAverage": "{value} im Durchschnitt des Zeitraums",
     "withinUsualRange": "In deinem üblichen Bereich ({minimum} bis {maximum})",
     "belowUsualRange": "Unter deinem üblichen Bereich ({minimum} bis {maximum})",
@@ -1421,6 +1481,8 @@
     "stagesTitle": "Schlafphasen",
     "stagesDescription": "Zeitachse der ausgewählten Nacht",
     "nightRange": "Nacht vom {range}",
+    "asleepTotal": "<value>{duration}</value> Schlaf",
+    "nightWindow": "{start}–{end}",
     "sleepWindow": "{start}–{end} · {duration} Schlaf",
     "selectNight": "Nacht auswählen",
     "nightOption": "{date} · {start}–{end}",
@@ -1498,5 +1560,41 @@
       "energy": "Energiezufuhr",
       "hydration": "Flüssigkeitszufuhr"
     }
+  },
+  "DailyNotes": {
+    "pageTitle": "Notizen",
+    "cardTitle": "Notizen",
+    "createTitle": "Neue Notiz",
+    "editTitle": "Notiz bearbeiten",
+    "pageDescription": "Überblick und Verwaltung deiner täglichen Notizen.",
+    "bodyLabel": "Notiz",
+    "bodyPlaceholder": "Wie war der Tag?",
+    "privacyNote": "Deine Notizen werden verschlüsselt gespeichert.",
+    "counter": "{count} / {max}",
+    "pickDay": "Tag auswählen",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "saved": "Notiz gespeichert.",
+    "delete": "Löschen",
+    "deleteConfirmTitle": "Diese Notiz löschen?",
+    "deleteConfirmDescription": "Diese Aktion ist endgültig.",
+    "deleted": "Notiz gelöscht.",
+    "cancel": "Abbrechen",
+    "add": "Notiz hinzufügen",
+    "edit": "Notiz bearbeiten",
+    "newNote": "Neue Notiz",
+    "viewAll": "Alle Notizen ansehen",
+    "count": "{count, plural, =0 {Keine Notiz} one {# Notiz} other {# Notizen}}",
+    "more": "+{count}",
+    "emptyTitle": "Keine Notiz",
+    "emptyDescription": "Kein Tag ausgewählt.",
+    "emptyPeriod": "Keine Notiz in diesem Zeitraum.",
+    "loading": "Notizen werden geladen",
+    "loadError": "Die Notizen konnten nicht geladen werden.",
+    "saveError": "Die Notiz konnte nicht gespeichert werden.",
+    "invalidBody": "Schreibe etwas, bevor du speicherst.",
+    "limitReached": "Du hast das Notizlimit erreicht. Versuche es später erneut.",
+    "unavailable": "Notizen sind derzeit nicht verfügbar.",
+    "unreadable": "Diese Notiz konnte nicht entschlüsselt werden."
   }
 }

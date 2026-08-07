@@ -107,6 +107,11 @@
     "sleepSourcesDescription": "More than one device? Lumida identifies each data source and keeps them apart.",
     "privacyTitle": "Built with privacy in mind.",
     "privacyDescription": "Your health data is yours. Lumida is designed around that principle: we don’t store it.",
+    "cliTitle": "Lumida CLI — The nerdiest way.",
+    "cliDescription": "Access your data directly from your terminal.",
+    "cliTerminalLabel": "Lumida CLI demonstration terminal",
+    "cliCommandsLabel": "Try a command:",
+    "cliRunCommand": "Run {command} in the demonstration terminal",
     "footerTagline": "View health data from Google Health, Fitbit, or other compatible devices directly in your browser.",
     "footerLegalTitle": "Legal",
     "footerLegalNotice": "Legal notice",
@@ -575,6 +580,7 @@
     "health": "Health",
     "weight": "Weight",
     "nutrition": "Nutrition",
+    "notes": "Notes",
     "toggleSidebar": "Toggle sidebar",
     "mobileNavTitle": "Navigation",
     "mobileNavDescription": "Main navigation menu.",
@@ -592,6 +598,7 @@
     "help": "Help",
     "feedback": "Feedback",
     "changelog": "What's new",
+    "guide": "Guide",
     "administration": "Administration",
     "signOut": "Sign out"
   },
@@ -749,6 +756,31 @@
     "notConnectedDescription": "Google Health is not connected to Lumida.",
     "backToDashboard": "Back to dashboard"
   },
+  "GuidePage": {
+    "title": "Guide",
+    "description": "How Lumida displays your data.",
+    "sections": {
+      "sleep": "Sleep and sleep stages"
+    },
+    "items": {
+      "sleepNightNaming": {
+        "title": "Night naming",
+        "description": "A night is named after the day you wake up and covers the previous evening through that morning. Falling asleep at 00:35 therefore still belongs to the night before, and is labelled exactly like a 23:10 bedtime: the label never changes shape depending on which side of midnight you went to bed."
+      },
+      "sleepNaps": {
+        "title": "Naps",
+        "description": "Naps stay out of your nights, out of the \"Last night\" figure and out of the stage timeline. Google Health flags most of them; for sources that do not, Lumida counts a daytime sleep as a nap as soon as a longer sleep exists on the same day, so a night worker's main sleep remains a night."
+      },
+      "sleepStages": {
+        "title": "Stage detail",
+        "description": "How much detail you get depends on your device. Some sources separate deep, light and REM sleep; others only distinguish asleep, restless and awake. When a night carries no stage detail at all, the timeline says so instead of inventing one."
+      },
+      "sleepSources": {
+        "title": "Sources",
+        "description": "Several apps or devices can record the same night. Lumida keeps them side by side rather than merging them, and the Sources button on the Sleep page lets you choose which ones to display."
+      }
+    }
+  },
   "HelpPage": {
     "title": "Help & information",
     "description": "Learn how Lumida works and how your health data is handled.",
@@ -771,6 +803,21 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "dailyNotes": {
+        "category": "Notes",
+        "title": "Daily notes",
+        "description": "Write one note per day. It appears in condensed form when you hover a health chart, putting a measurement back in the context of your day. The Notes page gathers and manages them all. Notes are stored encrypted."
+      },
+      "activityHeatmap": {
+        "category": "Activity",
+        "title": "Activity heatmap view",
+        "description": "Added a session heatmap to the dashboard."
+      },
+      "healthCardHeaders": {
+        "category": "Interface",
+        "title": "Consistent card headers",
+        "description": "Health cards now follow one hierarchy: the block's name in small caps, then its value. On the Sleep page, the stage timeline shows the night's interval beside the selector instead of repeating it under the title."
+      },
       "serverMigration": {
         "category": "Application",
         "title": "Server migration",
@@ -1050,6 +1097,19 @@
       "sleepDuration": "Sleep duration"
     }
   },
+  "ActivityHeatmap": {
+    "title": "Activity calendar",
+    "totalRolling": "{count, plural, =0 {No sessions over the last year} one {# session over the last year} other {# sessions over the last year}}",
+    "totalYear": "{count, plural, =0 {No sessions in {year}} one {# session in {year}} other {# sessions in {year}}}",
+    "description": "Each square represents one day. Intensity reflects the number of recorded sessions.",
+    "sessions": "Sessions",
+    "yearSelector": "Select a year",
+    "dayCount": "{count, plural, =0 {No sessions} one {# session} other {# sessions}}",
+    "less": "Less",
+    "more": "More",
+    "error": "Unable to load the activity calendar.",
+    "partial": "Only some sessions are shown for this period."
+  },
   "OxygenSaturationCard": {
     "title": "SpO₂ · Blood oxygen",
     "percentValue": "{value}%",
@@ -1079,7 +1139,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Nightly temperature vs baseline",
     "nightlyTemperature": "Nightly temperature",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "temperatureUnitHelpLabel": "About the temperature unit",
     "temperatureUnitHelp": "You can change the temperature unit in Settings.",
     "temperatureUnitHelpLink": "Open Settings",
@@ -1100,7 +1160,7 @@
     "bpmValue": "{value} bpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "periodAverage": "{value} average over the period",
     "withinUsualRange": "Within your usual range ({minimum}–{maximum})",
     "belowUsualRange": "Below your usual range ({minimum}–{maximum})",
@@ -1421,6 +1481,8 @@
     "stagesTitle": "Sleep stages",
     "stagesDescription": "Timeline of the selected night",
     "nightRange": "Night of {range}",
+    "asleepTotal": "<value>{duration}</value> asleep",
+    "nightWindow": "{start}–{end}",
     "sleepWindow": "{start}–{end} · {duration} asleep",
     "selectNight": "Select a night",
     "nightOption": "{date} · {start}–{end}",
@@ -1498,5 +1560,41 @@
       "energy": "Energy intake",
       "hydration": "Hydration"
     }
+  },
+  "DailyNotes": {
+    "pageTitle": "Notes",
+    "cardTitle": "Notes",
+    "createTitle": "New note",
+    "editTitle": "Edit note",
+    "pageDescription": "Overview and management of your daily notes.",
+    "bodyLabel": "Note",
+    "bodyPlaceholder": "How did the day go?",
+    "privacyNote": "Your notes are stored encrypted.",
+    "counter": "{count} / {max}",
+    "pickDay": "Choose a day",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Note saved.",
+    "delete": "Delete",
+    "deleteConfirmTitle": "Delete this note?",
+    "deleteConfirmDescription": "This cannot be undone.",
+    "deleted": "Note deleted.",
+    "cancel": "Cancel",
+    "add": "Add a note",
+    "edit": "Edit the note",
+    "newNote": "New note",
+    "viewAll": "View all notes",
+    "count": "{count, plural, =0 {No note} one {# note} other {# notes}}",
+    "more": "+{count}",
+    "emptyTitle": "No note",
+    "emptyDescription": "No day selected.",
+    "emptyPeriod": "No note for this period.",
+    "loading": "Loading notes",
+    "loadError": "The notes could not be loaded.",
+    "saveError": "The note could not be saved.",
+    "invalidBody": "Write something before saving.",
+    "limitReached": "You have reached the note limit. Try again later.",
+    "unavailable": "Notes are unavailable right now.",
+    "unreadable": "This note could not be decrypted."
   }
 }

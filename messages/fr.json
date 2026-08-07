@@ -107,6 +107,11 @@
     "sleepSourcesDescription": "Vous avez plusieurs appareils ? Lumida sait identifier et séparer les différentes sources de données.",
     "privacyTitle": "Conçu dans le respect de votre vie privée.",
     "privacyDescription": "Vos données de santé vous appartiennent. Lumida est conçue autour de ce principe : nous ne les stockons pas.",
+    "cliTitle": "Lumida CLI — La méthode la plus geek.",
+    "cliDescription": "Accédez à vos données directement depuis votre terminal.",
+    "cliTerminalLabel": "Terminal de démonstration de Lumida CLI",
+    "cliCommandsLabel": "Essayez une commande :",
+    "cliRunCommand": "Exécuter {command} dans le terminal de démonstration",
     "footerTagline": "Consultez depuis votre navigateur les données de santé issues de Google Health, Fitbit ou d’autres appareils compatibles.",
     "footerLegalTitle": "Informations légales",
     "footerLegalNotice": "Mentions légales",
@@ -575,6 +580,7 @@
     "health": "Santé",
     "weight": "Poids",
     "nutrition": "Nutrition",
+    "notes": "Notes",
     "toggleSidebar": "Afficher ou masquer la barre latérale",
     "mobileNavTitle": "Navigation",
     "mobileNavDescription": "Menu de navigation principal.",
@@ -592,6 +598,7 @@
     "help": "Aide",
     "feedback": "Donner mon avis",
     "changelog": "Nouveautés",
+    "guide": "Guide",
     "administration": "Administration",
     "signOut": "Se déconnecter"
   },
@@ -749,6 +756,31 @@
     "notConnectedDescription": "Google Health n'est pas connecté à Lumida.",
     "backToDashboard": "Retour au tableau de bord"
   },
+  "GuidePage": {
+    "title": "Guide",
+    "description": "Comment Lumida affiche vos données.",
+    "sections": {
+      "sleep": "Sommeil et phases de sommeil"
+    },
+    "items": {
+      "sleepNightNaming": {
+        "title": "Nommage des nuits",
+        "description": "Une nuit porte le nom de votre jour de réveil et couvre la veille au soir jusqu'à ce matin-là. Un endormissement à 00:35 appartient donc encore à la nuit précédente, et s'affiche exactement comme un coucher à 23:10 : l'étiquette ne change pas de forme selon que vous vous couchez avant ou après minuit."
+      },
+      "sleepNaps": {
+        "title": "Siestes",
+        "description": "Les siestes restent hors de vos nuits, hors du chiffre « Dernière nuit » et hors de la chronologie des phases. Google Health en signale la plupart ; pour les sources qui ne le font pas, Lumida compte comme sieste un sommeil diurne dès qu'un sommeil plus long existe le même jour, ce qui laisse le sommeil principal d'un travailleur de nuit à sa place."
+      },
+      "sleepStages": {
+        "title": "Détail des phases",
+        "description": "Le niveau de détail dépend de votre appareil. Certaines sources distinguent sommeil profond, léger et paradoxal ; d'autres se limitent à endormi, agité et éveillé. Quand une nuit ne porte aucun détail de phases, la chronologie le dit plutôt que d'en inventer un."
+      },
+      "sleepSources": {
+        "title": "Sources",
+        "description": "Plusieurs applications ou appareils peuvent enregistrer la même nuit. Lumida les garde côte à côte au lieu de les fusionner, et le bouton Sources de la page Sommeil vous laisse choisir ceux à afficher."
+      }
+    }
+  },
   "HelpPage": {
     "title": "Aide et informations",
     "description": "Découvrez le fonctionnement de Lumida et la façon dont vos données sont traitées.",
@@ -771,6 +803,21 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "dailyNotes": {
+        "category": "Notes",
+        "title": "Arrivée des notes journalières",
+        "description": "Écrivez une note par jour. Elle apparaît en condensé au survol des graphiques de santé, pour remettre une mesure en perspective avec votre journée. La page Notes rassemble et gère l’ensemble. Les notes sont stockées chiffrées."
+      },
+      "activityHeatmap": {
+        "category": "Activité",
+        "title": "Vue heatmap des activités",
+        "description": "Ajout d’une vue heatmap des séances sur le tableau de bord."
+      },
+      "healthCardHeaders": {
+        "category": "Interface",
+        "title": "En-têtes de cartes uniformisés",
+        "description": "Les cartes de santé suivent la même hiérarchie : le nom du bloc en petites capitales, puis sa valeur mise en avant. Sur la page Sommeil, la chronologie des phases affiche l’horaire de la nuit à côté du sélecteur au lieu de le répéter sous le titre."
+      },
       "serverMigration": {
         "category": "Application",
         "title": "Migration de serveur",
@@ -1050,6 +1097,19 @@
       "sleepDuration": "Durée de sommeil"
     }
   },
+  "ActivityHeatmap": {
+    "title": "Calendrier d’activité",
+    "totalRolling": "{count, plural, =0 {Aucune séance au cours des 12 derniers mois} one {# séance au cours des 12 derniers mois} other {# séances au cours des 12 derniers mois}}",
+    "totalYear": "{count, plural, =0 {Aucune séance en {year}} one {# séance en {year}} other {# séances en {year}}}",
+    "description": "Chaque case représente un jour. L’intensité correspond au nombre de séances enregistrées.",
+    "sessions": "Séances",
+    "yearSelector": "Sélectionner une année",
+    "dayCount": "{count, plural, =0 {Aucune séance} one {# séance} other {# séances}}",
+    "less": "Moins",
+    "more": "Plus",
+    "error": "Impossible de charger le calendrier d’activité.",
+    "partial": "Seule une partie des séances est affichée pour cette période."
+  },
   "OxygenSaturationCard": {
     "title": "SpO₂ · Oxygène dans le sang",
     "percentValue": "{value} %",
@@ -1079,7 +1139,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Température nocturne vs référence",
     "nightlyTemperature": "Température nocturne",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "temperatureUnitHelpLabel": "À propos de l'unité de température",
     "temperatureUnitHelp": "Vous pouvez modifier l'unité de température dans les Réglages.",
     "temperatureUnitHelpLink": "Ouvrir les Réglages",
@@ -1100,7 +1160,7 @@
     "bpmValue": "{value} bpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value} {unit}",
+    "temperatureValue": "{value}\u00a0{unit}",
     "periodAverage": "{value} en moyenne sur la période",
     "withinUsualRange": "Dans votre plage habituelle ({minimum} à {maximum})",
     "belowUsualRange": "Sous votre plage habituelle ({minimum} à {maximum})",
@@ -1421,6 +1481,8 @@
     "stagesTitle": "Phases de sommeil",
     "stagesDescription": "Chronologie de la nuit sélectionnée",
     "nightRange": "Nuit du {range}",
+    "asleepTotal": "<value>{duration}</value> de sommeil",
+    "nightWindow": "{start}–{end}",
     "sleepWindow": "{start}–{end} · {duration} de sommeil",
     "selectNight": "Sélectionner une nuit",
     "nightOption": "{date} · {start}–{end}",
@@ -1498,5 +1560,41 @@
       "energy": "Apport énergétique",
       "hydration": "Hydratation"
     }
+  },
+  "DailyNotes": {
+    "pageTitle": "Notes",
+    "cardTitle": "Notes",
+    "createTitle": "Nouvelle note",
+    "editTitle": "Modifier la note",
+    "pageDescription": "Vue d’ensemble et gestion de vos notes journalières.",
+    "bodyLabel": "Note",
+    "bodyPlaceholder": "Comment s’est passée la journée ?",
+    "privacyNote": "Vos notes sont stockées chiffrées.",
+    "counter": "{count} / {max}",
+    "pickDay": "Choisir un jour",
+    "save": "Enregistrer",
+    "saving": "Enregistrement…",
+    "saved": "Note enregistrée.",
+    "delete": "Supprimer",
+    "deleteConfirmTitle": "Supprimer cette note ?",
+    "deleteConfirmDescription": "Cette action est définitive.",
+    "deleted": "Note supprimée.",
+    "cancel": "Annuler",
+    "add": "Ajouter une note",
+    "edit": "Modifier la note",
+    "newNote": "Nouvelle note",
+    "viewAll": "Voir toutes les notes",
+    "count": "{count, plural, =0 {Aucune note} one {# note} other {# notes}}",
+    "more": "+{count}",
+    "emptyTitle": "Aucune note",
+    "emptyDescription": "Aucun jour sélectionné.",
+    "emptyPeriod": "Aucune note sur cette période.",
+    "loading": "Chargement des notes",
+    "loadError": "Les notes n’ont pas pu être chargées.",
+    "saveError": "La note n’a pas pu être enregistrée.",
+    "invalidBody": "Écrivez quelque chose avant d’enregistrer.",
+    "limitReached": "Vous avez atteint la limite de notes. Réessayez plus tard.",
+    "unavailable": "Les notes sont indisponibles pour le moment.",
+    "unreadable": "Cette note n’a pas pu être déchiffrée."
   }
 }
