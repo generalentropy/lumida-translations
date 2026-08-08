@@ -763,7 +763,8 @@
     "title": "Guide",
     "description": "How Lumida displays your data.",
     "sections": {
-      "sleep": "Sleep and sleep stages"
+      "sleep": "Sleep and sleep stages",
+      "health": "Heart rate and blood oxygen"
     },
     "items": {
       "sleepNightNaming": {
@@ -781,6 +782,10 @@
       "sleepSources": {
         "title": "Sources",
         "description": "Several apps or devices can record the same night. Lumida keeps them side by side rather than merging them, and the Sources button on the Sleep page lets you choose which ones to display."
+      },
+      "healthOxygenSaturation": {
+        "title": "Blood oxygen (SpO₂)",
+        "description": "Your device measures blood oxygen during sleep, so the chart shows one point per night rather than a continuous reading. The two dashed lines are the confidence interval reported around that average, not the lowest and highest values measured. When several apps or devices report the same night, Lumida draws a single point for it: the most precise measurement, the one with the narrowest interval. The Sources button on the Health page lets you choose which sources count."
       }
     }
   },
@@ -1125,6 +1130,11 @@
     "sleepAverage": "Average during sleep",
     "periodAverage": "{value}% average over {count, plural, one {# night} other {# nights}}",
     "noData": "No SpO₂ data for this period.",
+    "sourcesButton": "Sources",
+    "sourcesTitle": "Data sources",
+    "sourcesDescription": "Choose which sources to display. With several sources, each night keeps the most precise measurement.",
+    "unknownSource": "Unknown source",
+    "allSourcesHidden": "All sources are hidden. Enable at least one to see your blood oxygen.",
     "series": {
       "lowerBound": "Lower confidence bound",
       "average": "Sleep average",

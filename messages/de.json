@@ -763,7 +763,8 @@
     "title": "Leitfaden",
     "description": "Wie Lumida deine Daten darstellt.",
     "sections": {
-      "sleep": "Schlaf und Schlafphasen"
+      "sleep": "Schlaf und Schlafphasen",
+      "health": "Herzfrequenz und Sauerstoff im Blut"
     },
     "items": {
       "sleepNightNaming": {
@@ -781,6 +782,10 @@
       "sleepSources": {
         "title": "Quellen",
         "description": "Mehrere Apps oder Geräte können dieselbe Nacht aufzeichnen. Lumida stellt sie nebeneinander, statt sie zusammenzuführen, und über die Schaltfläche „Quellen“ auf der Schlafseite wählst du aus, welche angezeigt werden."
+      },
+      "healthOxygenSaturation": {
+        "title": "Sauerstoff im Blut (SpO₂)",
+        "description": "Dein Gerät misst den Sauerstoff im Blut während des Schlafs, deshalb zeigt das Diagramm einen Punkt pro Nacht und keine fortlaufende Messung. Die beiden gestrichelten Linien sind das Konfidenzintervall zu diesem Durchschnitt, nicht der niedrigste und der höchste gemessene Wert. Wenn mehrere Apps oder Geräte dieselbe Nacht melden, zeichnet Lumida nur einen Punkt: die genaueste Messung, die mit dem schmalsten Intervall. Über die Schaltfläche „Quellen“ auf der Seite Gesundheit wählst du aus, welche Quellen zählen."
       }
     }
   },
@@ -1125,6 +1130,11 @@
     "sleepAverage": "Durchschnitt während des Schlafs",
     "periodAverage": "{value} % im Durchschnitt über {count, plural, one {# Nacht} other {# Nächte}}",
     "noData": "Keine SpO₂-Daten in diesem Zeitraum.",
+    "sourcesButton": "Quellen",
+    "sourcesTitle": "Datenquellen",
+    "sourcesDescription": "Wähle die anzuzeigenden Quellen. Bei mehreren Quellen behält jede Nacht die genaueste Messung.",
+    "unknownSource": "Unbekannte Quelle",
+    "allSourcesHidden": "Alle Quellen sind ausgeblendet. Aktiviere mindestens eine, um deinen Sauerstoff im Blut zu sehen.",
     "series": {
       "lowerBound": "Untere Konfidenzgrenze",
       "average": "Schlafdurchschnitt",

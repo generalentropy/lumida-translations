@@ -763,7 +763,8 @@
     "title": "Guide",
     "description": "Comment Lumida affiche vos données.",
     "sections": {
-      "sleep": "Sommeil et phases de sommeil"
+      "sleep": "Sommeil et phases de sommeil",
+      "health": "Fréquence cardiaque et oxygène dans le sang"
     },
     "items": {
       "sleepNightNaming": {
@@ -781,6 +782,10 @@
       "sleepSources": {
         "title": "Sources",
         "description": "Plusieurs applications ou appareils peuvent enregistrer la même nuit. Lumida les garde côte à côte au lieu de les fusionner, et le bouton Sources de la page Sommeil vous laisse choisir ceux à afficher."
+      },
+      "healthOxygenSaturation": {
+        "title": "Oxygène dans le sang (SpO₂)",
+        "description": "Votre appareil mesure l'oxygène dans le sang pendant le sommeil : le graphique montre donc un point par nuit, et non une mesure continue. Les deux lignes en pointillés sont l'intervalle de confiance associé à cette moyenne, pas la plus basse et la plus haute des valeurs mesurées. Quand plusieurs applications ou appareils rapportent la même nuit, Lumida n'en trace qu'un point : celui de la mesure la plus précise, à l'intervalle le plus étroit. Le bouton Sources de la page Santé vous laisse choisir les sources à prendre en compte."
       }
     }
   },
@@ -1125,6 +1130,11 @@
     "sleepAverage": "Moyenne pendant le sommeil",
     "periodAverage": "{value} % en moyenne sur {count, plural, one {# nuit} other {# nuits}}",
     "noData": "Aucune donnée de SpO₂ sur cette période.",
+    "sourcesButton": "Sources",
+    "sourcesTitle": "Sources de données",
+    "sourcesDescription": "Choisissez les sources à afficher. En cas de sources multiples, chaque nuit garde la mesure la plus précise.",
+    "unknownSource": "Source inconnue",
+    "allSourcesHidden": "Toutes les sources sont masquées. Activez-en au moins une pour voir votre oxygène dans le sang.",
     "series": {
       "lowerBound": "Borne de confiance basse",
       "average": "Moyenne du sommeil",

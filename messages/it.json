@@ -763,7 +763,8 @@
     "title": "Guida",
     "description": "Come Lumida mostra i tuoi dati.",
     "sections": {
-      "sleep": "Sonno e fasi del sonno"
+      "sleep": "Sonno e fasi del sonno",
+      "health": "Frequenza cardiaca e ossigeno nel sangue"
     },
     "items": {
       "sleepNightNaming": {
@@ -781,6 +782,10 @@
       "sleepSources": {
         "title": "Fonti",
         "description": "Più app o dispositivi possono registrare la stessa notte. Lumida li mantiene affiancati invece di unirli, e il pulsante Fonti nella pagina Sonno ti permette di scegliere quali mostrare."
+      },
+      "healthOxygenSaturation": {
+        "title": "Ossigeno nel sangue (SpO₂)",
+        "description": "Il tuo dispositivo misura l'ossigeno nel sangue durante il sonno, quindi il grafico mostra un punto per notte e non una misurazione continua. Le due linee tratteggiate sono l'intervallo di confidenza associato a quella media, non il valore più basso e quello più alto misurati. Quando più app o dispositivi riportano la stessa notte, Lumida disegna un solo punto: quello della misurazione più precisa, con l'intervallo più stretto. Il pulsante Sorgenti nella pagina Salute ti permette di scegliere quali sorgenti contano."
       }
     }
   },
@@ -1125,6 +1130,11 @@
     "sleepAverage": "Media durante il sonno",
     "periodAverage": "{value}% in media su {count, plural, one {# notte} other {# notti}}",
     "noData": "Nessun dato SpO₂ per questo periodo.",
+    "sourcesButton": "Sorgenti",
+    "sourcesTitle": "Sorgenti dati",
+    "sourcesDescription": "Scegli quali sorgenti mostrare. Con più sorgenti, ogni notte conserva la misurazione più precisa.",
+    "unknownSource": "Sorgente sconosciuta",
+    "allSourcesHidden": "Tutte le sorgenti sono nascoste. Attivane almeno una per vedere il tuo ossigeno nel sangue.",
     "series": {
       "lowerBound": "Limite inferiore di confidenza",
       "average": "Media nel sonno",
