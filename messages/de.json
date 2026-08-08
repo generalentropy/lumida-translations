@@ -1130,6 +1130,7 @@
     "sleepAverage": "Durchschnitt während des Schlafs",
     "periodAverage": "{value} % im Durchschnitt über {count, plural, one {# Nacht} other {# Nächte}}",
     "noData": "Keine SpO₂-Daten in diesem Zeitraum.",
+    "boundsToggle": "Grenzen",
     "sourcesButton": "Quellen",
     "sourcesTitle": "Datenquellen",
     "sourcesDescription": "Wähle die anzuzeigenden Quellen. Bei mehreren Quellen behält jede Nacht die genaueste Messung.",
@@ -1528,6 +1529,7 @@
   "HeartPage": {
     "title": "Gesundheit",
     "heartRateTitle": "Herzfrequenz",
+    "boundsToggle": "Min-Max",
     "bpmValue": "{value} bpm",
     "heartRateRange": "{minimum}–{maximum} bpm",
     "periodAverage": "{value} bpm im Durchschnitt des Zeitraums",

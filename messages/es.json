@@ -1130,6 +1130,7 @@
     "sleepAverage": "Media durante el sueño",
     "periodAverage": "{value} % de media durante {count, plural, one {# noche} other {# noches}}",
     "noData": "No hay datos de SpO₂ en este período.",
+    "boundsToggle": "Límites",
     "sourcesButton": "Fuentes",
     "sourcesTitle": "Fuentes de datos",
     "sourcesDescription": "Elige qué fuentes mostrar. Con varias fuentes, cada noche conserva la medición más precisa.",
@@ -1528,6 +1529,7 @@
   "HeartPage": {
     "title": "Salud",
     "heartRateTitle": "Frecuencia cardíaca",
+    "boundsToggle": "Mín-máx",
     "bpmValue": "{value} lpm",
     "heartRateRange": "{minimum}–{maximum} lpm",
     "periodAverage": "{value} lpm de media en el período",
