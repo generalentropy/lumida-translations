@@ -803,6 +803,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "heartRateDayResolution": {
+        "category": "Salud",
+        "title": "Frecuencia cardíaca más precisa en la página Salud",
+        "description": "En la vista Día, la página Salud traza ahora un punto de frecuencia cardíaca cada 5 minutos en lugar de uno por hora. Los picos de esfuerzo y los mínimos nocturnos aparecen donde una media horaria los aplanaba. La tarjeta del panel mantiene su lectura horaria, acorde con su anchura. Gracias a @GoombaAdventurer por la sugerencia."
+      },
       "dailyNotes": {
         "category": "Notas",
         "title": "Notas diarias",

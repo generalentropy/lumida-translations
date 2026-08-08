@@ -803,6 +803,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "heartRateDayResolution": {
+        "category": "Gesundheit",
+        "title": "Feinere Herzfrequenz auf der Seite Gesundheit",
+        "description": "In der Tagesansicht zeichnet die Seite Gesundheit jetzt alle 5 Minuten einen Herzfrequenzpunkt statt einen pro Stunde. Belastungsspitzen und nächtliche Tiefpunkte werden dort sichtbar, wo ein Stundenmittel sie geglättet hat. Die Karte im Dashboard behält ihre stündliche Auflösung, passend zu ihrer Breite. Danke an @GoombaAdventurer für den Vorschlag."
+      },
       "dailyNotes": {
         "category": "Notizen",
         "title": "Tägliche Notizen",

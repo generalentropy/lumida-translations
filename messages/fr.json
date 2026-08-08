@@ -803,6 +803,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "heartRateDayResolution": {
+        "category": "Santé",
+        "title": "Fréquence cardiaque plus fine sur la page Santé",
+        "description": "En vue Jour, la page Santé trace désormais un point de fréquence cardiaque toutes les 5 minutes au lieu d’un par heure. Les pics d’effort et les creux nocturnes apparaissent là où une moyenne horaire les aplatissait. La carte du tableau de bord garde sa lecture horaire, adaptée à sa largeur. Merci à @GoombaAdventurer pour la suggestion."
+      },
       "dailyNotes": {
         "category": "Notes",
         "title": "Arrivée des notes journalières",

@@ -803,6 +803,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "heartRateDayResolution": {
+        "category": "Health",
+        "title": "Finer heart rate on the Health page",
+        "description": "In Day view, the Health page now plots one heart rate point every 5 minutes instead of one per hour. Effort peaks and night-time lows appear where an hourly average flattened them. The dashboard card keeps its hourly reading, which suits its width. Thanks to @GoombaAdventurer for the suggestion."
+      },
       "dailyNotes": {
         "category": "Notes",
         "title": "Daily notes",
