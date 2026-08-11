@@ -811,6 +811,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "bugFixes": {
+        "category": "Fix",
+        "title": "Bug fixes",
+        "description": "Various fixes to how health data is displayed."
+      },
       "heartRateDayResolution": {
         "category": "Health",
         "title": "Finer heart rate on the Health page",

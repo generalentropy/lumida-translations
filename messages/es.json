@@ -811,6 +811,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "bugFixes": {
+        "category": "Corrección",
+        "title": "Corrección de errores",
+        "description": "Varias correcciones en la visualización de los datos de salud."
+      },
       "heartRateDayResolution": {
         "category": "Salud",
         "title": "Frecuencia cardíaca más precisa en la página Salud",

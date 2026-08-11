@@ -811,6 +811,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "bugFixes": {
+        "category": "Correctif",
+        "title": "Correction de bug",
+        "description": "Divers correctifs sur l’affichage des données de santé."
+      },
       "heartRateDayResolution": {
         "category": "Santé",
         "title": "Fréquence cardiaque plus fine sur la page Santé",
