@@ -785,7 +785,7 @@
       },
       "healthOxygenSaturation": {
         "title": "Blood oxygen (SpO₂)",
-        "description": "Your device measures blood oxygen during sleep, so the chart shows one point per night rather than a continuous reading. The two dashed lines are the confidence interval reported around that average, not the lowest and highest values measured. When several apps or devices report the same night, Lumida draws a single point for it: the most precise measurement, the one with the narrowest interval. The Sources button on the Health page lets you choose which sources count."
+        "description": "In Day view, Lumida plots the timestamped SpO₂ samples available during the main sleep. Google Health does not guarantee a fixed sampling interval, so gaps remain visible and are never interpolated. The other views keep one summary point per night; the two dashed lines are the confidence interval around that sleep average, not the lowest and highest values measured. The Sources button on the Health page chooses which sources count: Day view uses one enabled source without merging sources, while longer views keep the most precise summary for each night."
       }
     }
   },
@@ -811,6 +811,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "spo2DaySamples": {
+        "category": "Health",
+        "title": "Timestamped SpO₂ detail in Day view",
+        "description": "When available, the Health page now plots timestamped SpO₂ samples over the main sleep. Their real cadence is preserved: Google Health does not guarantee one measurement per minute, and Lumida never interpolates gaps. One enabled source is shown at a time. Without samples, and in longer views, the nightly summary remains in place."
+      },
       "bugFixes": {
         "category": "Fix",
         "title": "Bug fixes",
@@ -1138,13 +1143,15 @@
     "boundsToggle": "Bounds",
     "sourcesButton": "Sources",
     "sourcesTitle": "Data sources",
-    "sourcesDescription": "Choose which sources to display. With several sources, each night keeps the most precise measurement.",
+    "sourcesDescription": "Choose which sources to display. Day view plots timestamped samples from one enabled source without merging sources. Longer views keep the most precise summary for each night.",
     "unknownSource": "Unknown source",
     "allSourcesHidden": "All sources are hidden. Enable at least one to see your blood oxygen.",
+    "intradaySamples": "{count, plural, one {# timestamped sample} other {# timestamped samples}}",
     "series": {
       "lowerBound": "Lower confidence bound",
       "average": "Sleep average",
-      "upperBound": "Upper confidence bound"
+      "upperBound": "Upper confidence bound",
+      "intraday": "Timestamped SpO₂"
     }
   },
   "RecoverySignalsCard": {

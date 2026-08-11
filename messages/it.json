@@ -785,7 +785,7 @@
       },
       "healthOxygenSaturation": {
         "title": "Ossigeno nel sangue (SpO₂)",
-        "description": "Il tuo dispositivo misura l'ossigeno nel sangue durante il sonno, quindi il grafico mostra un punto per notte e non una misurazione continua. Le due linee tratteggiate sono l'intervallo di confidenza associato a quella media, non il valore più basso e quello più alto misurati. Quando più app o dispositivi riportano la stessa notte, Lumida disegna un solo punto: quello della misurazione più precisa, con l'intervallo più stretto. Il pulsante Sorgenti nella pagina Salute ti permette di scegliere quali sorgenti contano."
+        "description": "Nella vista Giorno, Lumida traccia i campioni SpO₂ con orario disponibili durante il sonno principale. Google Health non garantisce un intervallo di campionamento fisso, quindi i vuoti restano visibili e non vengono mai interpolati. Le altre viste mantengono un punto di riepilogo per notte; le due linee tratteggiate sono l'intervallo di confidenza attorno a quella media del sonno, non i valori più basso e più alto misurati. Il pulsante Sorgenti nella pagina Salute sceglie quali sorgenti contano: la vista Giorno usa una sola sorgente attiva senza unirle, mentre le viste più lunghe mantengono il riepilogo più preciso di ogni notte."
       }
     }
   },
@@ -811,6 +811,11 @@
     "description": "Nuove funzionalità, miglioramenti e correzioni.",
     "npmLinkLabel": "Vedi su npm",
     "items": {
+      "spo2DaySamples": {
+        "category": "Salute",
+        "title": "Dettaglio SpO₂ con orario nella vista Giorno",
+        "description": "Quando sono disponibili, la pagina Salute ora traccia i campioni SpO₂ con orario durante il sonno principale. Viene mantenuta la loro frequenza reale: Google Health non garantisce una misurazione al minuto e Lumida non interpola mai i vuoti. Viene mostrata una sola sorgente attiva alla volta. Senza campioni, e nelle viste più lunghe, resta il riepilogo per notte."
+      },
       "bugFixes": {
         "category": "Correzione",
         "title": "Correzione di bug",
@@ -1138,13 +1143,15 @@
     "boundsToggle": "Limiti",
     "sourcesButton": "Sorgenti",
     "sourcesTitle": "Sorgenti dati",
-    "sourcesDescription": "Scegli quali sorgenti mostrare. Con più sorgenti, ogni notte conserva la misurazione più precisa.",
+    "sourcesDescription": "Scegli quali sorgenti mostrare. La vista Giorno traccia i campioni con orario di una sola sorgente attiva, senza unire le sorgenti. Le viste più lunghe mantengono il riepilogo più preciso di ogni notte.",
     "unknownSource": "Sorgente sconosciuta",
     "allSourcesHidden": "Tutte le sorgenti sono nascoste. Attivane almeno una per vedere il tuo ossigeno nel sangue.",
+    "intradaySamples": "{count, plural, one {# campione con orario} other {# campioni con orario}}",
     "series": {
       "lowerBound": "Limite inferiore di confidenza",
       "average": "Media nel sonno",
-      "upperBound": "Limite superiore di confidenza"
+      "upperBound": "Limite superiore di confidenza",
+      "intraday": "SpO₂ con orario"
     }
   },
   "RecoverySignalsCard": {

@@ -785,7 +785,7 @@
       },
       "healthOxygenSaturation": {
         "title": "Sauerstoff im Blut (SpO₂)",
-        "description": "Dein Gerät misst den Sauerstoff im Blut während des Schlafs, deshalb zeigt das Diagramm einen Punkt pro Nacht und keine fortlaufende Messung. Die beiden gestrichelten Linien sind das Konfidenzintervall zu diesem Durchschnitt, nicht der niedrigste und der höchste gemessene Wert. Wenn mehrere Apps oder Geräte dieselbe Nacht melden, zeichnet Lumida nur einen Punkt: die genaueste Messung, die mit dem schmalsten Intervall. Über die Schaltfläche „Quellen“ auf der Seite Gesundheit wählst du aus, welche Quellen zählen."
+        "description": "In der Tagesansicht zeichnet Lumida die verfügbaren SpO₂-Messwerte mit Zeitstempel während des Hauptschlafs. Google Health garantiert kein festes Abtastintervall; Lücken bleiben daher sichtbar und werden nie interpoliert. Die anderen Ansichten behalten einen Zusammenfassungspunkt pro Nacht; die beiden gestrichelten Linien sind das Konfidenzintervall um diesen Schlafdurchschnitt, nicht der niedrigste und der höchste gemessene Wert. Über die Schaltfläche „Quellen“ auf der Seite Gesundheit wählst du aus, welche Quellen zählen: Die Tagesansicht verwendet eine aktivierte Quelle, ohne Quellen zusammenzuführen, während längere Ansichten die genaueste Zusammenfassung jeder Nacht behalten."
       }
     }
   },
@@ -811,6 +811,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "spo2DaySamples": {
+        "category": "Gesundheit",
+        "title": "SpO₂-Details mit Zeitstempel in der Tagesansicht",
+        "description": "Wenn verfügbar, zeichnet die Gesundheitsseite jetzt SpO₂-Messwerte mit Zeitstempel während des Hauptschlafs. Ihre tatsächliche Frequenz bleibt erhalten: Google Health garantiert keine Messung pro Minute und Lumida interpoliert Lücken nie. Es wird jeweils nur eine aktivierte Quelle angezeigt. Ohne Messwerte und in längeren Ansichten bleibt die Zusammenfassung pro Nacht bestehen."
+      },
       "bugFixes": {
         "category": "Fehlerbehebung",
         "title": "Fehlerbehebungen",
@@ -1138,13 +1143,15 @@
     "boundsToggle": "Grenzen",
     "sourcesButton": "Quellen",
     "sourcesTitle": "Datenquellen",
-    "sourcesDescription": "Wähle die anzuzeigenden Quellen. Bei mehreren Quellen behält jede Nacht die genaueste Messung.",
+    "sourcesDescription": "Wähle die anzuzeigenden Quellen. Die Tagesansicht zeichnet Messwerte mit Zeitstempel aus einer aktivierten Quelle, ohne Quellen zusammenzuführen. Längere Ansichten behalten die genaueste Zusammenfassung jeder Nacht.",
     "unknownSource": "Unbekannte Quelle",
     "allSourcesHidden": "Alle Quellen sind ausgeblendet. Aktiviere mindestens eine, um deinen Sauerstoff im Blut zu sehen.",
+    "intradaySamples": "{count, plural, one {# Messwert mit Zeitstempel} other {# Messwerte mit Zeitstempel}}",
     "series": {
       "lowerBound": "Untere Konfidenzgrenze",
       "average": "Schlafdurchschnitt",
-      "upperBound": "Obere Konfidenzgrenze"
+      "upperBound": "Obere Konfidenzgrenze",
+      "intraday": "SpO₂ mit Zeitstempel"
     }
   },
   "RecoverySignalsCard": {

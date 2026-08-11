@@ -785,7 +785,7 @@
       },
       "healthOxygenSaturation": {
         "title": "Oxygène dans le sang (SpO₂)",
-        "description": "Votre appareil mesure l'oxygène dans le sang pendant le sommeil : le graphique montre donc un point par nuit, et non une mesure continue. Les deux lignes en pointillés sont l'intervalle de confiance associé à cette moyenne, pas la plus basse et la plus haute des valeurs mesurées. Quand plusieurs applications ou appareils rapportent la même nuit, Lumida n'en trace qu'un point : celui de la mesure la plus précise, à l'intervalle le plus étroit. Le bouton Sources de la page Santé vous laisse choisir les sources à prendre en compte."
+        "description": "En vue Jour, Lumida trace les échantillons SpO₂ horodatés disponibles pendant le sommeil principal. Google Health ne garantit pas un intervalle d'échantillonnage fixe : les trous restent donc visibles et ne sont jamais interpolés. Les autres vues gardent un point de synthèse par nuit ; les deux lignes en pointillés sont l'intervalle de confiance autour de cette moyenne du sommeil, pas la plus basse et la plus haute des valeurs mesurées. Le bouton Sources de la page Santé choisit les sources à prendre en compte : la vue Jour utilise une seule source activée sans les fusionner, tandis que les vues plus longues gardent la synthèse la plus précise de chaque nuit."
       }
     }
   },
@@ -811,6 +811,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "spo2DaySamples": {
+        "category": "Santé",
+        "title": "Détail SpO₂ horodaté en vue Jour",
+        "description": "Lorsqu’ils sont disponibles, la page Santé trace désormais les échantillons SpO₂ horodatés de la nuit principale. Leur cadence réelle est conservée : Google Health ne garantit pas une mesure par minute et Lumida n’interpole jamais les trous. Une seule source activée est affichée à la fois. Sans échantillons, et dans les vues plus longues, la synthèse par nuit reste en place."
+      },
       "bugFixes": {
         "category": "Correctif",
         "title": "Correction de bug",
@@ -1138,13 +1143,15 @@
     "boundsToggle": "Bornes",
     "sourcesButton": "Sources",
     "sourcesTitle": "Sources de données",
-    "sourcesDescription": "Choisissez les sources à afficher. En cas de sources multiples, chaque nuit garde la mesure la plus précise.",
+    "sourcesDescription": "Choisissez les sources à afficher. La vue Jour trace les échantillons horodatés d'une seule source activée, sans fusionner les sources. Les vues plus longues gardent la synthèse la plus précise de chaque nuit.",
     "unknownSource": "Source inconnue",
     "allSourcesHidden": "Toutes les sources sont masquées. Activez-en au moins une pour voir votre oxygène dans le sang.",
+    "intradaySamples": "{count, plural, one {# échantillon horodaté} other {# échantillons horodatés}}",
     "series": {
       "lowerBound": "Borne de confiance basse",
       "average": "Moyenne du sommeil",
-      "upperBound": "Borne de confiance haute"
+      "upperBound": "Borne de confiance haute",
+      "intraday": "SpO₂ horodatée"
     }
   },
   "RecoverySignalsCard": {

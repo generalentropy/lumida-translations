@@ -785,7 +785,7 @@
       },
       "healthOxygenSaturation": {
         "title": "Oxígeno en sangre (SpO₂)",
-        "description": "Tu dispositivo mide el oxígeno en sangre durante el sueño, así que el gráfico muestra un punto por noche y no una medición continua. Las dos líneas discontinuas son el intervalo de confianza asociado a esa media, no el valor más bajo y el más alto medidos. Cuando varias aplicaciones o dispositivos informan de la misma noche, Lumida dibuja un solo punto: el de la medición más precisa, la del intervalo más estrecho. El botón Fuentes de la página Salud te permite elegir qué fuentes cuentan."
+        "description": "En la vista Día, Lumida traza las muestras de SpO₂ con hora disponibles durante el sueño principal. Google Health no garantiza un intervalo de muestreo fijo, por lo que los huecos permanecen visibles y nunca se interpolan. Las demás vistas conservan un punto de resumen por noche; las dos líneas discontinuas son el intervalo de confianza alrededor de esa media del sueño, no los valores más bajo y más alto medidos. El botón Fuentes de la página Salud elige qué fuentes cuentan: la vista Día usa una sola fuente activa sin fusionarlas, mientras que las vistas más largas conservan el resumen más preciso de cada noche."
       }
     }
   },
@@ -811,6 +811,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "spo2DaySamples": {
+        "category": "Salud",
+        "title": "Detalle de SpO₂ con hora en la vista Día",
+        "description": "Cuando están disponibles, la página Salud ahora traza las muestras de SpO₂ con hora durante el sueño principal. Se conserva su frecuencia real: Google Health no garantiza una medición por minuto y Lumida nunca interpola los huecos. Se muestra una sola fuente activa cada vez. Sin muestras, y en las vistas más largas, se mantiene el resumen por noche."
+      },
       "bugFixes": {
         "category": "Corrección",
         "title": "Corrección de errores",
@@ -1138,13 +1143,15 @@
     "boundsToggle": "Límites",
     "sourcesButton": "Fuentes",
     "sourcesTitle": "Fuentes de datos",
-    "sourcesDescription": "Elige qué fuentes mostrar. Con varias fuentes, cada noche conserva la medición más precisa.",
+    "sourcesDescription": "Elige qué fuentes mostrar. La vista Día traza las muestras con hora de una sola fuente activa, sin fusionar fuentes. Las vistas más largas conservan el resumen más preciso de cada noche.",
     "unknownSource": "Fuente desconocida",
     "allSourcesHidden": "Todas las fuentes están ocultas. Activa al menos una para ver tu oxígeno en sangre.",
+    "intradaySamples": "{count, plural, one {# muestra con hora} other {# muestras con hora}}",
     "series": {
       "lowerBound": "Límite inferior de confianza",
       "average": "Media durante el sueño",
-      "upperBound": "Límite superior de confianza"
+      "upperBound": "Límite superior de confianza",
+      "intraday": "SpO₂ con hora"
     }
   },
   "RecoverySignalsCard": {
