@@ -811,6 +811,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "technicalMaintenance": {
+        "category": "Application",
+        "title": "Technical maintenance",
+        "description": "Lumida's dependencies have been updated."
+      },
       "spo2DaySamples": {
         "category": "Health",
         "title": "Timestamped SpO₂ detail in Day view",

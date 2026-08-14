@@ -811,6 +811,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "technicalMaintenance": {
+        "category": "Application",
+        "title": "Maintenance technique",
+        "description": "Les dépendances de Lumida ont été mises à jour."
+      },
       "spo2DaySamples": {
         "category": "Santé",
         "title": "Détail SpO₂ horodaté en vue Jour",
