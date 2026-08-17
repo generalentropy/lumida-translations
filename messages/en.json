@@ -238,10 +238,7 @@
       "intro": "The Lumida website and application are published by:",
       "nameLabel": "Publisher",
       "statusLabel": "Legal status",
-      "statusValue": "Sole trader",
-      "addressLabel": "Registered office",
-      "vatLabel": "VAT",
-      "vatValue": "VAT not applicable under Article 293 B of the French General Tax Code."
+      "statusValue": "Sole trader"
     },
     "publication": {
       "title": "Publication and development",
@@ -256,7 +253,7 @@
     },
     "service": {
       "title": "Nature of the service",
-      "description": "Lumida is a free beta service reserved for adults. It provides a browser interface for reviewing health and fitness information authorized by the user through Google Health."
+      "description": "Lumida is a free service reserved for adults. It provides a browser interface for reviewing health and fitness information authorized by the user through Google Health."
     },
     "property": {
       "title": "Intellectual property",
@@ -299,8 +296,8 @@
       "description": "Connecting Google Health is optional. You choose the Google account to connect and authorize the requested read-only permissions through Google OAuth. Lumida accesses only the categories needed for the features presented and you can disconnect the integration at any time. During the Google test phase, access remains subject to available capacity and prior approval."
     },
     "beta": {
-      "title": "Free beta and availability",
-      "description": "Lumida is provided free of charge during its beta phase. Features, compatibility and access conditions may change as the product develops. The service may be interrupted for maintenance, security, provider limitations or technical incidents, and no uninterrupted availability commitment is made."
+      "title": "Free service and availability",
+      "description": "Lumida is provided free of charge. Features, compatibility and access conditions may change as the product develops. The service may be interrupted for maintenance, security, provider limitations or technical incidents, and no uninterrupted availability commitment is made."
     },
     "acceptableUse": {
       "title": "Acceptable use",

@@ -238,10 +238,7 @@
       "intro": "Il sito e l’applicazione Lumida sono pubblicati da:",
       "nameLabel": "Editore",
       "statusLabel": "Forma giuridica",
-      "statusValue": "Ditta individuale",
-      "addressLabel": "Sede legale",
-      "vatLabel": "IVA",
-      "vatValue": "IVA non applicabile ai sensi dell’articolo 293 B del Codice generale delle imposte francese."
+      "statusValue": "Ditta individuale"
     },
     "publication": {
       "title": "Pubblicazione e sviluppo",
@@ -256,7 +253,7 @@
     },
     "service": {
       "title": "Natura del servizio",
-      "description": "Lumida è un servizio beta gratuito riservato ai maggiorenni. Offre un’interfaccia browser per consultare le informazioni su salute e fitness autorizzate dall’utente tramite Google Health."
+      "description": "Lumida è un servizio gratuito riservato ai maggiorenni. Offre un’interfaccia browser per consultare le informazioni su salute e fitness autorizzate dall’utente tramite Google Health."
     },
     "property": {
       "title": "Proprietà intellettuale",
@@ -299,8 +296,8 @@
       "description": "Il collegamento di Google Health è facoltativo. Scegli tu quale account Google collegare e concedi le autorizzazioni di sola lettura richieste tramite Google OAuth. Lumida accede solo alle categorie necessarie alle funzionalità presentate e puoi scollegare l’integrazione in qualsiasi momento. Durante la fase di test di Google, l’accesso resta soggetto alla capacità disponibile e a un’approvazione preventiva."
     },
     "beta": {
-      "title": "Beta gratuita e disponibilità",
-      "description": "Lumida è fornita gratuitamente durante la fase beta. Funzionalità, compatibilità e condizioni di accesso possono cambiare con l’evoluzione del prodotto. Il servizio può essere interrotto per manutenzione, sicurezza, limitazioni dei fornitori o incidenti tecnici, e non viene assunto alcun impegno di disponibilità continua."
+      "title": "Gratuità e disponibilità",
+      "description": "Lumida è fornita gratuitamente. Funzionalità, compatibilità e condizioni di accesso possono cambiare con l’evoluzione del prodotto. Il servizio può essere interrotto per manutenzione, sicurezza, limitazioni dei fornitori o incidenti tecnici, e non viene assunto alcun impegno di disponibilità continua."
     },
     "acceptableUse": {
       "title": "Uso consentito",

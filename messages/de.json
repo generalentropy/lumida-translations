@@ -238,10 +238,7 @@
       "intro": "Website und App Lumida werden angeboten von:",
       "nameLabel": "Anbieter",
       "statusLabel": "Rechtsform",
-      "statusValue": "Einzelunternehmer",
-      "addressLabel": "Geschäftsanschrift",
-      "vatLabel": "Umsatzsteuer",
-      "vatValue": "Umsatzsteuer nicht anwendbar, Artikel 293 B des französischen Steuergesetzbuchs (Code général des impôts)."
+      "statusValue": "Einzelunternehmer"
     },
     "publication": {
       "title": "Herausgabe und Entwicklung",
@@ -256,7 +253,7 @@
     },
     "service": {
       "title": "Art des Dienstes",
-      "description": "Lumida ist ein kostenloser Dienst in der Beta-Phase, der volljährigen Personen vorbehalten ist. Er bietet eine Weboberfläche, um die Gesundheits- und Aktivitätsdaten anzusehen, die Sie über Google Health freigeben."
+      "description": "Lumida ist ein kostenloser Dienst, der volljährigen Personen vorbehalten ist. Er bietet eine Weboberfläche, um die Gesundheits- und Aktivitätsdaten anzusehen, die Sie über Google Health freigeben."
     },
     "property": {
       "title": "Geistiges Eigentum",
@@ -299,8 +296,8 @@
       "description": "Die Verbindung mit Google Health ist optional. Sie wählen das zu verbindende Google-Konto und erteilen die angeforderten Lese-Berechtigungen über Google OAuth. Lumida greift nur auf die Kategorien zu, die für die dargestellten Funktionen erforderlich sind, und Sie können die Integration jederzeit trennen. Während der Google-Testphase bleibt der Zugang von verfügbaren Plätzen und einer vorherigen Freigabe abhängig."
     },
     "beta": {
-      "title": "Kostenlose Beta und Verfügbarkeit",
-      "description": "Lumida wird während der Beta-Phase kostenlos bereitgestellt. Funktionen, Kompatibilität und Zugangsbedingungen können sich mit dem Produkt weiterentwickeln. Der Dienst kann für Wartung, Sicherheit, aufgrund von Einschränkungen eines Dienstleisters oder wegen technischer Störungen unterbrochen werden, ohne dass eine ununterbrochene Verfügbarkeit zugesichert wird."
+      "title": "Kostenlose Nutzung und Verfügbarkeit",
+      "description": "Lumida wird kostenlos bereitgestellt. Funktionen, Kompatibilität und Zugangsbedingungen können sich mit dem Produkt weiterentwickeln. Der Dienst kann für Wartung, Sicherheit, aufgrund von Einschränkungen eines Dienstleisters oder wegen technischer Störungen unterbrochen werden, ohne dass eine ununterbrochene Verfügbarkeit zugesichert wird."
     },
     "acceptableUse": {
       "title": "Zulässige Nutzung",
