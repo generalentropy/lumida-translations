@@ -589,6 +589,7 @@
     "mobileNavDescription": "Hauptnavigationsmenü.",
     "resources": "Ressourcen",
     "discord": "Discord",
+    "support": "Lumida unterstützen",
     "appearance": "Erscheinungsbild",
     "themeSystem": "System",
     "themeLight": "Hell",
@@ -708,7 +709,8 @@
       "emailVerified": "E-Mail bestätigt",
       "googleHealthAccess": "Google-Health-Zugang",
       "lastActiveAt": "Letzte Aktivität",
-      "createdAt": "Registriert"
+      "createdAt": "Registriert",
+      "details": "Details"
     },
     "activity": {
       "never": "Nie"
@@ -732,7 +734,9 @@
       "approve": "Freigeben",
       "approving": "Wird freigegeben…",
       "approvalSuccess": "Google-Health-Zugang freigegeben und Bestätigungs-E-Mail gesendet.",
-      "approvalError": "Der Zugang konnte nicht freigegeben werden. Prüfe den E-Mail-Dienst und versuche es erneut."
+      "approvalError": "Der Zugang konnte nicht freigegeben werden. Prüfe den E-Mail-Dienst und versuche es erneut.",
+      "copyEmail": "Angefragte Adresse kopieren",
+      "copiedEmail": "Adresse kopiert."
     },
     "empty": "Keine Nutzer gefunden.",
     "pagination": {
@@ -742,6 +746,48 @@
       "next": "Weiter",
       "previousLabel": "Zur vorherigen Seite",
       "nextLabel": "Zur nächsten Seite"
+    },
+    "openDetails": "Details zu {name} ansehen"
+  },
+  "AdminUserDetailPage": {
+    "backToList": "Zurück zu den Nutzern",
+    "unknown": "Unbekannt",
+    "activity": {
+      "never": "Nie"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "user": "Nutzer"
+    },
+    "statuses": {
+      "active": "Aktiv",
+      "banned": "Gesperrt"
+    },
+    "emailVerification": {
+      "verified": "Bestätigt",
+      "unverified": "Nicht bestätigt"
+    },
+    "googleHealth": {
+      "title": "Google-Health-Testzugang",
+      "description": "Vorübergehender Teststatus, solange die OAuth-Anwendung in Google Cloud im Testmodus bleibt.",
+      "testEmail": "Angefragtes Konto",
+      "state": "Status",
+      "requestedAt": "Angefragt am",
+      "approvedAt": "Freigegeben am",
+      "noRequest": "Dieses Konto hat keinen Google-Health-Testzugang angefragt.",
+      "approvalHint": "Trage diese Adresse zuerst bei den Google-Cloud-Testnutzern ein. Die Freigabe sendet eine Bestätigungs-E-Mail an das Konto."
+    },
+    "account": {
+      "title": "Konto",
+      "description": "Von Lumida gespeicherte Identitäts- und Aktivitätsdaten.",
+      "userId": "Nutzer-ID",
+      "createdAt": "Registriert",
+      "lastActiveAt": "Letzte Aktivität",
+      "updatedAt": "Zuletzt aktualisiert",
+      "banReason": "Sperrgrund",
+      "noBanReason": "Kein Grund hinterlegt",
+      "banExpires": "Sperre endet",
+      "banNeverExpires": "Ohne Ablauf"
     }
   },
   "SettingsPage": {
@@ -805,6 +851,13 @@
     "contributeTitle": "Mitwirken",
     "contributeBody": "Hilf uns, die Übersetzungen von Lumida zu verbessern.",
     "contributeCta": "Mitwirken"
+  },
+  "SupportPage": {
+    "heroTitle": "Lumida ist",
+    "heroTitleAccent": "100% kostenlos.",
+    "intro": "Ohne Abo, ohne Werbung und ohne Tracker. Ich entwickle sie aus Spaß, in meiner Freizeit!",
+    "ask": "Wenn dir die App gefällt, kannst du mir helfen, das Hosting zu finanzieren, auch symbolisch.",
+    "kofiCta": "Auf Ko-fi unterstützen"
   },
   "ChangelogPage": {
     "title": "Neuigkeiten",
