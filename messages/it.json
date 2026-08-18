@@ -1091,6 +1091,11 @@
         "title": "Manutenzione tecnica",
         "description": "Le dipendenze di Lumida sono state aggiornate."
       },
+      "userManagement": {
+        "category": "Account",
+        "title": "Gestione degli utenti",
+        "description": "La gestione degli account utente è stata migliorata."
+      },
       "spo2DaySamples": {
         "category": "Salute",
         "title": "Dettaglio SpO₂ con orario nella vista Giorno",

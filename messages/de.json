@@ -1091,6 +1091,11 @@
         "title": "Technische Wartung",
         "description": "Die Abhängigkeiten von Lumida wurden aktualisiert."
       },
+      "userManagement": {
+        "category": "Konto",
+        "title": "Benutzerverwaltung",
+        "description": "Die Verwaltung der Benutzerkonten wurde verbessert."
+      },
       "spo2DaySamples": {
         "category": "Gesundheit",
         "title": "SpO₂-Details mit Zeitstempel in der Tagesansicht",

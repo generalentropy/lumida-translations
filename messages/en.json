@@ -1091,6 +1091,11 @@
         "title": "Technical maintenance",
         "description": "Lumida's dependencies have been updated."
       },
+      "userManagement": {
+        "category": "Account",
+        "title": "User management",
+        "description": "User account management has been improved."
+      },
       "spo2DaySamples": {
         "category": "Health",
         "title": "Timestamped SpO₂ detail in Day view",

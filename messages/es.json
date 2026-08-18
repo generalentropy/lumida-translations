@@ -1091,6 +1091,11 @@
         "title": "Mantenimiento técnico",
         "description": "Se han actualizado las dependencias de Lumida."
       },
+      "userManagement": {
+        "category": "Cuenta",
+        "title": "Gestión de usuarios",
+        "description": "Se ha mejorado la gestión de las cuentas de usuario."
+      },
       "spo2DaySamples": {
         "category": "Salud",
         "title": "Detalle de SpO₂ con hora en la vista Día",
