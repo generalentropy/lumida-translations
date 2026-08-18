@@ -364,7 +364,9 @@
       "preferences": "Preferencias y datos de administración: idioma elegido en la URL, apariencia guardada en el dispositivo, unidad de temperatura, última fecha aproximada de actividad y posibles restricciones de la cuenta.",
       "connection": "Datos de conexión con Google Health: identificador estable de Google, permisos concedidos, estado y fechas de conexión, y token de actualización cifrado necesario para mantener la conexión.",
       "health": "Datos de salud y actividad solicitados bajo demanda: actividad y ejercicio, sueño, frecuencia cardiaca, saturación de oxígeno, mediciones de recuperación, peso, nutrición, hidratación y, cuando lo autorizas, rutas geográficas de los entrenamientos.",
-      "communications": "Datos de comentarios sobre el producto y comunicaciones: mensajes, cuenta asociada, idioma de la aplicación, zona horaria, página de origen normalizada, tamaño de la ventana, agente de usuario y versión del despliegue, además del contenido y los metadatos técnicos del correo cuando contactas con Lumida o recibes un mensaje transaccional."
+      "communications": "Datos de comentarios sobre el producto y comunicaciones: mensajes, cuenta asociada, idioma de la aplicación, zona horaria, página de origen normalizada, tamaño de la ventana, agente de usuario y versión del despliegue, además del contenido y los metadatos técnicos del correo cuando contactas con Lumida o recibes un mensaje transaccional.",
+      "waitlist": "Datos de la lista de espera: la dirección de correo que envías cuando el acceso anticipado está completo, el idioma de la solicitud, su estado de confirmación y las fechas asociadas. No se almacena ninguna dirección IP.",
+      "turnstile": "Protección antibots: el formulario público de lista de espera está protegido por Cloudflare Turnstile, que comprueba que la solicitud procede de un navegador real. Cloudflare recibe tu dirección IP y señales técnicas del navegador solo para esa comprobación; Turnstile no recopila datos con fines de retargeting publicitario. Solo se ejecuta en la página de inicio pública, nunca en las páginas con sesión iniciada."
     },
     "purposes": {
       "title": "Finalidades y bases jurídicas",
@@ -386,7 +388,7 @@
     },
     "storage": {
       "title": "Tratamiento de los datos de salud",
-      "health": "Las mediciones de salud pasan por el servidor de Lumida únicamente durante el tiempo necesario para responder a tu solicitud y nunca se guardan en Neon. Para acelerar la interfaz, los resúmenes ya consultados se conservan en una caché local en tu dispositivo (memoria del navegador y almacenamiento IndexedDB del navegador). Esta caché nunca sale de tu dispositivo, caduca automáticamente como máximo a los 30 días, se elimina al cerrar sesión y puede desactivarse en cualquier momento en los ajustes de la aplicación, por ejemplo en un ordenador compartido. Las rutas GPS de los entrenamientos nunca se escriben en el almacenamiento del navegador y permanecen solo en memoria.",
+      "health": "Las mediciones de salud pasan por el servidor de Lumida únicamente durante el tiempo necesario para responder a tu solicitud y nunca se guardan en la base de datos. Para acelerar la interfaz, los resúmenes ya consultados se conservan en una caché local en tu dispositivo (memoria del navegador y almacenamiento IndexedDB del navegador). Esta caché nunca sale de tu dispositivo, caduca automáticamente como máximo a los 30 días, se elimina al cerrar sesión y puede desactivarse en cualquier momento en los ajustes de la aplicación, por ejemplo en un ordenador compartido. Las rutas GPS de los entrenamientos nunca se escriben en el almacenamiento del navegador y permanecen solo en memoria.",
       "token": "Los tokens de actualización de Google Health se cifran en reposo mediante AES-256-GCM. Los tokens de acceso permanecen en el servidor y solo se conservan en la memoria temporal del proceso. Los tokens OAuth nunca se exponen al navegador; los únicos datos de salud presentes en tu dispositivo son los de la caché local descrita anteriormente, bajo tu control."
     },
     "providers": {
@@ -410,6 +412,7 @@
       "connection": "Los datos de conexión con Google Health se conservan hasta que desconectes Google Health o se elimine la cuenta.",
       "temporary": "Una transacción OAuth de Google Health caduca después de 10 minutos, un enlace de verificación del correo después de una hora y un enlace de restablecimiento de contraseña después de 15 minutos.",
       "communication": "Los comentarios vinculados a la cuenta se conservan mientras sean útiles para mejorar Lumida y se eliminan con la cuenta, salvo que deban mantenerse para una reclamación legal. Las demás comunicaciones se conservan el tiempo necesario para responder y gestionar su seguimiento.",
+      "waitlist": "Una dirección de la lista de espera se conserva hasta que te das de baja con el enlace incluido en cada mensaje.",
       "logs": "Los registros técnicos de seguridad y alojamiento se conservan durante periodos limitados según la configuración de los proveedores y las necesidades legítimas de seguridad. Las copias de seguridad de los proveedores pueden permanecer hasta que finalice su ciclo normal de rotación."
     },
     "cookies": {
@@ -478,6 +481,34 @@
     "forgotPassword": "¿Has olvidado tu contraseña?",
     "passwordResetComplete": "Tu contraseña se ha cambiado. Inicia sesión con la nueva contraseña."
   },
+  "Waitlist": {
+    "fullTitle": "Vaya… ya no quedan plazas disponibles",
+    "fullDescription": "Escribe tu correo para que te avisemos en cuanto haya una plaza disponible.",
+    "emailLabel": "Dirección de correo",
+    "emailPlaceholder": "Tu dirección de correo",
+    "submit": "Avísame",
+    "submitPending": "Enviando…",
+    "verifying": "Verificación en curso…",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signIn": "Iniciar sesión",
+    "closedOnLogin": "Las inscripciones están cerradas.",
+    "successTitle": "Revisa tu bandeja de entrada",
+    "successDescription": "Si esa dirección puede unirse a la lista, acaba de salir un enlace de confirmación hacia {email}.",
+    "errorGeneric": "Algo ha fallado. Inténtalo de nuevo.",
+    "errorRateLimited": "Demasiadas solicitudes. Inténtalo más tarde.",
+    "errorUnverified": "La verificación ha fallado. Recarga la página e inténtalo de nuevo.",
+    "confirmedTitle": "¡Ya estás en la lista!",
+    "confirmedDescription": "Te avisaremos en cuanto haya una plaza disponible.",
+    "alreadyConfirmedTitle": "Ya confirmado",
+    "alreadyConfirmedDescription": "Esta dirección ya está en la lista de espera.",
+    "invalidTitle": "Este enlace ya no es válido",
+    "invalidDescription": "Los enlaces de confirmación caducan a los {days} días. Pide uno nuevo desde la página de inicio.",
+    "unsubscribedTitle": "Te has dado de baja",
+    "unsubscribedDescription": "Tu dirección se ha eliminado. No recibirás ningún mensaje más.",
+    "unsubscribeInvalidTitle": "Este enlace ya no es válido",
+    "unsubscribeInvalidDescription": "Puede que tu dirección ya se haya eliminado.",
+    "backToHome": "Volver al inicio"
+  },
   "EmailVerification": {
     "subject": "Verifica tu correo de Lumida",
     "preview": "Confirma tu correo electrónico para terminar de crear tu cuenta de Lumida.",
@@ -486,6 +517,16 @@
     "cta": "Verificar mi correo",
     "expires": "Este enlace caduca en una hora.",
     "ignore": "Si no has creado una cuenta de Lumida, puedes ignorar este correo."
+  },
+  "WaitlistEmail": {
+    "subject": "Confirma tu dirección de correo para unirte a la lista de espera",
+    "preview": "Confirma tu dirección de correo para unirte a la lista de espera de Lumida.",
+    "heading": "Confirma tu dirección de correo",
+    "body": "Confirma tu dirección de correo para que te avisemos en cuanto haya una plaza disponible en Lumida.",
+    "cta": "Confirmar mi dirección de correo",
+    "expires": "Este enlace caduca en {days} días.",
+    "ignore": "Si no has sido tú quien se ha apuntado, puedes ignorar este mensaje.",
+    "unsubscribe": "Quitarme de la lista de espera"
   },
   "ForgotPassword": {
     "title": "Restablece tu contraseña",
@@ -607,6 +648,7 @@
     "administration": "Administración",
     "overview": "Resumen",
     "users": "Usuarios",
+    "waitlist": "Lista de espera",
     "feedback": "Comentarios de usuarios",
     "backToApp": "Volver a Lumida",
     "toggleSidebar": "Mostrar u ocultar la barra de administración",
@@ -640,6 +682,14 @@
       "totalFeedback": {
         "title": "Comentarios del producto",
         "description": "Mensajes enviados desde la barra lateral de Lumida."
+      },
+      "waitlistPending": {
+        "title": "Lista de espera",
+        "description": "Direcciones pendientes de confirmar su correo."
+      },
+      "waitlistConfirmed": {
+        "title": "Lista de espera confirmada",
+        "description": "Direcciones que han confirmado su correo."
       }
     }
   },
@@ -745,6 +795,37 @@
       "nextLabel": "Ir a la página siguiente"
     },
     "openDetails": "Ver la ficha de {name}"
+  },
+  "AdminWaitlistPage": {
+    "title": "Lista de espera",
+    "description": "Direcciones a la espera de una plaza de acceso anticipado.",
+    "listTitle": "Direcciones registradas",
+    "listDescription": "{count, plural, =0 {Ninguna dirección} one {# dirección} other {# direcciones}}",
+    "columns": {
+      "email": "Correo",
+      "status": "Estado",
+      "locale": "Idioma",
+      "createdAt": "Solicitado el",
+      "confirmedAt": "Confirmado el"
+    },
+    "statuses": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmado"
+    },
+    "notConfirmed": "Sin confirmar",
+    "empty": "No hay nadie en la lista de espera.",
+    "copyEmails": "Copiar direcciones confirmadas",
+    "copyEmailsDone": "{count, plural, one {# dirección copiada} other {# direcciones copiadas}}",
+    "copyEmailsEmpty": "No hay ninguna dirección confirmada que copiar.",
+    "copyEmailsError": "No se han podido copiar las direcciones.",
+    "pagination": {
+      "summary": "Página {page} de {totalPages}",
+      "label": "Paginación de la lista de espera",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "previousLabel": "Ir a la página anterior",
+      "nextLabel": "Ir a la página siguiente"
+    }
   },
   "AdminUserDetailPage": {
     "backToList": "Volver a usuarios",

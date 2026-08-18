@@ -364,7 +364,9 @@
       "preferences": "Service preferences and administration data: language selected through the URL, appearance stored on the device, temperature unit, latest coarse activity date and any account restriction information.",
       "connection": "Google Health connection data: stable Google identifier, granted permissions, connection status and dates, and the encrypted refresh token needed to maintain the connection.",
       "health": "Health and fitness data requested on demand: activity and exercise, sleep, heart rate, oxygen saturation, recovery measurements, weight, nutrition, hydration and, when authorized, workout location routes.",
-      "communications": "Product-feedback and communications data: feedback messages, account linkage, app language, time zone, normalized source page, viewport size, user agent and deployment version, plus email content and technical metadata when you contact Lumida or receive a transactional message."
+      "communications": "Product-feedback and communications data: feedback messages, account linkage, app language, time zone, normalized source page, viewport size, user agent and deployment version, plus email content and technical metadata when you contact Lumida or receive a transactional message.",
+      "waitlist": "Waiting list data: the email address you submit when early access is full, the language of the request, its confirmation state and the related dates. No IP address is stored.",
+      "turnstile": "Bot protection: the public waiting-list form is protected by Cloudflare Turnstile, which checks that the request comes from a real browser. Cloudflare receives your IP address and technical browser signals for that check alone; Turnstile collects no data for advertising retargeting. It runs on the public home page only, never on signed-in pages."
     },
     "purposes": {
       "title": "Purposes and legal bases",
@@ -386,7 +388,7 @@
     },
     "storage": {
       "title": "How health data is handled",
-      "health": "Health measurements pass through Lumida’s server only for the time needed to answer your request and are never written to Neon. To make the interface faster, summaries you have already viewed are kept in a local cache on your device (browser memory and IndexedDB browser storage). This cache never leaves your device, expires automatically after 30 days at the latest, is deleted when you sign out, and can be disabled at any time in the app settings — for example on a shared computer. Workout GPS routes are never written to browser storage and remain in memory only.",
+      "health": "Health measurements pass through Lumida’s server only for the time needed to answer your request and are never written to the database. To make the interface faster, summaries you have already viewed are kept in a local cache on your device (browser memory and IndexedDB browser storage). This cache never leaves your device, expires automatically after 30 days at the latest, is deleted when you sign out, and can be disabled at any time in the app settings — for example on a shared computer. Workout GPS routes are never written to browser storage and remain in memory only.",
       "token": "Google Health refresh tokens are encrypted at rest using AES-256-GCM. Access tokens remain server-side and are kept only in short-lived process memory. OAuth tokens are never exposed to the browser; the only health data on your device is the local cache described above, under your control."
     },
     "providers": {
@@ -410,6 +412,7 @@
       "connection": "Google Health connection data is retained until you disconnect Google Health or the account is deleted.",
       "temporary": "A Google Health OAuth transaction expires after 10 minutes, an email-verification link after one hour and a password-reset link after 15 minutes.",
       "communication": "Account-linked product feedback is kept while useful for improving Lumida and is deleted with the account, unless retention is needed for a legal claim. Other correspondence is kept for the time needed to answer and manage follow-up.",
+      "waitlist": "A waiting-list address is kept until you unsubscribe with the link carried by every message.",
       "logs": "Technical security and hosting logs are retained for limited periods according to provider settings and legitimate security needs. Provider backups may remain until their normal rotation completes."
     },
     "cookies": {
@@ -478,6 +481,34 @@
     "forgotPassword": "Forgot your password?",
     "passwordResetComplete": "Your password has been changed. Sign in with your new password."
   },
+  "Waitlist": {
+    "fullTitle": "Oops… early access is full",
+    "fullDescription": "Enter your email to be notified as soon as a spot is available.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Your email address",
+    "submit": "Notify me",
+    "submitPending": "Sending…",
+    "verifying": "Verification in progress…",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "closedOnLogin": "Signups are closed.",
+    "successTitle": "Check your inbox",
+    "successDescription": "If that address can join the list, a confirmation link is on its way to {email}.",
+    "errorGeneric": "Something went wrong. Try again.",
+    "errorRateLimited": "Too many requests. Try again later.",
+    "errorUnverified": "Verification failed. Reload the page and try again.",
+    "confirmedTitle": "You're on the list!",
+    "confirmedDescription": "We'll let you know as soon as a spot is available.",
+    "alreadyConfirmedTitle": "Already confirmed",
+    "alreadyConfirmedDescription": "This address is already on the waiting list.",
+    "invalidTitle": "This link is no longer valid",
+    "invalidDescription": "Confirmation links expire after {days} days. Ask for a new one from the home page.",
+    "unsubscribedTitle": "You're off the list",
+    "unsubscribedDescription": "Your address has been deleted. You will not receive any further message.",
+    "unsubscribeInvalidTitle": "This link is no longer valid",
+    "unsubscribeInvalidDescription": "Your address may already have been deleted.",
+    "backToHome": "Back to home"
+  },
   "EmailVerification": {
     "subject": "Verify your Lumida email",
     "preview": "Confirm your email address to finish creating your Lumida account.",
@@ -486,6 +517,16 @@
     "cta": "Verify my email",
     "expires": "This link expires in one hour.",
     "ignore": "If you did not create a Lumida account, you can ignore this email."
+  },
+  "WaitlistEmail": {
+    "subject": "Confirm your email address to join the waiting list",
+    "preview": "Confirm your email address to join the Lumida waiting list.",
+    "heading": "Confirm your email address",
+    "body": "Confirm your email address to be notified as soon as a spot is available on Lumida.",
+    "cta": "Confirm my email address",
+    "expires": "This link expires in {days} days.",
+    "ignore": "If you did not sign up for this, you can simply ignore this message.",
+    "unsubscribe": "Remove me from the waiting list"
   },
   "ForgotPassword": {
     "title": "Reset your password",
@@ -607,6 +648,7 @@
     "administration": "Administration",
     "overview": "Overview",
     "users": "Users",
+    "waitlist": "Waiting list",
     "feedback": "Feedback",
     "backToApp": "Back to Lumida",
     "toggleSidebar": "Toggle admin sidebar",
@@ -640,6 +682,14 @@
       "totalFeedback": {
         "title": "Product feedback",
         "description": "Messages submitted from the Lumida sidebar."
+      },
+      "waitlistPending": {
+        "title": "Waiting list",
+        "description": "Addresses awaiting email confirmation."
+      },
+      "waitlistConfirmed": {
+        "title": "Confirmed waiting list",
+        "description": "Addresses that confirmed their email."
       }
     }
   },
@@ -745,6 +795,37 @@
       "nextLabel": "Go to the next page"
     },
     "openDetails": "View details for {name}"
+  },
+  "AdminWaitlistPage": {
+    "title": "Waiting list",
+    "description": "Addresses waiting for an early access spot.",
+    "listTitle": "Registered addresses",
+    "listDescription": "{count, plural, =0 {No addresses} one {# address} other {# addresses}}",
+    "columns": {
+      "email": "Email",
+      "status": "Status",
+      "locale": "Language",
+      "createdAt": "Requested",
+      "confirmedAt": "Confirmed"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed"
+    },
+    "notConfirmed": "Not confirmed",
+    "empty": "No one is on the waiting list.",
+    "copyEmails": "Copy confirmed addresses",
+    "copyEmailsDone": "{count, plural, one {# address copied} other {# addresses copied}}",
+    "copyEmailsEmpty": "No confirmed address to copy.",
+    "copyEmailsError": "The addresses could not be copied.",
+    "pagination": {
+      "summary": "Page {page} of {totalPages}",
+      "label": "Waiting list pagination",
+      "previous": "Previous",
+      "next": "Next",
+      "previousLabel": "Go to the previous page",
+      "nextLabel": "Go to the next page"
+    }
   },
   "AdminUserDetailPage": {
     "backToList": "Back to users",
