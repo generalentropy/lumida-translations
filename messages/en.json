@@ -528,6 +528,17 @@
     "ignore": "If you did not sign up for this, you can simply ignore this message.",
     "unsubscribe": "Remove me from the waiting list"
   },
+  "WaitlistInviteEmail": {
+    "subject": "Good news: spots are available again on Lumida",
+    "preview": "Spots have just opened up on Lumida.",
+    "heading": "Good news!",
+    "body": "You are on the Lumida waiting list. A few spots have just opened up.",
+    "invitation": "If you would like one, you can create your account now.",
+    "cta": "Create my account",
+    "thanks": "Thank you for your interest in Lumida!",
+    "community": "Join the Discord community",
+    "unsubscribe": "Remove me from the waiting list"
+  },
   "ForgotPassword": {
     "title": "Reset your password",
     "description": "Enter the email address associated with your Lumida account.",
@@ -679,6 +690,10 @@
         "title": "Linked to Google Health",
         "description": "Accounts with an active Google Health connection."
       },
+      "pendingGoogleHealthAccess": {
+        "title": "Awaiting validation",
+        "description": "Google Health tester requests submitted and not yet approved."
+      },
       "totalFeedback": {
         "title": "Product feedback",
         "description": "Messages submitted from the Lumida sidebar."
@@ -714,11 +729,14 @@
     "description": "Account-linked product feedback and the technical context captured when it was submitted.",
     "listTitle": "Product feedback",
     "listDescription": "{count, plural, =0 {No feedback messages} one {# feedback message} other {# feedback messages}}",
-    "columns": {
-      "user": "User",
+    "list": {
+      "label": "Feedback messages"
+    },
+    "detail": {
+      "title": "Feedback detail",
+      "description": "The selected feedback message and its technical context.",
       "message": "Message",
-      "context": "Context",
-      "createdAt": "Submitted"
+      "context": "Technical context"
     },
     "context": {
       "source": "Page",
@@ -747,8 +765,18 @@
   "AdminUsersPage": {
     "title": "Users",
     "description": "Lumida accounts, statuses, and recent activity.",
-    "listTitle": "Registered users",
-    "listDescription": "{count, plural, =0 {No registered users} one {# registered user} other {# registered users}}",
+    "lists": {
+      "all": {
+        "title": "Registered users",
+        "description": "{count, plural, =0 {No registered users} one {# registered user} other {# registered users}}",
+        "empty": "No users were found."
+      },
+      "pendingGoogleHealth": {
+        "title": "Users awaiting validation",
+        "description": "{count, plural, =0 {No registered user awaiting validation} one {# registered user awaiting validation} other {# registered users awaiting validation}}",
+        "empty": "No account is awaiting validation."
+      }
+    },
     "columns": {
       "user": "User",
       "role": "Role",
@@ -785,7 +813,6 @@
       "copyEmail": "Copy the requested address",
       "copiedEmail": "Address copied."
     },
-    "empty": "No users were found.",
     "pagination": {
       "summary": "Page {page} of {totalPages}",
       "label": "User list pagination",
@@ -794,7 +821,18 @@
       "previousLabel": "Go to the previous page",
       "nextLabel": "Go to the next page"
     },
-    "openDetails": "View details for {name}"
+    "openDetails": "View details for {name}",
+    "sort": {
+      "label": "Sort by",
+      "createdAt": "Newest accounts",
+      "activity": "Last activity",
+      "googleHealth": "Google Health request"
+    },
+    "filter": {
+      "label": "Filter",
+      "all": "All accounts",
+      "pendingGoogleHealth": "Awaiting validation"
+    }
   },
   "AdminWaitlistPage": {
     "title": "Waiting list",
@@ -806,7 +844,9 @@
       "status": "Status",
       "locale": "Language",
       "createdAt": "Requested",
-      "confirmedAt": "Confirmed"
+      "confirmedAt": "Confirmed",
+      "invitedAt": "Invited",
+      "actions": "Actions"
     },
     "statuses": {
       "pending": "Pending",
@@ -825,6 +865,68 @@
       "next": "Next",
       "previousLabel": "Go to the previous page",
       "nextLabel": "Go to the next page"
+    },
+    "openInvite": "Send an invitation",
+    "notInvited": "Never invited",
+    "invite": {
+      "send": "Invite",
+      "resend": "Invite again",
+      "unavailable": "No spot is open right now.",
+      "dialogTitle": "Send the invitation?",
+      "dialogDescription": "{email} receives the message now. Sending cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Send now",
+      "sending": "Sending…",
+      "success": "The invitation has been sent.",
+      "errors": {
+        "full": "No spot is open, so nothing was sent.",
+        "notInvitable": "This address is no longer confirmed on the list.",
+        "generic": "The invitation could not be sent."
+      }
+    }
+  },
+  "AdminWaitlistInvitePage": {
+    "title": "Invite the waiting list",
+    "description": "Send the invitation to confirmed addresses, in the language of their request.",
+    "backToList": "Back to the waiting list",
+    "audience": {
+      "title": "Recipients",
+      "description": "Only confirmed addresses are added to the sending list.",
+      "confirmed": "Confirmed addresses",
+      "notInvited": "Never contacted",
+      "invited": "Already contacted"
+    },
+    "capacity": {
+      "title": "Available spots",
+      "description": "A spot is taken when a tester address is approved in the Google console.",
+      "remaining": "{count, plural, =0 {No spot left} one {# spot left} other {# spots left}}",
+      "full": "No spot is open, so the invitation cannot be sent."
+    },
+    "preview": {
+      "title": "Message",
+      "description": "Every recipient gets this message in the language of their request.",
+      "subject": "Subject"
+    },
+    "form": {
+      "limitLabel": "Batch size",
+      "limitHint": "The addresses confirmed longest ago go out first.",
+      "includeInvited": "Also contact addresses already invited",
+      "includeInvitedHint": "Off by default, so a second send does not reach the same person twice.",
+      "batchHint": "A batch cannot exceed {count} messages, the sending limit.",
+      "submit": "{count, plural, =0 {No address to contact} one {Send to # address} other {Send to # addresses}}",
+      "submitPending": "Sending…",
+      "dialogTitle": "Send the invitation?",
+      "dialogDescription": "{count, plural, one {# address receives the message now} other {# addresses receive the message now}}. Sending cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Send now"
+    },
+    "result": {
+      "sent": "{count, plural, one {# invitation sent} other {# invitations sent}}",
+      "remaining": "{count, plural, =0 {Every address has been contacted.} one {# address remains for the next batch.} other {# addresses remain for the next batch.}}"
+    },
+    "errors": {
+      "full": "No spot is open, so nothing was sent.",
+      "generic": "The invitation could not be sent."
     }
   },
   "AdminUserDetailPage": {
@@ -853,7 +955,23 @@
       "requestedAt": "Requested on",
       "approvedAt": "Approved on",
       "noRequest": "This account has not requested Google Health test access.",
-      "approvalHint": "Add this address to the Google Cloud test users first. Approving sends a confirmation email to the account."
+      "approvalHint": "Add this address to the Google Cloud test users first. Approving sends a confirmation email to the account.",
+      "revokedAt": "Spot released on",
+      "revocation": {
+        "hint": "Releasing the spot cuts the account's Google Health connection and lets it request access again.",
+        "action": "Release the spot",
+        "dialogTitle": "Release this tester spot?",
+        "dialogDescription": "The account keeps its data and its login, but loses its Google Health connection and goes back to being an account that never requested access. It can request again.",
+        "consoleReminder": "Remove the address from the test users in the Google console as well. Nothing here does it for you.",
+        "cancel": "Cancel",
+        "confirm": "Release the spot",
+        "revoking": "Releasing…",
+        "success": "The tester spot has been released.",
+        "errors": {
+          "notGranted": "This account holds no tester spot.",
+          "generic": "The spot could not be released."
+        }
+      }
     },
     "account": {
       "title": "Account",
@@ -861,11 +979,37 @@
       "userId": "User ID",
       "createdAt": "Joined",
       "lastActiveAt": "Last active",
+      "locale": "Language",
+      "localeUnknown": "Unknown",
+      "localeSource": {
+        "googleHealthRequest": "From their access request",
+        "feedback": "From their latest feedback"
+      },
       "updatedAt": "Last updated",
       "banReason": "Ban reason",
       "noBanReason": "No reason recorded",
       "banExpires": "Ban expires",
       "banNeverExpires": "No expiry"
+    },
+    "danger": {
+      "title": "Delete this account",
+      "description": "Deletion removes the account and everything attached to it: sessions, Google Health connection, preferences, daily notes and feedback. The account key is destroyed, so encrypted notes become unreadable, including in backups already taken.",
+      "googleNote": "The Google Cloud tester spot is not released automatically. Remove the address from the test users in the console.",
+      "action": "Delete this account",
+      "dialogTitle": "Delete this account permanently?",
+      "dialogDescription": "Type the account address to confirm. This action cannot be undone.",
+      "confirmLabel": "Account email",
+      "confirmPlaceholder": "Copy the address here",
+      "cancel": "Cancel",
+      "confirm": "Delete permanently",
+      "deleting": "Deleting…",
+      "success": "The account has been deleted.",
+      "errors": {
+        "mismatch": "The address does not match this account.",
+        "self": "You cannot delete your own account.",
+        "admin": "An administrator account cannot be deleted here.",
+        "generic": "The account could not be deleted."
+      }
     }
   },
   "SettingsPage": {

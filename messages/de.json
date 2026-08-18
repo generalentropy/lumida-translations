@@ -528,6 +528,17 @@
     "ignore": "Wenn du dich nicht angemeldet hast, kannst du diese Nachricht einfach ignorieren.",
     "unsubscribe": "Mich von der Warteliste entfernen"
   },
+  "WaitlistInviteEmail": {
+    "subject": "Gute Nachrichten: Auf Lumida sind wieder Plätze frei",
+    "preview": "Auf Lumida sind gerade Plätze frei geworden.",
+    "heading": "Gute Nachrichten!",
+    "body": "Du stehst auf der Warteliste von Lumida. Gerade sind ein paar Plätze frei geworden.",
+    "invitation": "Wenn du einen davon möchtest, kannst du jetzt dein Konto erstellen.",
+    "cta": "Mein Konto erstellen",
+    "thanks": "Danke für dein Interesse an Lumida!",
+    "community": "Der Discord-Community beitreten",
+    "unsubscribe": "Mich von der Warteliste entfernen"
+  },
   "ForgotPassword": {
     "title": "Setze dein Passwort zurück",
     "description": "Gib die E-Mail-Adresse ein, die mit deinem Lumida-Konto verknüpft ist.",
@@ -679,6 +690,10 @@
         "title": "Mit Google Health verbunden",
         "description": "Konten mit aktiver Google-Health-Verbindung."
       },
+      "pendingGoogleHealthAccess": {
+        "title": "Wartet auf Freigabe",
+        "description": "Eingereichte und noch nicht freigegebene Google-Health-Testeranfragen."
+      },
       "totalFeedback": {
         "title": "Produkt-Feedback",
         "description": "Über die Lumida-Seitenleiste gesendete Nachrichten."
@@ -714,11 +729,14 @@
     "description": "Kontobezogenes Produkt-Feedback und der beim Senden erfasste technische Kontext.",
     "listTitle": "Produkt-Feedback",
     "listDescription": "{count, plural, =0 {Kein Feedback} one {# Rückmeldung} other {# Rückmeldungen}}",
-    "columns": {
-      "user": "Nutzer",
+    "list": {
+      "label": "Feedback-Nachrichten"
+    },
+    "detail": {
+      "title": "Feedback-Details",
+      "description": "Die ausgewählte Rückmeldung und ihr technischer Kontext.",
       "message": "Nachricht",
-      "context": "Kontext",
-      "createdAt": "Gesendet"
+      "context": "Technischer Kontext"
     },
     "context": {
       "source": "Seite",
@@ -747,8 +765,18 @@
   "AdminUsersPage": {
     "title": "Nutzer",
     "description": "Lumida-Konten, Status und letzte Aktivität.",
-    "listTitle": "Registrierte Nutzer",
-    "listDescription": "{count, plural, =0 {Keine registrierten Nutzer} one {# registrierter Nutzer} other {# registrierte Nutzer}}",
+    "lists": {
+      "all": {
+        "title": "Registrierte Nutzer",
+        "description": "{count, plural, =0 {Keine registrierten Nutzer} one {# registrierter Nutzer} other {# registrierte Nutzer}}",
+        "empty": "Keine Nutzer gefunden."
+      },
+      "pendingGoogleHealth": {
+        "title": "Nutzer, die auf Freigabe warten",
+        "description": "{count, plural, =0 {Kein registrierter Nutzer wartet auf Freigabe} one {# registrierter Nutzer wartet auf Freigabe} other {# registrierte Nutzer warten auf Freigabe}}",
+        "empty": "Kein Konto wartet auf Freigabe."
+      }
+    },
     "columns": {
       "user": "Nutzer",
       "role": "Rolle",
@@ -785,7 +813,6 @@
       "copyEmail": "Angefragte Adresse kopieren",
       "copiedEmail": "Adresse kopiert."
     },
-    "empty": "Keine Nutzer gefunden.",
     "pagination": {
       "summary": "Seite {page} von {totalPages}",
       "label": "Seitennummerierung der Nutzerliste",
@@ -794,7 +821,18 @@
       "previousLabel": "Zur vorherigen Seite",
       "nextLabel": "Zur nächsten Seite"
     },
-    "openDetails": "Details zu {name} ansehen"
+    "openDetails": "Details zu {name} ansehen",
+    "sort": {
+      "label": "Sortieren nach",
+      "createdAt": "Neueste Konten",
+      "activity": "Letzte Aktivität",
+      "googleHealth": "Google-Health-Anfrage"
+    },
+    "filter": {
+      "label": "Filtern",
+      "all": "Alle Konten",
+      "pendingGoogleHealth": "Wartet auf Freigabe"
+    }
   },
   "AdminWaitlistPage": {
     "title": "Warteliste",
@@ -806,7 +844,9 @@
       "status": "Status",
       "locale": "Sprache",
       "createdAt": "Angefragt am",
-      "confirmedAt": "Bestätigt am"
+      "confirmedAt": "Bestätigt am",
+      "invitedAt": "Eingeladen",
+      "actions": "Aktionen"
     },
     "statuses": {
       "pending": "Ausstehend",
@@ -825,6 +865,68 @@
       "next": "Weiter",
       "previousLabel": "Zur vorherigen Seite",
       "nextLabel": "Zur nächsten Seite"
+    },
+    "openInvite": "Einladung senden",
+    "notInvited": "Nie eingeladen",
+    "invite": {
+      "send": "Einladen",
+      "resend": "Erneut einladen",
+      "unavailable": "Derzeit ist kein Platz frei.",
+      "dialogTitle": "Einladung senden?",
+      "dialogDescription": "{email} erhält die Nachricht jetzt. Der Versand lässt sich nicht rückgängig machen.",
+      "cancel": "Abbrechen",
+      "confirm": "Jetzt senden",
+      "sending": "Wird gesendet…",
+      "success": "Die Einladung wurde gesendet.",
+      "errors": {
+        "full": "Es ist kein Platz frei, es wurde nichts gesendet.",
+        "notInvitable": "Diese Adresse ist nicht mehr auf der Liste bestätigt.",
+        "generic": "Die Einladung konnte nicht gesendet werden."
+      }
+    }
+  },
+  "AdminWaitlistInvitePage": {
+    "title": "Warteliste einladen",
+    "description": "Die Einladung an bestätigte Adressen senden, in der Sprache ihrer Anfrage.",
+    "backToList": "Zurück zur Warteliste",
+    "audience": {
+      "title": "Empfänger",
+      "description": "Nur bestätigte Adressen kommen auf die Versandliste.",
+      "confirmed": "Bestätigte Adressen",
+      "notInvited": "Nie kontaktiert",
+      "invited": "Bereits kontaktiert"
+    },
+    "capacity": {
+      "title": "Freie Plätze",
+      "description": "Ein Platz ist belegt, sobald eine Tester-Adresse in der Google-Konsole freigegeben wird.",
+      "remaining": "{count, plural, =0 {Kein Platz mehr frei} one {# Platz frei} other {# Plätze frei}}",
+      "full": "Es ist kein Platz frei, die Einladung kann nicht raus."
+    },
+    "preview": {
+      "title": "Nachricht",
+      "description": "Jeder Empfänger erhält diese Nachricht in der Sprache seiner Anfrage.",
+      "subject": "Betreff"
+    },
+    "form": {
+      "limitLabel": "Stapelgröße",
+      "limitHint": "Zuerst gehen die Adressen raus, die am längsten bestätigt sind.",
+      "includeInvited": "Auch bereits eingeladene Adressen kontaktieren",
+      "includeInvitedHint": "Standardmäßig aus, damit ein zweiter Versand dieselbe Person nicht doppelt erreicht.",
+      "batchHint": "Ein Stapel darf {count} Nachrichten nicht überschreiten, das ist das Sendelimit.",
+      "submit": "{count, plural, =0 {Keine Adresse zu kontaktieren} one {An # Adresse senden} other {An # Adressen senden}}",
+      "submitPending": "Wird gesendet…",
+      "dialogTitle": "Einladung senden?",
+      "dialogDescription": "{count, plural, one {# Adresse erhält die Nachricht jetzt} other {# Adressen erhalten die Nachricht jetzt}}. Der Versand lässt sich nicht rückgängig machen.",
+      "cancel": "Abbrechen",
+      "confirm": "Jetzt senden"
+    },
+    "result": {
+      "sent": "{count, plural, one {# Einladung gesendet} other {# Einladungen gesendet}}",
+      "remaining": "{count, plural, =0 {Alle Adressen wurden kontaktiert.} one {# Adresse bleibt für den nächsten Stapel.} other {# Adressen bleiben für den nächsten Stapel.}}"
+    },
+    "errors": {
+      "full": "Es ist kein Platz frei, es wurde nichts gesendet.",
+      "generic": "Die Einladung konnte nicht gesendet werden."
     }
   },
   "AdminUserDetailPage": {
@@ -853,7 +955,23 @@
       "requestedAt": "Angefragt am",
       "approvedAt": "Freigegeben am",
       "noRequest": "Dieses Konto hat keinen Google-Health-Testzugang angefragt.",
-      "approvalHint": "Trage diese Adresse zuerst bei den Google-Cloud-Testnutzern ein. Die Freigabe sendet eine Bestätigungs-E-Mail an das Konto."
+      "approvalHint": "Trage diese Adresse zuerst bei den Google-Cloud-Testnutzern ein. Die Freigabe sendet eine Bestätigungs-E-Mail an das Konto.",
+      "revokedAt": "Platz freigegeben am",
+      "revocation": {
+        "hint": "Den Platz freizugeben trennt die Google-Health-Verbindung des Kontos und lässt es den Zugang erneut beantragen.",
+        "action": "Platz freigeben",
+        "dialogTitle": "Diesen Testerplatz freigeben?",
+        "dialogDescription": "Das Konto behält seine Daten und seinen Zugang zu Lumida, verliert aber seine Google-Health-Verbindung und wird wieder zu einem Konto, das nie Zugang beantragt hat. Es kann erneut beantragen.",
+        "consoleReminder": "Entferne die Adresse auch in der Google-Konsole aus den Testnutzern. Hier passiert das nicht von selbst.",
+        "cancel": "Abbrechen",
+        "confirm": "Platz freigeben",
+        "revoking": "Wird freigegeben…",
+        "success": "Der Testerplatz wurde freigegeben.",
+        "errors": {
+          "notGranted": "Dieses Konto belegt keinen Testerplatz.",
+          "generic": "Der Platz konnte nicht freigegeben werden."
+        }
+      }
     },
     "account": {
       "title": "Konto",
@@ -861,11 +979,37 @@
       "userId": "Nutzer-ID",
       "createdAt": "Registriert",
       "lastActiveAt": "Letzte Aktivität",
+      "locale": "Sprache",
+      "localeUnknown": "Unbekannt",
+      "localeSource": {
+        "googleHealthRequest": "Aus der Zugangsanfrage",
+        "feedback": "Aus dem letzten Feedback"
+      },
       "updatedAt": "Zuletzt aktualisiert",
       "banReason": "Sperrgrund",
       "noBanReason": "Kein Grund hinterlegt",
       "banExpires": "Sperre endet",
       "banNeverExpires": "Ohne Ablauf"
+    },
+    "danger": {
+      "title": "Dieses Konto löschen",
+      "description": "Das Löschen entfernt das Konto und alles, was daran hängt: Sitzungen, Google-Health-Verbindung, Einstellungen, Tagesnotizen und Feedback. Der Kontoschlüssel wird zerstört, verschlüsselte Notizen werden dadurch unlesbar, auch in bereits erstellten Backups.",
+      "googleNote": "Der Testerplatz bei Google wird nicht automatisch frei. Entferne die Adresse in der Konsole aus den Testnutzern.",
+      "action": "Dieses Konto löschen",
+      "dialogTitle": "Dieses Konto endgültig löschen?",
+      "dialogDescription": "Tippe die Adresse des Kontos ab, um zu bestätigen. Der Vorgang lässt sich nicht rückgängig machen.",
+      "confirmLabel": "E-Mail des Kontos",
+      "confirmPlaceholder": "Adresse hier abtippen",
+      "cancel": "Abbrechen",
+      "confirm": "Endgültig löschen",
+      "deleting": "Wird gelöscht…",
+      "success": "Das Konto wurde gelöscht.",
+      "errors": {
+        "mismatch": "Die Adresse passt nicht zu diesem Konto.",
+        "self": "Du kannst dein eigenes Konto nicht löschen.",
+        "admin": "Ein Administratorkonto wird nicht hier gelöscht.",
+        "generic": "Das Konto konnte nicht gelöscht werden."
+      }
     }
   },
   "SettingsPage": {

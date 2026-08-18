@@ -528,6 +528,17 @@
     "ignore": "Si no has sido tú quien se ha apuntado, puedes ignorar este mensaje.",
     "unsubscribe": "Quitarme de la lista de espera"
   },
+  "WaitlistInviteEmail": {
+    "subject": "Buenas noticias: vuelve a haber plazas disponibles en Lumida",
+    "preview": "Acaban de quedar plazas libres en Lumida.",
+    "heading": "¡Buenas noticias!",
+    "body": "Estás en la lista de espera de Lumida. Acaban de quedar libres algunas plazas.",
+    "invitation": "Si quieres aprovecharlo, puedes crear tu cuenta ahora mismo.",
+    "cta": "Crear mi cuenta",
+    "thanks": "¡Gracias por tu interés en Lumida!",
+    "community": "Unirme a la comunidad de Discord",
+    "unsubscribe": "Quitarme de la lista de espera"
+  },
   "ForgotPassword": {
     "title": "Restablece tu contraseña",
     "description": "Introduce la dirección de correo asociada a tu cuenta de Lumida.",
@@ -679,6 +690,10 @@
         "title": "Vinculadas a Google Health",
         "description": "Cuentas con una conexión activa con Google Health."
       },
+      "pendingGoogleHealthAccess": {
+        "title": "Pendientes de validación",
+        "description": "Solicitudes de acceso de probador de Google Health enviadas y aún sin aprobar."
+      },
       "totalFeedback": {
         "title": "Comentarios del producto",
         "description": "Mensajes enviados desde la barra lateral de Lumida."
@@ -714,11 +729,14 @@
     "description": "Comentarios del producto vinculados a la cuenta y contexto técnico capturado al enviarlos.",
     "listTitle": "Comentarios del producto",
     "listDescription": "{count, plural, =0 {No hay comentarios} one {# comentario} other {# comentarios}}",
-    "columns": {
-      "user": "Usuario",
+    "list": {
+      "label": "Mensajes de comentarios"
+    },
+    "detail": {
+      "title": "Detalle del comentario",
+      "description": "El comentario seleccionado y su contexto técnico.",
       "message": "Mensaje",
-      "context": "Contexto",
-      "createdAt": "Enviado"
+      "context": "Contexto técnico"
     },
     "context": {
       "source": "Página",
@@ -747,8 +765,18 @@
   "AdminUsersPage": {
     "title": "Usuarios",
     "description": "Cuentas de Lumida, estados y actividad reciente.",
-    "listTitle": "Usuarios registrados",
-    "listDescription": "{count, plural, =0 {Ningún usuario registrado} one {# usuario registrado} other {# usuarios registrados}}",
+    "lists": {
+      "all": {
+        "title": "Usuarios registrados",
+        "description": "{count, plural, =0 {Ningún usuario registrado} one {# usuario registrado} other {# usuarios registrados}}",
+        "empty": "No se encontraron usuarios."
+      },
+      "pendingGoogleHealth": {
+        "title": "Usuarios pendientes de validación",
+        "description": "{count, plural, =0 {Ningún usuario registrado pendiente de validación} one {# usuario registrado pendiente de validación} other {# usuarios registrados pendientes de validación}}",
+        "empty": "Ninguna cuenta está pendiente de validación."
+      }
+    },
     "columns": {
       "user": "Usuario",
       "role": "Rol",
@@ -785,7 +813,6 @@
       "copyEmail": "Copiar la dirección solicitada",
       "copiedEmail": "Dirección copiada."
     },
-    "empty": "No se encontraron usuarios.",
     "pagination": {
       "summary": "Página {page} de {totalPages}",
       "label": "Paginación de la lista de usuarios",
@@ -794,7 +821,18 @@
       "previousLabel": "Ir a la página anterior",
       "nextLabel": "Ir a la página siguiente"
     },
-    "openDetails": "Ver la ficha de {name}"
+    "openDetails": "Ver la ficha de {name}",
+    "sort": {
+      "label": "Ordenar por",
+      "createdAt": "Cuentas más recientes",
+      "activity": "Última actividad",
+      "googleHealth": "Solicitud de Google Health"
+    },
+    "filter": {
+      "label": "Filtrar",
+      "all": "Todas las cuentas",
+      "pendingGoogleHealth": "Pendientes de validación"
+    }
   },
   "AdminWaitlistPage": {
     "title": "Lista de espera",
@@ -806,7 +844,9 @@
       "status": "Estado",
       "locale": "Idioma",
       "createdAt": "Solicitado el",
-      "confirmedAt": "Confirmado el"
+      "confirmedAt": "Confirmado el",
+      "invitedAt": "Invitada",
+      "actions": "Acciones"
     },
     "statuses": {
       "pending": "Pendiente",
@@ -825,6 +865,68 @@
       "next": "Siguiente",
       "previousLabel": "Ir a la página anterior",
       "nextLabel": "Ir a la página siguiente"
+    },
+    "openInvite": "Enviar una invitación",
+    "notInvited": "Nunca invitada",
+    "invite": {
+      "send": "Invitar",
+      "resend": "Volver a invitar",
+      "unavailable": "Ahora mismo no hay ninguna plaza abierta.",
+      "dialogTitle": "¿Enviar la invitación?",
+      "dialogDescription": "{email} recibe el mensaje ahora. El envío es irreversible.",
+      "cancel": "Cancelar",
+      "confirm": "Enviar ahora",
+      "sending": "Enviando…",
+      "success": "La invitación se ha enviado.",
+      "errors": {
+        "full": "No hay ninguna plaza abierta, no se ha enviado nada.",
+        "notInvitable": "Esta dirección ya no está confirmada en la lista.",
+        "generic": "No se ha podido enviar la invitación."
+      }
+    }
+  },
+  "AdminWaitlistInvitePage": {
+    "title": "Invitar a la lista de espera",
+    "description": "Enviar la invitación a las direcciones confirmadas, en el idioma de su solicitud.",
+    "backToList": "Volver a la lista de espera",
+    "audience": {
+      "title": "Destinatarios",
+      "description": "Solo las direcciones confirmadas se añaden a la lista de envío.",
+      "confirmed": "Direcciones confirmadas",
+      "notInvited": "Nunca contactadas",
+      "invited": "Ya contactadas"
+    },
+    "capacity": {
+      "title": "Plazas disponibles",
+      "description": "Una plaza se ocupa cuando se aprueba una dirección de prueba en la consola de Google.",
+      "remaining": "{count, plural, =0 {No queda ninguna plaza} one {Queda # plaza} other {Quedan # plazas}}",
+      "full": "No hay ninguna plaza abierta, la invitación no puede enviarse."
+    },
+    "preview": {
+      "title": "Mensaje",
+      "description": "Cada destinatario recibe este mensaje en el idioma de su solicitud.",
+      "subject": "Asunto"
+    },
+    "form": {
+      "limitLabel": "Tamaño del lote",
+      "limitHint": "Salen primero las direcciones confirmadas hace más tiempo.",
+      "includeInvited": "Contactar también con las direcciones ya invitadas",
+      "includeInvitedHint": "Desmarcado por defecto, para que un segundo envío no llegue dos veces a la misma persona.",
+      "batchHint": "Un lote no puede superar {count} mensajes, el límite de envío.",
+      "submit": "{count, plural, =0 {Ninguna dirección que contactar} one {Enviar a # dirección} other {Enviar a # direcciones}}",
+      "submitPending": "Enviando…",
+      "dialogTitle": "¿Enviar la invitación?",
+      "dialogDescription": "{count, plural, one {# dirección recibe el mensaje ahora} other {# direcciones reciben el mensaje ahora}}. El envío es irreversible.",
+      "cancel": "Cancelar",
+      "confirm": "Enviar ahora"
+    },
+    "result": {
+      "sent": "{count, plural, one {# invitación enviada} other {# invitaciones enviadas}}",
+      "remaining": "{count, plural, =0 {Se ha contactado con todas las direcciones.} one {Queda # dirección para el siguiente lote.} other {Quedan # direcciones para el siguiente lote.}}"
+    },
+    "errors": {
+      "full": "No hay ninguna plaza abierta, no se ha enviado nada.",
+      "generic": "No se ha podido enviar la invitación."
     }
   },
   "AdminUserDetailPage": {
@@ -853,7 +955,23 @@
       "requestedAt": "Solicitado el",
       "approvedAt": "Aprobado el",
       "noRequest": "Esta cuenta no ha solicitado acceso de prueba a Google Health.",
-      "approvalHint": "Añade primero esta dirección a los testers de Google Cloud. Al aprobar se envía un correo de confirmación a la cuenta."
+      "approvalHint": "Añade primero esta dirección a los testers de Google Cloud. Al aprobar se envía un correo de confirmación a la cuenta.",
+      "revokedAt": "Plaza liberada el",
+      "revocation": {
+        "hint": "Liberar la plaza corta la conexión con Google Health de la cuenta y le permite volver a solicitar el acceso.",
+        "action": "Liberar la plaza",
+        "dialogTitle": "¿Liberar esta plaza de probador?",
+        "dialogDescription": "La cuenta conserva sus datos y su acceso a Lumida, pero pierde su conexión con Google Health y vuelve a ser una cuenta que nunca solicitó el acceso. Podrá solicitarlo de nuevo.",
+        "consoleReminder": "Retira también la dirección de los usuarios de prueba en la consola de Google. Aquí no se hace solo.",
+        "cancel": "Cancelar",
+        "confirm": "Liberar la plaza",
+        "revoking": "Liberando…",
+        "success": "La plaza de probador se ha liberado.",
+        "errors": {
+          "notGranted": "Esta cuenta no ocupa ninguna plaza de probador.",
+          "generic": "No se ha podido liberar la plaza."
+        }
+      }
     },
     "account": {
       "title": "Cuenta",
@@ -861,11 +979,37 @@
       "userId": "Identificador",
       "createdAt": "Registro",
       "lastActiveAt": "Última actividad",
+      "locale": "Idioma",
+      "localeUnknown": "Desconocido",
+      "localeSource": {
+        "googleHealthRequest": "Según su solicitud de acceso",
+        "feedback": "Según su último comentario"
+      },
       "updatedAt": "Última actualización",
       "banReason": "Motivo del bloqueo",
       "noBanReason": "Sin motivo registrado",
       "banExpires": "Fin del bloqueo",
       "banNeverExpires": "Sin vencimiento"
+    },
+    "danger": {
+      "title": "Eliminar esta cuenta",
+      "description": "La eliminación retira la cuenta y todo lo asociado a ella: sesiones, conexión con Google Health, preferencias, notas diarias y comentarios. La clave de la cuenta se destruye, así que las notas cifradas quedan ilegibles, incluso en las copias de seguridad ya realizadas.",
+      "googleNote": "La plaza de probador en Google no se libera automáticamente. Retira la dirección de los usuarios de prueba en la consola.",
+      "action": "Eliminar esta cuenta",
+      "dialogTitle": "¿Eliminar definitivamente esta cuenta?",
+      "dialogDescription": "Copia la dirección de la cuenta para confirmar. Esta acción es irreversible.",
+      "confirmLabel": "Correo de la cuenta",
+      "confirmPlaceholder": "Copia aquí la dirección",
+      "cancel": "Cancelar",
+      "confirm": "Eliminar definitivamente",
+      "deleting": "Eliminando…",
+      "success": "La cuenta se ha eliminado.",
+      "errors": {
+        "mismatch": "La dirección no coincide con esta cuenta.",
+        "self": "No puedes eliminar tu propia cuenta.",
+        "admin": "Una cuenta de administrador no se elimina desde aquí.",
+        "generic": "No se ha podido eliminar la cuenta."
+      }
     }
   },
   "SettingsPage": {

@@ -528,6 +528,17 @@
     "ignore": "Si vous n’êtes pas à l’origine de cette inscription, vous pouvez simplement ignorer ce message.",
     "unsubscribe": "Me retirer de la liste d’attente"
   },
+  "WaitlistInviteEmail": {
+    "subject": "Bonne nouvelle : des places sont de nouveau disponibles sur Lumida",
+    "preview": "Des places viennent de se libérer sur Lumida.",
+    "heading": "Bonne nouvelle !",
+    "body": "Vous êtes inscrit sur la liste d’attente de Lumida. Quelques places viennent de se libérer.",
+    "invitation": "Si vous souhaitez en profiter, vous pouvez créer votre compte dès maintenant.",
+    "cta": "Créer mon compte",
+    "thanks": "Merci pour votre intérêt pour Lumida !",
+    "community": "Rejoindre la communauté Discord",
+    "unsubscribe": "Me retirer de la liste d’attente"
+  },
   "ForgotPassword": {
     "title": "Réinitialisez votre mot de passe",
     "description": "Saisissez l’adresse e-mail associée à votre compte Lumida.",
@@ -679,6 +690,10 @@
         "title": "Liés à Google Health",
         "description": "Comptes avec une connexion Google Health active."
       },
+      "pendingGoogleHealthAccess": {
+        "title": "En attente de validation",
+        "description": "Demandes d’accès testeur Google Health soumises et pas encore approuvées."
+      },
       "totalFeedback": {
         "title": "Retours produit",
         "description": "Messages envoyés depuis la barre latérale Lumida."
@@ -714,11 +729,14 @@
     "description": "Retours produit liés aux comptes et contexte technique recueilli au moment de leur envoi.",
     "listTitle": "Retours produit",
     "listDescription": "{count, plural, =0 {Aucun retour} one {# retour} other {# retours}}",
-    "columns": {
-      "user": "Utilisateur",
+    "list": {
+      "label": "Messages de retour"
+    },
+    "detail": {
+      "title": "Détail du retour",
+      "description": "Le retour sélectionné et son contexte technique.",
       "message": "Message",
-      "context": "Contexte",
-      "createdAt": "Envoyé"
+      "context": "Contexte technique"
     },
     "context": {
       "source": "Page",
@@ -747,8 +765,18 @@
   "AdminUsersPage": {
     "title": "Utilisateurs",
     "description": "Comptes Lumida, statuts et activité récente.",
-    "listTitle": "Utilisateurs inscrits",
-    "listDescription": "{count, plural, =0 {Aucun utilisateur inscrit} one {# utilisateur inscrit} other {# utilisateurs inscrits}}",
+    "lists": {
+      "all": {
+        "title": "Utilisateurs inscrits",
+        "description": "{count, plural, =0 {Aucun utilisateur inscrit} one {# utilisateur inscrit} other {# utilisateurs inscrits}}",
+        "empty": "Aucun utilisateur trouvé."
+      },
+      "pendingGoogleHealth": {
+        "title": "Utilisateurs en attente de validation",
+        "description": "{count, plural, =0 {Aucun utilisateur inscrit en attente de validation} one {# utilisateur inscrit en attente de validation} other {# utilisateurs inscrits en attente de validation}}",
+        "empty": "Aucun compte n’attend de validation."
+      }
+    },
     "columns": {
       "user": "Utilisateur",
       "role": "Rôle",
@@ -785,7 +813,6 @@
       "copyEmail": "Copier l’adresse demandée",
       "copiedEmail": "Adresse copiée."
     },
-    "empty": "Aucun utilisateur trouvé.",
     "pagination": {
       "summary": "Page {page} sur {totalPages}",
       "label": "Pagination de la liste des utilisateurs",
@@ -794,7 +821,18 @@
       "previousLabel": "Aller à la page précédente",
       "nextLabel": "Aller à la page suivante"
     },
-    "openDetails": "Voir la fiche de {name}"
+    "openDetails": "Voir la fiche de {name}",
+    "sort": {
+      "label": "Trier par",
+      "createdAt": "Comptes les plus récents",
+      "activity": "Dernière activité",
+      "googleHealth": "Demande Google Health"
+    },
+    "filter": {
+      "label": "Filtrer",
+      "all": "Tous les comptes",
+      "pendingGoogleHealth": "En attente de validation"
+    }
   },
   "AdminWaitlistPage": {
     "title": "Liste d'attente",
@@ -806,7 +844,9 @@
       "status": "Statut",
       "locale": "Langue",
       "createdAt": "Demandé le",
-      "confirmedAt": "Confirmé le"
+      "confirmedAt": "Confirmé le",
+      "invitedAt": "Invitée",
+      "actions": "Actions"
     },
     "statuses": {
       "pending": "En attente",
@@ -825,6 +865,68 @@
       "next": "Suivante",
       "previousLabel": "Aller à la page précédente",
       "nextLabel": "Aller à la page suivante"
+    },
+    "openInvite": "Envoyer une invitation",
+    "notInvited": "Jamais invitée",
+    "invite": {
+      "send": "Inviter",
+      "resend": "Réinviter",
+      "unavailable": "Aucune place n’est ouverte pour le moment.",
+      "dialogTitle": "Envoyer l’invitation ?",
+      "dialogDescription": "{email} reçoit le message maintenant. L’envoi est irréversible.",
+      "cancel": "Annuler",
+      "confirm": "Envoyer maintenant",
+      "sending": "Envoi en cours…",
+      "success": "L’invitation a été envoyée.",
+      "errors": {
+        "full": "Aucune place n’est ouverte, rien n’a été envoyé.",
+        "notInvitable": "Cette adresse n’est plus confirmée sur la liste.",
+        "generic": "L’invitation n’a pas pu être envoyée."
+      }
+    }
+  },
+  "AdminWaitlistInvitePage": {
+    "title": "Inviter la liste d’attente",
+    "description": "Envoyer l’invitation aux adresses confirmées, dans la langue de leur demande.",
+    "backToList": "Retour à la liste d’attente",
+    "audience": {
+      "title": "Destinataires",
+      "description": "Seules les adresses confirmées sont ajoutées à la liste d’envoi.",
+      "confirmed": "Adresses confirmées",
+      "notInvited": "Jamais contactées",
+      "invited": "Déjà contactées"
+    },
+    "capacity": {
+      "title": "Places disponibles",
+      "description": "Une place est prise quand une adresse de testeur est approuvée dans la console Google.",
+      "remaining": "{count, plural, =0 {Aucune place restante} one {# place restante} other {# places restantes}}",
+      "full": "Aucune place n’est ouverte, l’invitation ne peut pas partir."
+    },
+    "preview": {
+      "title": "Message",
+      "description": "Chaque destinataire reçoit ce message dans la langue de sa demande.",
+      "subject": "Objet"
+    },
+    "form": {
+      "limitLabel": "Taille du lot",
+      "limitHint": "Les adresses confirmées le plus anciennement partent en premier.",
+      "includeInvited": "Contacter aussi les adresses déjà invitées",
+      "includeInvitedHint": "Décoché par défaut, pour qu’un second envoi ne touche pas deux fois la même personne.",
+      "batchHint": "Un lot ne peut pas dépasser {count} messages, la limite d’envoi.",
+      "submit": "{count, plural, =0 {Aucune adresse à contacter} one {Envoyer à # adresse} other {Envoyer à # adresses}}",
+      "submitPending": "Envoi en cours…",
+      "dialogTitle": "Envoyer l’invitation ?",
+      "dialogDescription": "{count, plural, one {# adresse reçoit le message maintenant} other {# adresses reçoivent le message maintenant}}. L’envoi est irréversible.",
+      "cancel": "Annuler",
+      "confirm": "Envoyer maintenant"
+    },
+    "result": {
+      "sent": "{count, plural, one {# invitation envoyée} other {# invitations envoyées}}",
+      "remaining": "{count, plural, =0 {Toutes les adresses ont été contactées.} one {# adresse reste pour le prochain lot.} other {# adresses restent pour le prochain lot.}}"
+    },
+    "errors": {
+      "full": "Aucune place n’est ouverte, rien n’a été envoyé.",
+      "generic": "L’invitation n’a pas pu être envoyée."
     }
   },
   "AdminUserDetailPage": {
@@ -853,7 +955,23 @@
       "requestedAt": "Demandé le",
       "approvedAt": "Autorisé le",
       "noRequest": "Ce compte n’a demandé aucun accès de test Google Health.",
-      "approvalHint": "Ajoutez d’abord cette adresse aux testeurs Google Cloud. L’autorisation envoie un e-mail de confirmation au compte."
+      "approvalHint": "Ajoutez d’abord cette adresse aux testeurs Google Cloud. L’autorisation envoie un e-mail de confirmation au compte.",
+      "revokedAt": "Place rendue le",
+      "revocation": {
+        "hint": "Rendre la place coupe la connexion Google Health du compte et lui permet de redemander l’accès.",
+        "action": "Rendre la place",
+        "dialogTitle": "Rendre cette place de testeur ?",
+        "dialogDescription": "Le compte garde ses données et sa connexion à Lumida, mais perd sa connexion Google Health et redevient un compte qui n’a jamais demandé l’accès. Il pourra redemander.",
+        "consoleReminder": "Retirez aussi l’adresse des utilisateurs test dans la console Google. Rien ici ne le fait à votre place.",
+        "cancel": "Annuler",
+        "confirm": "Rendre la place",
+        "revoking": "Retrait en cours…",
+        "success": "La place de testeur a été rendue.",
+        "errors": {
+          "notGranted": "Ce compte n’occupe aucune place de testeur.",
+          "generic": "La place n’a pas pu être rendue."
+        }
+      }
     },
     "account": {
       "title": "Compte",
@@ -861,11 +979,37 @@
       "userId": "Identifiant",
       "createdAt": "Inscription",
       "lastActiveAt": "Dernière activité",
+      "locale": "Langue",
+      "localeUnknown": "Inconnue",
+      "localeSource": {
+        "googleHealthRequest": "D’après sa demande d’accès",
+        "feedback": "D’après son dernier retour"
+      },
       "updatedAt": "Dernière mise à jour",
       "banReason": "Motif du bannissement",
       "noBanReason": "Aucun motif enregistré",
       "banExpires": "Fin du bannissement",
       "banNeverExpires": "Sans échéance"
+    },
+    "danger": {
+      "title": "Supprimer ce compte",
+      "description": "La suppression retire le compte et tout ce qui lui est rattaché : sessions, connexion Google Health, préférences, notes journalières et retours. La clé du compte est détruite, donc les notes chiffrées deviennent illisibles, y compris dans les sauvegardes déjà prises.",
+      "googleNote": "La place de testeur chez Google n’est pas libérée automatiquement. Retirez l’adresse des utilisateurs test dans la console.",
+      "action": "Supprimer ce compte",
+      "dialogTitle": "Supprimer définitivement ce compte ?",
+      "dialogDescription": "Recopiez l’adresse du compte pour confirmer. Cette action est irréversible.",
+      "confirmLabel": "Adresse du compte",
+      "confirmPlaceholder": "Recopiez l’adresse ici",
+      "cancel": "Annuler",
+      "confirm": "Supprimer définitivement",
+      "deleting": "Suppression…",
+      "success": "Le compte a été supprimé.",
+      "errors": {
+        "mismatch": "L’adresse ne correspond pas à ce compte.",
+        "self": "Vous ne pouvez pas supprimer votre propre compte.",
+        "admin": "Un compte administrateur ne se supprime pas ici.",
+        "generic": "Le compte n’a pas pu être supprimé."
+      }
     }
   },
   "SettingsPage": {
