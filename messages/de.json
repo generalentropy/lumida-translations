@@ -699,13 +699,9 @@
         "title": "Produkt-Feedback",
         "description": "Über die Lumida-Seitenleiste gesendete Nachrichten."
       },
-      "waitlistPending": {
+      "waitlist": {
         "title": "Warteliste",
-        "description": "Adressen, die ihre E-Mail noch bestätigen müssen."
-      },
-      "waitlistConfirmed": {
-        "title": "Bestätigte Warteliste",
-        "description": "Adressen, die ihre E-Mail bestätigt haben."
+        "description": "Adressen, die bei geschlossener Registrierung gesammelt wurden."
       }
     }
   },
@@ -841,6 +837,7 @@
     "description": "Adressen, die auf einen Platz im Early Access warten.",
     "listTitle": "Registrierte Adressen",
     "listDescription": "{count, plural, =0 {Keine Adresse} one {# Adresse} other {# Adressen}}",
+    "listConfirmed": "{count, plural, =0 {keine bestätigt} other {# bestätigt}}",
     "columns": {
       "email": "E-Mail",
       "status": "Status",
@@ -1457,7 +1454,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Nächtliche Temperatur vs. Referenz",
     "nightlyTemperature": "Nächtliche Temperatur",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "temperatureUnitHelpLabel": "Über die Temperatureinheit",
     "temperatureUnitHelp": "Du kannst die Temperatureinheit in den Einstellungen ändern.",
     "temperatureUnitHelpLink": "Einstellungen öffnen",
@@ -1478,7 +1475,7 @@
     "bpmValue": "{value} bpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "periodAverage": "{value} im Durchschnitt des Zeitraums",
     "withinUsualRange": "In deinem üblichen Bereich ({minimum} bis {maximum})",
     "belowUsualRange": "Unter deinem üblichen Bereich ({minimum} bis {maximum})",

@@ -699,13 +699,9 @@
         "title": "Comentarios del producto",
         "description": "Mensajes enviados desde la barra lateral de Lumida."
       },
-      "waitlistPending": {
+      "waitlist": {
         "title": "Lista de espera",
-        "description": "Direcciones pendientes de confirmar su correo."
-      },
-      "waitlistConfirmed": {
-        "title": "Lista de espera confirmada",
-        "description": "Direcciones que han confirmado su correo."
+        "description": "Direcciones recogidas mientras los registros están cerrados."
       }
     }
   },
@@ -841,6 +837,7 @@
     "description": "Direcciones a la espera de una plaza de acceso anticipado.",
     "listTitle": "Direcciones registradas",
     "listDescription": "{count, plural, =0 {Ninguna dirección} one {# dirección} other {# direcciones}}",
+    "listConfirmed": "{count, plural, =0 {ninguna confirmada} one {# confirmada} other {# confirmadas}}",
     "columns": {
       "email": "Correo",
       "status": "Estado",
@@ -1457,7 +1454,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Temperatura nocturna vs referencia",
     "nightlyTemperature": "Temperatura nocturna",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "temperatureUnitHelpLabel": "Acerca de la unidad de temperatura",
     "temperatureUnitHelp": "Puedes cambiar la unidad de temperatura en los Ajustes.",
     "temperatureUnitHelpLink": "Abrir los Ajustes",
@@ -1478,7 +1475,7 @@
     "bpmValue": "{value} lpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "periodAverage": "{value} de media en el período",
     "withinUsualRange": "Dentro de tu rango habitual ({minimum}–{maximum})",
     "belowUsualRange": "Por debajo de tu rango habitual ({minimum}–{maximum})",

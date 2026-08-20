@@ -699,13 +699,9 @@
         "title": "Product feedback",
         "description": "Messages submitted from the Lumida sidebar."
       },
-      "waitlistPending": {
+      "waitlist": {
         "title": "Waiting list",
-        "description": "Addresses awaiting email confirmation."
-      },
-      "waitlistConfirmed": {
-        "title": "Confirmed waiting list",
-        "description": "Addresses that confirmed their email."
+        "description": "Addresses collected while sign-ups are closed."
       }
     }
   },
@@ -841,6 +837,7 @@
     "description": "Addresses waiting for an early access spot.",
     "listTitle": "Registered addresses",
     "listDescription": "{count, plural, =0 {No addresses} one {# address} other {# addresses}}",
+    "listConfirmed": "{count, plural, =0 {none confirmed} other {# confirmed}}",
     "columns": {
       "email": "Email",
       "status": "Status",
@@ -1457,7 +1454,7 @@
     "respiratoryRateValue": "{value}/min",
     "temperatureDelta": "Nightly temperature vs baseline",
     "nightlyTemperature": "Nightly temperature",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "temperatureUnitHelpLabel": "About the temperature unit",
     "temperatureUnitHelp": "You can change the temperature unit in Settings.",
     "temperatureUnitHelpLink": "Open Settings",
@@ -1478,7 +1475,7 @@
     "bpmValue": "{value} bpm",
     "millisecondsValue": "{value} ms",
     "respiratoryRateValue": "{value}/min",
-    "temperatureValue": "{value}\u00a0{unit}",
+    "temperatureValue": "{value} {unit}",
     "periodAverage": "{value} average over the period",
     "withinUsualRange": "Within your usual range ({minimum}–{maximum})",
     "belowUsualRange": "Below your usual range ({minimum}–{maximum})",
