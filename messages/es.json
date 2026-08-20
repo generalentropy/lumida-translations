@@ -715,6 +715,7 @@
     "messageLabel": "Comparte tus ideas",
     "messagePlaceholder": "¿Qué funciona bien? ¿Qué resulta confuso? ¿Qué falta?",
     "privacyNote": "No incluyas mediciones de salud ni otra información sensible.",
+    "notSupportNote": "Este no es un formulario de soporte.",
     "discordHelp": "¿Necesitas ayuda? Únete a la comunidad en <discord>Discord</discord>.",
     "close": "Cerrar la ventana de comentarios",
     "cancel": "Cancelar",

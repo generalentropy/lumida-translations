@@ -715,6 +715,7 @@
     "messageLabel": "Teile deine Meinung",
     "messagePlaceholder": "Was funktioniert gut? Was ist verwirrend? Was fehlt?",
     "privacyNote": "Füge keine Gesundheitswerte oder andere sensible Informationen hinzu.",
+    "notSupportNote": "Dies ist kein Support-Formular.",
     "discordHelp": "Brauchst du Hilfe? Tritt der Community auf <discord>Discord</discord> bei.",
     "close": "Feedback-Fenster schließen",
     "cancel": "Abbrechen",

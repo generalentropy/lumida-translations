@@ -715,6 +715,7 @@
     "messageLabel": "Share your thoughts",
     "messagePlaceholder": "What's working well? What's confusing? What's missing?",
     "privacyNote": "Please don't include health measurements or other sensitive information.",
+    "notSupportNote": "This is not a support form.",
     "discordHelp": "Need help? Join the community on <discord>Discord</discord>.",
     "close": "Close feedback window",
     "cancel": "Cancel",

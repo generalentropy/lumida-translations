@@ -715,6 +715,7 @@
     "messageLabel": "Condividi la tua opinione",
     "messagePlaceholder": "Cosa funziona bene? Cosa non è chiaro? Cosa manca?",
     "privacyNote": "Non includere misurazioni sulla salute o altre informazioni sensibili.",
+    "notSupportNote": "Questo non è un modulo di assistenza.",
     "discordHelp": "Hai bisogno di aiuto? Unisciti alla community su <discord>Discord</discord>.",
     "close": "Chiudi la finestra di feedback",
     "cancel": "Annulla",

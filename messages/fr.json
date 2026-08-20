@@ -715,6 +715,7 @@
     "messageLabel": "Partagez votre avis",
     "messagePlaceholder": "Qu’est-ce qui fonctionne bien ? Qu’est-ce qui prête à confusion ? Que manque-t-il ?",
     "privacyNote": "N’incluez pas de mesures de santé ni d’autres informations sensibles.",
+    "notSupportNote": "Ceci n’est pas un formulaire de support.",
     "discordHelp": "Besoin d’aide ? Rejoignez la communauté sur <discord>Discord</discord>.",
     "close": "Fermer la fenêtre de partage d’avis",
     "cancel": "Annuler",
