@@ -1085,6 +1085,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "workoutHeartRateAxis": {
+        "category": "Activity",
+        "title": "BPM values on workout charts",
+        "description": "The heart-rate chart on workout detail pages now displays BPM values on the vertical axis for easier reading."
+      },
       "technicalMaintenance": {
         "category": "Application",
         "title": "Technical maintenance",

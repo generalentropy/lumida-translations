@@ -1085,6 +1085,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "workoutHeartRateAxis": {
+        "category": "Actividad",
+        "title": "Valores de lpm en los gráficos de actividad",
+        "description": "El gráfico de frecuencia cardíaca de las páginas de detalle de las actividades ahora muestra los valores en lpm en el eje vertical para facilitar la lectura."
+      },
       "technicalMaintenance": {
         "category": "Aplicación",
         "title": "Mantenimiento técnico",

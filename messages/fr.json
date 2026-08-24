@@ -1085,6 +1085,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "workoutHeartRateAxis": {
+        "category": "Activité",
+        "title": "Valeurs BPM sur les graphiques d’activité",
+        "description": "Le graphique de fréquence cardiaque des pages de détails des activités affiche désormais les valeurs en BPM sur l’axe vertical, pour une meilleure lisibilité."
+      },
       "technicalMaintenance": {
         "category": "Application",
         "title": "Maintenance technique",

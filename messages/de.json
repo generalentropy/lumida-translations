@@ -1085,6 +1085,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "workoutHeartRateAxis": {
+        "category": "Aktivität",
+        "title": "BPM-Werte in Aktivitätsdiagrammen",
+        "description": "Das Herzfrequenzdiagramm auf den Detailseiten der Aktivitäten zeigt nun zur besseren Lesbarkeit BPM-Werte auf der vertikalen Achse an."
+      },
       "technicalMaintenance": {
         "category": "Anwendung",
         "title": "Technische Wartung",
