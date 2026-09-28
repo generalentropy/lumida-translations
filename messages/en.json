@@ -1377,7 +1377,7 @@
     "averageNights": "Average over {count, plural, one {# night} other {# nights}} · {period}",
     "noSession": "No session",
     "recentActivity": "Recent activity",
-    "viewAllActivity": "View all activity",
+    "viewAllActivity": "View all workouts",
     "periodHighlight": {
       "title": "Period highlight",
       "minutesValue": "{value} min",
@@ -1717,7 +1717,7 @@
   },
   "WorkoutPage": {
     "title": "Workout details",
-    "backToActivity": "Back to activity",
+    "backToActivity": "Back to the Activity page",
     "workout": "Workout",
     "loading": "Loading workout details",
     "statusError": "Unable to retrieve the Google Health connection status.",

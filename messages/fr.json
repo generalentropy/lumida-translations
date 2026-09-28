@@ -1377,7 +1377,7 @@
     "averageNights": "Moyenne sur {count, plural, one {# nuit} other {# nuits}} · {period}",
     "noSession": "Aucune session",
     "recentActivity": "Activité récente",
-    "viewAllActivity": "Voir toute l'activité",
+    "viewAllActivity": "Voir toutes les séances",
     "periodHighlight": {
       "title": "À retenir sur la période",
       "minutesValue": "{value} min",
@@ -1717,7 +1717,7 @@
   },
   "WorkoutPage": {
     "title": "Détail de la séance",
-    "backToActivity": "Retour à l'activité",
+    "backToActivity": "Retour à la page Activité",
     "workout": "Séance",
     "loading": "Chargement du détail de la séance",
     "statusError": "Impossible de récupérer le statut de la connexion Google Health.",

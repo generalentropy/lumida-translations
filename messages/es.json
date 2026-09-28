@@ -1377,7 +1377,7 @@
     "averageNights": "Media de {count, plural, one {# noche} other {# noches}} · {period}",
     "noSession": "Sin sesiones",
     "recentActivity": "Actividad reciente",
-    "viewAllActivity": "Ver toda la actividad",
+    "viewAllActivity": "Ver todos los entrenamientos",
     "periodHighlight": {
       "title": "A destacar en el período",
       "minutesValue": "{value} min",
@@ -1717,7 +1717,7 @@
   },
   "WorkoutPage": {
     "title": "Detalles del entrenamiento",
-    "backToActivity": "Volver a actividad",
+    "backToActivity": "Volver a la página Actividad",
     "workout": "Entrenamiento",
     "loading": "Cargando los detalles del entrenamiento",
     "statusError": "No se ha podido obtener el estado de la conexión con Google Health.",

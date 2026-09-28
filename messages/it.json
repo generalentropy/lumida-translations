@@ -1377,7 +1377,7 @@
     "averageNights": "Media su {count, plural, one {# notte} other {# notti}} · {period}",
     "noSession": "Nessuna sessione",
     "recentActivity": "Attività recente",
-    "viewAllActivity": "Vedi tutta l’attività",
+    "viewAllActivity": "Vedi tutti gli allenamenti",
     "periodHighlight": {
       "title": "Da notare nel periodo",
       "minutesValue": "{value} min",
@@ -1717,7 +1717,7 @@
   },
   "WorkoutPage": {
     "title": "Dettagli dell’allenamento",
-    "backToActivity": "Torna all’attività",
+    "backToActivity": "Torna alla pagina Attività",
     "workout": "Allenamento",
     "loading": "Caricamento dei dettagli dell’allenamento",
     "statusError": "Impossibile recuperare lo stato della connessione a Google Health.",

@@ -1377,7 +1377,7 @@
     "averageNights": "Durchschnitt über {count, plural, one {# Nacht} other {# Nächte}} · {period}",
     "noSession": "Keine Aufzeichnung",
     "recentActivity": "Letzte Aktivität",
-    "viewAllActivity": "Alle Aktivitäten ansehen",
+    "viewAllActivity": "Alle Workouts ansehen",
     "periodHighlight": {
       "title": "Wichtig im Zeitraum",
       "minutesValue": "{value} min",
@@ -1717,7 +1717,7 @@
   },
   "WorkoutPage": {
     "title": "Workout-Details",
-    "backToActivity": "Zurück zur Aktivität",
+    "backToActivity": "Zurück zur Aktivitätsseite",
     "workout": "Workout",
     "loading": "Workout-Details werden geladen",
     "statusError": "Der Status der Google-Health-Verbindung konnte nicht abgerufen werden.",
