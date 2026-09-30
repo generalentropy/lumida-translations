@@ -123,6 +123,7 @@
     "contributeCta": "Contribuir",
     "discordCta": "Unirse al Discord",
     "footerCopyright": "© 2026 Lumida.",
+    "footerCredit": "Diseñado y desarrollado por <author>Visual Artisan</author>.",
     "disclaimer": "Lumida no está afiliada a Google, Google Health ni Fitbit.",
     "preview": {
       "navigationLabel": "Vista previa de la navegación del panel",
@@ -1085,6 +1086,11 @@
     "description": "Nuevas funciones, mejoras y correcciones.",
     "npmLinkLabel": "Ver en npm",
     "items": {
+      "translationImprovements": {
+        "category": "Aplicación",
+        "title": "Mejora de las traducciones",
+        "description": "Se han mejorado algunas traducciones."
+      },
       "workoutHeartRateAxis": {
         "category": "Actividad",
         "title": "Valores de lpm en los gráficos de actividad",
