@@ -51,6 +51,15 @@
     "catppuccin": "Catppuccin",
     "vitality": "Vitality"
   },
+  "TimeFormatSelector": {
+    "label": "Format horaire",
+    "description": "Choisissez l’affichage des heures dans vos vues de santé, indépendamment de la langue.",
+    "locale": "Selon la langue",
+    "h12": "12 h (4:30 PM)",
+    "h24": "24 h (16:30)",
+    "saved": "Le format horaire a été mis à jour.",
+    "saveError": "Impossible de mettre à jour le format horaire."
+  },
   "TemperatureUnitSelector": {
     "label": "Unité de température",
     "celsius": "Celsius (°C)",
@@ -1086,6 +1095,11 @@
     "description": "Nouvelles fonctionnalités, évolutions et correctifs.",
     "npmLinkLabel": "Voir sur npm",
     "items": {
+      "timeFormatPreference": {
+        "category": "Application",
+        "title": "Format horaire 12 h ou 24 h",
+        "description": "Les paramètres permettent désormais de choisir un format horaire 12 h ou 24 h pour les vues de santé, indépendamment de la langue de l’application. Merci à Mark D. d’avoir signalé la confusion dans l’affichage des heures."
+      },
       "translationImprovements": {
         "category": "Application",
         "title": "Amélioration des traductions",

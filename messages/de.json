@@ -51,6 +51,15 @@
     "catppuccin": "Catppuccin",
     "vitality": "Vitality"
   },
+  "TimeFormatSelector": {
+    "label": "Zeitformat",
+    "description": "Wähle unabhängig von der Sprache, wie Uhrzeiten in deinen Gesundheitsansichten angezeigt werden.",
+    "locale": "Je nach Sprache",
+    "h12": "12 Stunden (4:30 PM)",
+    "h24": "24 Stunden (16:30)",
+    "saved": "Zeitformat aktualisiert.",
+    "saveError": "Das Zeitformat konnte nicht aktualisiert werden."
+  },
   "TemperatureUnitSelector": {
     "label": "Temperatureinheit",
     "celsius": "Celsius (°C)",
@@ -1086,6 +1095,11 @@
     "description": "Neue Funktionen, Änderungen und Fehlerbehebungen.",
     "npmLinkLabel": "Auf npm ansehen",
     "items": {
+      "timeFormatPreference": {
+        "category": "Anwendung",
+        "title": "12- oder 24-Stunden-Format",
+        "description": "In den Einstellungen lässt sich jetzt unabhängig von der Sprache der App das 12- oder 24-Stunden-Format für die Gesundheitsansichten wählen. Danke an Mark D. für den Hinweis auf die missverständliche Zeitanzeige."
+      },
       "translationImprovements": {
         "category": "Anwendung",
         "title": "Verbesserte Übersetzungen",

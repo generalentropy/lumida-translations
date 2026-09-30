@@ -51,6 +51,15 @@
     "catppuccin": "Catppuccin",
     "vitality": "Vitality"
   },
+  "TimeFormatSelector": {
+    "label": "Time format",
+    "description": "Choose how times appear in your health views, independently of the language.",
+    "locale": "Follow language",
+    "h12": "12-hour (4:30 PM)",
+    "h24": "24-hour (16:30)",
+    "saved": "Time format updated.",
+    "saveError": "The time format could not be updated."
+  },
   "TemperatureUnitSelector": {
     "label": "Temperature unit",
     "celsius": "Celsius (°C)",
@@ -1086,6 +1095,11 @@
     "description": "New features, improvements, and fixes.",
     "npmLinkLabel": "View on npm",
     "items": {
+      "timeFormatPreference": {
+        "category": "Application",
+        "title": "12-hour or 24-hour time",
+        "description": "Settings now lets you choose a 12-hour or 24-hour clock across health views, independently of the app language. Thanks to Mark D. for pointing out the confusing time display."
+      },
       "translationImprovements": {
         "category": "Application",
         "title": "Translation improvements",
